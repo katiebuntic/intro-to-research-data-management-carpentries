@@ -23,11 +23,21 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::: challenge 
 
+## Challenge 1: Can you do it?
 
-::::::::::::::::::::::::::::::::::::: keypoints 
+Open `film_dataset.csv`. 
 
-- keypoint 1
-- keypoint 2
+1. How many missing values are there in the 'film_title' column?
+2. Are there any duplicate entries in the dataset? If so, how many?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::: solution 
+
+## Output
+ 
+1. There are 7 missing values in the `film_title` column
+2. There are 5 duplicate rows in the dataset
+
+:::::::::::::::::::::::::::::::::
+
