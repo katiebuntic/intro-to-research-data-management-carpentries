@@ -37,21 +37,17 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: Can you do it?
+## Challenge 1: Can find any inconsitencies or probelms with data entered into a spreadsheet
 
-What is the output of this command?
+A dataset called ####.csv is in the zip file. Please open the file in spreadhseet software (e.g. Google Spredsheets or Excel). Using a coloured fill identify any inconsistencies or problem data in the spreadsheet that you think might cause problems for anyone analysing the data.
 
 ```r
 paste("This", "new", "lesson", "looks", "good")
 ```
 
-:::::::::::::::::::::::: solution 
+:::::::::::::::::::::::: hint 
 
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
+Inconsistencies might include where measurements are in different units, differing formats for dates, differing case
 
 :::::::::::::::::::::::::::::::::
 
