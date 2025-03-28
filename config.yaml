@@ -67,6 +67,7 @@ contact: 'k.buntic@ucl.ac.uk'
 # Order of episodes in your lesson
 episodes: 
 - introduction.md
+- structuring-research-materials.md
 
 # Information for Learners
 learners: 
