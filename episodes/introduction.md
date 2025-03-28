@@ -1,7 +1,7 @@
 ---
 title: "What is Research Data?"
-teaching: 10
-exercises: 2
+teaching: 40
+exercises: 20
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
