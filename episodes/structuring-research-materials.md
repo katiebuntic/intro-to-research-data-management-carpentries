@@ -21,3 +21,14 @@ exercises: 10
 - Explain why version control software such as Git/GitHub can be useful for certain types of data.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::: discussion
+### Organising files into a folder structure
+
+In groups, look through the folder of data that you have been given:
+- What problems can you identify with how files are organised?
+- How many different datasets can you identify?
+- Which files are 'raw' vs 'processed' data?
+- How would you improve the organisation of the files? E.g. how would you split them between different folders?
+
+::::::::::::::::::::::::::::::::::::::
