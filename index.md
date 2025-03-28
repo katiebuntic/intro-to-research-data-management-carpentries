@@ -4,8 +4,6 @@ site: sandpaper::sandpaper_site
 
 This lesson aims to teach those just starting to undertake research how to manage their data and files.
 
-### Learning Objectives
-
 After completing this course, the learners should be able to:
 
 * Define research data and distinguish between different data types.
