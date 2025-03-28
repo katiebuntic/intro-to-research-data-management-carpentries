@@ -37,23 +37,16 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: Can you find any inconsitencies or probelms with data entered into a spreadsheet?
+## Challenge 1: Can you find any inconsistencies or problems with data entered into a spreadsheet?
 
 A dataset called ####.csv is in the zip file. Please open the file in spreadhseet software (e.g. Google Spredsheets or Excel). Using a coloured fill identify any inconsistencies or problem data in the spreadsheet that you think might cause problems for anyone analysing the data.
 
 :::::::::::::::::::::::: hint 
 
-Inconsistencies might include where measurements are in different units, differing formats for dates, differing case
+Inconsistencies might include where measurements are in different units, there are differing formats for dates, differing cases, or where something is indicated ina  variety of different ways but all mean the same thing
 
-:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::
 
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Figures
