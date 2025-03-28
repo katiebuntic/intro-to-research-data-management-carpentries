@@ -26,6 +26,7 @@ exercises: 10
 ### Organising files into a folder structure
 
 In groups, look through the folder of data that you have been given:
+
 - What problems can you identify with how files are organised?
 - How many different datasets can you identify?
 - Which files are 'raw' vs 'processed' data?
