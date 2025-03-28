@@ -8,6 +8,7 @@ exercises: 2
 
 - What is research data, and why is it important in academic and scientific research?
 - What are the different types of research data?
+- Where can research data come from?
 - What are the key components of research data management (RDM)?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
