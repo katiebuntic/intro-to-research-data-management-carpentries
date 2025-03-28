@@ -15,7 +15,7 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Describe what data cleaning is and why it is important
-- Find and resolve inconsistences within a tabular dataset programmatically (e.g datetime, numeric precision)
+- Find and resolve inconsistencies within a tabular dataset programmatically (e.g datetime, numeric precision)
 - Identify missing values within a tabular dataset using filters
 - Correct spelling mistakes using spell check tools and find + replace
 - Standardise text formats using spreadsheet functions
@@ -23,11 +23,28 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::: challenge 
 
+## Challenge 1: Can you do it?
+
+Open `film_dataset.csv`. 
+
+1. How many missing values are there in the 'film_title' column?
+2. Are there any duplicate entries in the dataset? If so, how many?
+
+:::::::::::::::::::::::: solution 
+
+## Output
+ 
+1. There are 7 missing values in the `film_title` column
+2. There are 5 duplicate rows in the dataset
+
+:::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- keypoint 1
-- keypoint 2
+- keypoint
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
