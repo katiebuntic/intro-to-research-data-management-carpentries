@@ -5,7 +5,8 @@
 This lesson aims to teach those just starting to undertake research how to manage their data and files.
 
 ### Learning Objectives
-After following this lesson, learners will be able to:
+
+After completing this course, the learners should be able to:
 
 * Define research data and distinguish between different data types.
 * Structure research materials using clear file naming conventions and a logical folder hierarchy
