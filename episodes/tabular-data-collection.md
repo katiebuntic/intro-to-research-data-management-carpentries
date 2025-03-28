@@ -46,7 +46,6 @@ A dataset called ####.csv is in the zip file. Please open the file in spreadhsee
 Inconsistencies might include where measurements are in different units, differing formats for dates, differing case
 
 :::::::::::::::::::::::::::::::::
-:::::::::::::::::::::::::::::::::::::::::
 
 ## Challenge 2: how do you nest solutions within challenge blocks?
 
