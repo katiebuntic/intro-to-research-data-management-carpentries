@@ -1,23 +1,24 @@
 ---
-title: "Using Markdown"
+title: "What is Research Data?"
 teaching: 10
 exercises: 2
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using Markdown and `{sandpaper}`?
+- What is research data, and why is it important in academic and scientific research?
+- What are the different types of research data?
+- What are the key components of research data management (RDM)?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Data types
+- Sources of data
+- What is research data management (collection, storage, organisation, sharing etc)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Introduction
 
 This is a lesson created via The Carpentries Workbench. It is written in
 [Pandoc-flavored Markdown](https://pandoc.org/MANUAL.html) for static files and
