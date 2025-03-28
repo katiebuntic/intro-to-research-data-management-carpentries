@@ -15,7 +15,7 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Describe what data cleaning is and why it is important
-- Find and resolve inconsistences within a tabular dataset programmatically (e.g datetime, numeric precision)
+- Find and resolve inconsistencies within a tabular dataset programmatically (e.g datetime, numeric precision)
 - Identify missing values within a tabular dataset using filters
 - Correct spelling mistakes using spell check tools and find + replace
 - Standardise text formats using spreadsheet functions
@@ -41,3 +41,4 @@ Open `film_dataset.csv`.
 
 :::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::
