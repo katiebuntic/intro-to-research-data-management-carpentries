@@ -11,7 +11,7 @@ objectnumber	istimelinework	lastconserv	objectid	accessionyear	objectname	title	
 1984.315.10	False	30/2/2024	483126	1884	Drawing	Colorful Architecture	Artist	Paul Klee	Klee, Paul	German, born Switzerland	M	1917	Gouache on paper mounted on cardboard
 1983.195	False	16/06/2017 12:30	482663	1983	Sculpture	Melisande	Artist	Robert Laurent	Laurent, Robert	American, born France	1	1945	Alabaster
 2013.638	False	25/07/2024	500436	2013	 Painting	Seated Nude	Artist	Pierre Bonnard	Bonnard, Pierre	French	Male	1919	 Oil on canvas
-2003.433.108a, b	False	07/21/2023	493502	2003	Print	Time Door Time D'Or, from the ¶Welcome to the Water Planet¶ series	Artist	James Rosenquist	Rosenquist, James	American	Male	1989	Colored, pressed paper pulp, lithograph, collage
+2003.433.108a, b	False	07/21/2023	493502	2003	Print	Time Door Time D'Or, from the ¬¶Welcome to the Water Planet¬¶ series	Artist	James Rosenquist	Rosenquist, James	American	Male	1989	Colored, pressed paper pulp, lithograph, collage
 2016.237.30	False	01/08/2022	497127	2016	Drawing	"Head of a Woman (Study for ""Nude with Drapery"")"	Artist	Pablo Picasso	Picasso, Pablo	Spanish		Paris, 1907	Gouache and watercolor on tan wove paper; subsequently mounted to panel
 2000.278.8a,b	0	10/04/2025	491570	2000	Burner with holder	Burner with holder	Designer	Josef Hoffmann	Hoffmann, Josef	Austrian	male	ca. 1910	Silver
 2014.40.12	False	07/05/2021 00:00	637122	2014	Photograph	XYZ 1481	Artist	Lucas Samaras	Samaras, Lucas	American, born Greece	Male	2013	Pigment  inkjet print on synthetic polymer paper
@@ -19,8 +19,8 @@ objectnumber	istimelinework	lastconserv	objectid	accessionyear	objectname	title	
 1980.319	False	02/03/2024	482102	1979	Drawing	River Porch III	Artist	Sonia Gechtoff	Gechtoff, Sonia	USA	2	1980	Acrylic and graphite on paper
 68.73.17	Flse	12/11/2027	489750	1968	Textile length	Textile length	Manufacturer	United Merchants & Manufacturers, Inc.	UNITED MERCHANTS &	American		1965	Cotton, vinyl
 23.159.1ab	False	13/08/2024	487288	1923	Bottle with stopper	Bottle with Stopper	Desiner	Maurice Marinot	Marinot, Maurice	French		1922	Glass
-1990.4.58	0	05/17/2023	485614	1990	drawing	Untitled	Artist	Jackson Pollock	Pollock, Jackson	American		ca. 1938ñ41	Colored pencils and graphite on on paper
+1990.4.58	0	05/17/2023	485614	1990	drawing	Untitled	Artist	Jackson Pollock	Pollock, Jackson	American		ca. 1938‚Äì41	Colored pencils and graphite on on paper
 1998.530.2	False	18/06/1989	487099	1998	Textile	Perpetual Indulgence	Designer	Candace Kling	Kling, Candace	American 	F	1989	Balsa wood, mylar-backed acetate, zippers and beads
 1999.363.22	True	07/12/2022	489978	1999	Sculpture	Three Men Walking II	artist	Alberto Giacometti	Giacometti, Alberto	Swiss		1949	Bronze
 1986.416.39	False	19/09/2022	484614	1986	Drawing	Untitled, # 33	Artist	Lucas Samaras	Samaras, Lucas	American, born Greece	M	1981	Pastel on black paper
-2012.576.1añk	False	08/12/2021 10:00	499632	2012	Cabinet	ìDuvalî Cabinet (Model AR 1511 / NR 2300)	Artist 	Emile-Jacques Ruhlmann	Ruhlmann, Emile-Jacques	French		designed 1924, probably made ca. 1926	Brazilian rosewood, ivory, amboyna burl, mahogany, oak, plywood
+2012.576.1a‚Äìk	False	08/12/2021 10:00	499632	2012	Cabinet	‚ÄúDuval‚Äù Cabinet (Model AR 1511 / NR 2300)	Artist 	Emile-Jacques Ruhlmann	Ruhlmann, Emile-Jacques	French		designed 1924, probably made ca. 1926	Brazilian rosewood, ivory, amboyna burl, mahogany, oak, plywood
