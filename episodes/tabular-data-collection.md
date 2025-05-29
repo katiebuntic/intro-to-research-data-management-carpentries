@@ -39,7 +39,7 @@ associated with the lessons. They appear in the "Instructor View"
 
 ## Challenge 1: Can you find any inconsistencies or problems with data entered into a spreadsheet?
 
-A dataset called ####.csv is in the zip file. Please open the file in spreadhseet software (e.g. Google Spredsheets or Excel). Using a coloured fill identify any inconsistencies or problem data in the spreadsheet that you think might cause problems for anyone analysing the data.
+A dataset called Met_Objects_Dataset_sample.txt is in the zip file. Please open the file in whatever spreadsheet software you are using (e.g. OpenLibre, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers. Using a coloured fill identify any inconsistencies or problem data in the spreadsheet that you think might cause problems for anyone analysing the data.
 
 :::::::::::::::::::::::: hint 
 
