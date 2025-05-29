@@ -2,17 +2,17 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+Before joining the workshop, please complete the data and software setup 
+described in this page.
 
 ## Data Sets
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+Download the [csv file of example data](https://example.com/FIXME) and save 
+it somewhere easily accessible on your computer.
+
+This csv file is a shortened and modified version of the [Metropolitan Museum of
+Art's Open Access CSV](https://github.com/metmuseum/openaccess), released under 
+a CC0 license on github.
 
 ## Software Setup
 
@@ -20,10 +20,12 @@ Download the [data zip file](https://example.com/FIXME) and unzip it to your Des
 
 ### Details
 
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+This workshop requires access to a spreadsheet program. For example: Microsoft 
+Excel, LibreOffice, Apple Numbers, Gnumeric, Onlyoffice, WPS office, among 
+others. 
+
+We encourage you to use Microsoft Excel or LibreOffice (a free, open source 
+alternative). Installation instructions are provided below for LibreOffice:
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -31,7 +33,16 @@ systems (and potentially add more, e.g. online setup) in the solutions blocks.
 
 ### Windows
 
-Use PuTTY
+- **Download the Installer**  
+  Install LibreOffice by going to the [installation
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for Windows should automatically be selected. Click
+  **Download**. You will go to a page that asks about a
+  donation, but you don't need to make one. Your download should begin
+  automatically.
+- **Install LibreOffice**  
+  Once the installer is downloaded, double click on it and it should
+  install.
 
 ::::::::::::::::::::::::
 
@@ -39,7 +50,17 @@ Use PuTTY
 
 ### MacOS
 
-Use Terminal.app
+- **Download the Installer**  
+  Install LibreOffice by going to the [installation
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for macOS should automatically be selected. Click
+  **Download**. You will go to a page that asks about a
+  donation, but you don't need to make one. Your download should begin
+  automatically.
+- **Install LibreOffice**  
+  The file *LibreOffice\_X.X.X\_MacOS\_x86-64* (whichever version of LibreOffice 
+  you have selected) should have been downloaded. Double click on this file, and 
+  LibreOffice will be installed.
 
 ::::::::::::::::::::::::
 
@@ -48,7 +69,15 @@ Use Terminal.app
 
 ### Linux
 
-Use Terminal
+- **Download the Installer**  
+  Install LibreOffice by going to the [installation
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for Linux should automatically be selected. Click **Download**. You 
+  will go to a page that asks about a donation, but you don't need to make one. 
+  Your download should begin automatically.
+- **Install LibreOffice**  
+  Once the installer is downloaded, double click on it and it should
+  install.
 
 ::::::::::::::::::::::::
 
