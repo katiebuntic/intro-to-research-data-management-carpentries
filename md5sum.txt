@@ -2,6 +2,7 @@
 "CODE_OF_CONDUCT.md" "c93c83c630db2fe2462240bf72552548" "site/built/CODE_OF_CONDUCT.md" "2022-08-05"
 "LICENSE.md" "16e8eaad880865bc4a41811b3e8fa945" "site/built/LICENSE.md" "2025-02-03"
 "config.yaml" "2f6d3859cae863e8e454bd96d64ab45a" "site/built/config.yaml" "2025-03-28"
+"draft_notes.md" "e89ce9801d2dbddabe8e4a06d844354a" "site/built/draft_notes.md" "2025-05-29"
 "index.md" "b2d0c95848782914264950dec807214d" "site/built/index.md" "2025-03-28"
 "links.md" "8184cf4149eafbf03ce8da8ff0778c14" "site/built/links.md" "2022-04-22"
 "episodes/introduction.md" "489752154e120ea5136d3f399a089c69" "site/built/introduction.md" "2025-03-28"
