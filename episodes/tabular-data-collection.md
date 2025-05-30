@@ -58,32 +58,33 @@ For example, in Alex's MET dataset, variables might include objectid, artistname
 
 #### Numeric variables
 
-Variables that represent measurable quantities.
+Variables that represent measurable quantities. These can be integers or floats.
 
 **Examples**:
 
-- objectid → `12345` _(Integer)_
-- heightcm → `23.5` _(Float)_
-- objectdate → `1890` _(Integer)_
+- objectid → `12345` _(integer)_
+- heightcm → `23.5` _(float)_
+- objectdate → `1890` _(integer)_
 
-#### Text variables
+#### String variables
 
 Free-form or descriptive text.
 
 **Examples**:
 
-- artistdisplayname → `"Claude Monet"` _(String)_
-- title → `"Woman with a Parasol"` _(String)_
+- artistdisplayname → `"Claude Monet"` _(string)_
+- title → `"Woman with a Parasol"` _(string)_
 
 #### Categorical variables
 
-Variables that represent groups or categories.
+Variables that represent groups or categories. These could be srings, integers or floats - anything within a category!
 
 **Examples**:
 
-- gender → `"Female"`, `"Male"` _(String)_
-- medium → `"Marble"`, `"Bronze"`, `"Oil on canvas"` _(String)_
-- istimelinework → `"Yes"` / `"No"` _(String)_ _(or TRUE/FALSE — can be Boolean!)_
+- gender → `"Female"`, `"Male"` _(string)_
+- medium → `"Marble"`, `"Bronze"`, `"Oil on canvas"` _(string)_
+- istimelinework → `"Yes"` / `"No"` _(string)_ _(or TRUE/FALSE — can be Boolean!)_
+- artistdecade → `1950`, `1960`, `1980` _(integer)_
 
 #### Date/time variables
 
@@ -91,8 +92,8 @@ Variables that represent dates or times.
 
 **Examples**:
 
-- lastconserv → `"2001-05-12"`
-- objectdate → `1990`, `"ca. 1890"`
+- lastconserv → `"2001-05-12"` _(datetime or string)_
+- objectdate → `1990` _(integer)_, `"ca. 1890"` _(string)_
 
 > ⚠️ Some columns might look like numbers but contain inconsistent formats (e.g., "ca. 1890"). These need cleaning before they can be analysed as dates.
 
