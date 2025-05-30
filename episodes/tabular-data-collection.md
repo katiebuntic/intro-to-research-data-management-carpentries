@@ -155,7 +155,7 @@ Before we can clean or analyse data, it's important to check for inconsistencies
 
 These inconsistencies can lead to errors or misleading results if not corrected.
 
-### Example: Inconsistencies in the `gender` column
+### Example: Inconsistencies in the `artistgender` column
 
 Here’s an example of how the same concept ("artistgender") can be recorded in many different ways:
 
