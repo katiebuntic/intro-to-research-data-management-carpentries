@@ -46,6 +46,16 @@ In the MET museum dataset Alex is using, each row is an object (like a painting 
 
 Alex’s dataset looks like a spreadsheet, but underneath, each column contains a specific **data type**. Knowing these helps avoid errors and choose the right tools for analysis.
 
+#### Basic data types
+
+Before we look at different types of variables, here are some common data types you'll encounter:
+
+- **String**: Text or characters, like `"Claude Monet"` or `"Oil on canvas"`
+- **Integer**: Whole numbers, like `1985`, `42`, or `0`
+- **Float**: Decimal numbers, like `27.5` or `3.14`
+- **Boolean**: True/False values, like `TRUE`, `FALSE`, `Yes`, `No`
+- **Datetime**: Calendar dates or timestamps, like `"2020-01-01"` or `"12/11/2027"`
+
 ### What is a variable?
 
 A variable is a characteristic or attribute that can take on different values. In tabular data, variables are usually represented as columns, where each row contains an observation or entry.
@@ -58,13 +68,13 @@ For example, in Alex's MET dataset, variables might include objectid, artistname
 
 #### Numeric variables
 
-Variables that represent measurable quantities. These can be integers or floats.
+Variables that represent measurable quantities. These can be integers or floats. Numeric variables can be _Discrete_, which means they take on specific, separate values (often counts), or _Continuous_, which can take on any value within a range (often measurements).
 
 **Examples**:
 
-- objectid → `12345` _(integer)_
-- heightcm → `23.5` _(float)_
-- objectdate → `1890` _(integer)_
+- `objectid` → `12345` _(integer, discrete — a unique ID number)_
+- `heightcm` → `23.5` _(float, continuous — a measurement in centimeters)_
+- `objectdate` → `1890` _(integer, discrete — a specific year)_
 
 #### String variables
 
@@ -77,14 +87,15 @@ Free-form or descriptive text.
 
 #### Categorical variables
 
-Variables that represent groups or categories. These could be srings, integers or floats - anything within a category!
+Variables that represent groups or categories. These could be strings, integers, or floats — anything used to label a category!  
+Categorical variables can be _Nominal_, which means there is no inherent order (e.g., `artistnationality`), or _Ordinal_, which means the categories follow a logical order (e.g., `popularity`).
 
 **Examples**:
 
-- gender → `"Female"`, `"Male"` _(string)_
-- medium → `"Marble"`, `"Bronze"`, `"Oil on canvas"` _(string)_
-- istimelinework → `"Yes"` / `"No"` _(string)_ _(or TRUE/FALSE — can be Boolean!)_
-- artistdecade → `1950`, `1960`, `1980` _(integer)_
+- `gender` → `"Female"`, `"Male"` _(string, nominal)_
+- `medium` → `"Marble"`, `"Bronze"`, `"Oil on canvas"` _(string, nominal)_
+- `istimelinework` → `"Yes"` / `"No"` _(string, nominal — or Boolean: `TRUE` / `FALSE`)_
+- `artistdecade` → `1950`, `1960`, `1980` _(integer, ordinal — ordered decades)_
 
 #### Date/time variables
 
@@ -97,14 +108,12 @@ Variables that represent dates or times.
 
 > ⚠️ Some columns might look like numbers but contain inconsistent formats (e.g., "ca. 1890"). These need cleaning before they can be analysed as dates.
 
-### Types of data
-
-#### Summary table
+#### Summary
 
 | Conceptual Type    | Technical Type | Description                  | Example                            |
 | ------------------ | -------------- | ---------------------------- | ---------------------------------- |
 | Nominal            | String         | Categories, no order         | `artistnationality = Australian`   |
-| Ordinal            | String/Integer | Categories with order        | `artistgender = Female`            |
+| Ordinal            | String         | Categories with order        | `popularity = high`                |
 | Discrete Numeric   | Integer        | Countable numbers            | `objectid = 123456`                |
 | Continuous Numeric | Integer, Float | Measurable, decimals allowed | `height = 27.5`                    |
 | Boolean            | Boolean        | Yes/No, True/False           | `ishighlight = TRUE`               |
@@ -120,12 +129,44 @@ Understanding both the _conceptual meaning_ and the _technical format_ of your d
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-You can use standard markdown for static figures with the following syntax:
+## Identify inconsistencies in data
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
+Before we can clean or analyze data, it's important to check for inconsistencies — values that don't follow a standard or expected format. These might include:
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
+- Different spellings or formats for the same category
+- Mixed use of upper/lower case
+- Inconsistent date formats
+- Unexpected blank or missing values
+- Invalid or impossible values (e.g. negative heights, future birth dates)
+
+These inconsistencies can lead to errors or misleading results if not corrected.
+
+### Example: Inconsistencies in the `gender` column
+
+Here’s an example of how the same concept ("artistgender") can be recorded in many different ways:
+
+| objectid | artistgender |
+| -------- | ------------ |
+| 1001     | Female       |
+| 1002     | female       |
+| 1003     | F            |
+| 1004     | Male         |
+| 1005     | MALE         |
+| 1006     | M            |
+| 1007     | Unknown      |
+| 1008     |              |
+
+We can see:
+
+- `"Female"`, `"female"`, and `"F"` all refer to the same category
+- `"Male"`, `"MALE"`, and `"M"` are also equivalent
+- `"Unknown"` and the blank entry might indicate missing or uncertain data
+
+These differences need to be standardised before analysis — for example, converting all values to lowercase and replacing shorthand terms with full words.
+
+---
+
+Next, we’ll look at how to avoid these kinds of issues from happening in the first place.
 
 ::::::::::::::::::::::::::::::::::::: callout
 
