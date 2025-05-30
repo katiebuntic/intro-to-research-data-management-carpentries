@@ -87,7 +87,7 @@ Free-form or descriptive text.
 
 #### Categorical variables
 
-Variables that represent groups or categories. These could be strings, integers, or floats — anything used to label a category!  
+Variables that represent groups or categories. These could be strings, integers, or floats - anything used to label a category!  
 Categorical variables can be _Nominal_, which means there is no inherent order (e.g., `artistnationality`), or _Ordinal_, which means the categories follow a logical order (e.g., `popularity`).
 
 **Examples**:
@@ -145,7 +145,7 @@ Inconsistencies might include where measurements are in different units, there a
 
 ## Identify inconsistencies in data
 
-Before we can clean or analyze data, it's important to check for inconsistencies — values that don't follow a standard or expected format. These might include:
+Before we can clean or analyse data, it's important to check for inconsistencies, values that don't follow a standard or expected format. These might include:
 
 - Different spellings or formats for the same category
 - Mixed use of upper/lower case
