@@ -18,7 +18,7 @@ After completing this course, the learners should be able to:
 
 Before coming to this training, learners should have:
 
-* Basic Excel skills (e.g., opening and saving tables)
-* Ability to create, delete, and move files on a computer (Windows/Mac)
+* Basic spreadsheet skills (e.g., opening and saving tables)
+* Ability to create, delete, and move files on a computer (Windows, Mac or Linux)
 * A research project in progress or data to work with
 :::
