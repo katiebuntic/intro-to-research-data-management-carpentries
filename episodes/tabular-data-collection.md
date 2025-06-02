@@ -286,6 +286,13 @@ collaborators and future users of your dataset, exactly how values were
 collected. This will also be invaluable when it's time to write the methods 
 section of any papers or reports that use this data.
 
+Make sure you include information about how to handle missing values. How will
+these be represented in your table? It is also useful to explicitly state why a 
+value may be missing (if possible). For example, in our dataset some objects are 
+made by manufacturing companies like `United Merchants & Manufacturers` rather 
+than an individual artist - in this case `artistgender` will be missing, as it 
+doesn't apply in this scenario.
+
 ::::::::::::::::::::::::::::::::::::: challenge 
 
 ## Write data collection guidelines
@@ -298,6 +305,8 @@ bullet-point guidelines for its collection. For example:
 - Which format should be used?
 
 - Are any checks required against other variables in the table?
+
+- If a value is missing, how should it be represented? E.g. NA, None, not applicable
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
