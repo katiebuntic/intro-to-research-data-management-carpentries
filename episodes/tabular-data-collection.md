@@ -44,7 +44,7 @@ A data point is a single piece of information collected for one variable about o
 
 In the MET museum dataset Alex is using, each row is an object (like a painting or sculpture), and each cell is a data point.
 
-Alex’s dataset looks like a spreadsheet, but underneath, each column contains a specific **data type**. Knowing these helps avoid errors and choose the right tools for analysis.
+Alex’s dataset looks like a spreadsheet, but underneath, each column contains a specific **data type**. Knowing these helps to avoid errors and choose the right tools for analysis.
 
 #### Basic data types
 
