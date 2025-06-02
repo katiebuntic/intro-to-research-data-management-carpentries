@@ -56,7 +56,7 @@ including:
 
 - 28/01/2025 = day / month / year
 - 07/21/2023 = month / day / year
-- 26.03.23 = day . month. year
+- 26.03.23 = day.month.year
 - 07/06/2019 00:00 = day / month / year hour:minute
 
 To avoid this, we could have enforced a specific date/time format during 
