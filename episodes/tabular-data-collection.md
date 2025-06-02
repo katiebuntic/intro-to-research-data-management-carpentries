@@ -38,6 +38,14 @@ associated with the lessons. They appear in the "Instructor View"
 
 Alex has received a dataset from the MET museum and needs to understand the types of variables before exploring or analysing it further.
 
+::::::::::::::::::::::::::::::::::::: prereq
+
+## Follow along: Open up the dataset
+
+A dataset called Met_Objects_Dataset_sample.txt is in the zip file. Please open the file in whatever spreadsheet software you are using (e.g. OpenLibre, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ### What is a data point?
 
 A data point is a single piece of information collected for one variable about one item.
@@ -106,9 +114,31 @@ Variables that represent dates or times.
 - lastconserv → `"2001-05-12"` _(datetime or string)_
 - objectdate → `1990` _(integer)_, `"ca. 1890"` _(string)_
 
-> ⚠️ Some columns might look like numbers but contain inconsistent formats (e.g., "ca. 1890"). These need cleaning before they can be analysed as dates.
+::::::::::::::::::::::caution
+
+Note on overlapping types:
+
+Some variables can belong to more than one category depending on their use and format. For example:
+
+objectdate = 1890 might be treated as a numeric variable (discrete integer) if used for sorting or calculations.
+
+The same objectdate could also be considered a date/time variable if formatted as "1890-01-01" and used in time-based analyses.
+
+artistdecade = 1950 could be a categorical variable (ordinal) if grouped into decade-based categories for comparison.
+
+It’s okay for a single value to have more than one interpretation - what matters is how it's used in context.
+
+::::::::::::::::::::
+
+::::::::::::::::::::::caution
+
+⚠️ Some columns might look like numbers but contain inconsistent formats (e.g., "ca. 1890"). These need cleaning before they can be analysed as dates.
+
+::::::::::::::::::::
 
 #### Summary
+
+Understanding the difference between conceptual types (how the data is used or interpreted) and technical types (how the data is stored or formatted) is key for working effectively with tabular data. For example, a column might be technically an integer but conceptually a category (like decades or survey scores).
 
 | Conceptual Type    | Technical Type | Description                  | Example                            |
 | ------------------ | -------------- | ---------------------------- | ---------------------------------- |
@@ -126,20 +156,6 @@ Variables that represent dates or times.
 **Tip for learners (like Alex):**
 
 Understanding both the _conceptual meaning_ and the _technical format_ of your data helps you clean it correctly, document it clearly, and analyse it without errors.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge
-
-## Challenge 1: Can you find any inconsistencies or problems with data entered into a spreadsheet?
-
-A dataset called Met_Objects_Dataset_sample.txt is in the zip file. Please open the file in whatever spreadsheet software you are using (e.g. OpenLibre, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers. Using a coloured fill identify any inconsistencies or problem data in the spreadsheet that you think might cause problems for anyone analysing the data.
-
-:::::::::::::::::::::::: hint
-
-Inconsistencies might include where measurements are in different units, there are differing formats for dates, differing cases, or where something is indicated ina variety of different ways but all mean the same thing
-
-::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -178,6 +194,20 @@ We can see:
 
 These differences need to be standardised before analysis — for example, converting all values to lowercase and replacing shorthand terms with full words.
 
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge 1: Can you find any inconsistencies or problems with data entered into a spreadsheet?
+
+Let's have a deep dive into the Met_Objects_Dataset_sample.txt dataset. Using a coloured fill identify any inconsistencies or problem data in the spreadsheet that you think might cause problems for anyone analysing the data.
+
+:::::::::::::::::::::::: hint
+
+Inconsistencies might include where measurements are in different units, there are differing formats for dates, differing cases, or where something is indicated ina variety of different ways but all mean the same thing
+
+::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ---
 
 Next, we’ll look at how to avoid these kinds of issues from happening in the first place.
@@ -201,4 +231,3 @@ e.g. by providing the answer to a commonly-asked question.
 - Run `sandpaper::build_lesson()` to preview your lesson locally
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
