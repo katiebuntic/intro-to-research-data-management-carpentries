@@ -212,14 +212,48 @@ Inconsistencies might include where measurements are in different units, there a
 
 Next, we’ll look at how to avoid these kinds of issues from happening in the first place.
 
-::::::::::::::::::::::::::::::::::::: callout
+## Data Dictionaries
 
-Callout sections can highlight information.
+### What is a Data Dictionary?
 
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides":
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
+A **data dictionary** is a table that describes the variables in your dataset. It provides key information such as:
+
+- **Variable name** (column header)
+- **Description** (what the variable represents)
+- **Data type** (e.g., string, integer, boolean, datetime)
+- **Possible values or format** (especially for categorical variables)
+- **Units** (if relevant)
+
+Data dictionaries help others (and future you!) understand and use your data consistently and correctly.
+
+#### Example: Wildlife Observations Dataset
+
+Here’s a sample data dictionary for a fictional dataset tracking wildlife sightings in a nature reserve:
+
+| Variable Name      | Description                              | Data Type | Possible Values / Format       | Units |
+| ------------------ | ---------------------------------------- | --------- | ------------------------------ | ----- |
+| `sighting_id`      | Unique ID for each observation           | Integer   | 1, 2, 3, …                     | N/A   |
+| `species_name`     | Name of the animal species observed      | String    | e.g., "Red Fox", "Barn Owl"    | N/A   |
+| `count`            | Number of individuals seen               | Integer   | 0, 1, 2, …                     | Count |
+| `observation_date` | Date the observation was recorded        | Datetime  | YYYY-MM-DD                     | N/A   |
+| `location`         | Area of the park where sighting occurred | String    | "North Woods", "Wetland Trail" | N/A   |
+| `is_endangered`    | Whether the species is endangered        | Boolean   | TRUE, FALSE                    | N/A   |
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge: Write a Data Dictionary for Alex
+
+Alex is trying to make sense of the MET museum dataset. Help Alex out by creating a mini data dictionary!
+
+1. Open the file `Met_Objects_Dataset_sample.txt`
+2. Choose **three variables (columns)** from the dataset
+3. For each one, write down:
+   - The **variable name**@
+   - A **short description**
+   - The **data type** (e.g., string, integer, date)
+   - Any **possible values** or **units**, if relevant
+
+Work in pairs or small groups and compare your answers.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
