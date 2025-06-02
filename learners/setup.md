@@ -7,10 +7,10 @@ described in this page.
 
 ## Data Sets
 
-Download the [csv file of example data](https://example.com/FIXME) and save 
+Download the [txt file of example data](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/blob/main/episodes/data/Met_Objects_Dataset_sample.txt) and save 
 it somewhere easily accessible on your computer.
 
-This csv file is a shortened and modified version of the [Metropolitan Museum of
+This file is a shortened and modified version of the [Metropolitan Museum of
 Art's Open Access CSV](https://github.com/metmuseum/openaccess), released under 
 a CC0 license on github.
 

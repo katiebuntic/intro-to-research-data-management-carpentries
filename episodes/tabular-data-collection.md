@@ -35,7 +35,7 @@ Alex has received a dataset from the MET museum and needs to understand the type
 
 ## Follow along: Open up the dataset
 
-A dataset called Met_Objects_Dataset_sample.txt is in the zip file. Please open the file in whatever spreadsheet software you are using (e.g. LibreOffice, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers.
+You should have downloaded a dataset called Met_Objects_Dataset_sample.txt as part of the [setup instructions](../learners/setup.md#data-sets). Please open this file in whatever spreadsheet software you are using (e.g. LibreOffice, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
