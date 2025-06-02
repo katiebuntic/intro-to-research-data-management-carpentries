@@ -201,6 +201,8 @@ Inconsistencies might include where measurements are in different units, there a
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+---
+
 Next, we’ll look at how to avoid these kinds of issues from happening in the first place.
 
 ## Prevent inconsistencies during data collection
