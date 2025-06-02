@@ -35,7 +35,7 @@ Alex has received a dataset from the MET museum and needs to understand the type
 
 ## Follow along: Open up the dataset
 
-A dataset called Met_Objects_Dataset_sample.txt is in the zip file. Please open the file in whatever spreadsheet software you are using (e.g. LibreOffice, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers.
+You should have downloaded a dataset called Met_Objects_Dataset_sample.txt as part of the [setup instructions](../learners/setup.md#data-sets). Please open this file in whatever spreadsheet software you are using (e.g. LibreOffice, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -83,8 +83,8 @@ Free-form or descriptive text.
 
 **Examples**:
 
-- artistdisplayname → `"Claude Monet"` _(string)_
-- title → `"Woman with a Parasol"` _(string)_
+- `artistdisplayname` → `"Claude Monet"` _(string)_
+- `title` → `"Woman with a Parasol"` _(string)_
 
 #### Categorical variables
 
@@ -104,8 +104,8 @@ Variables that represent dates or times.
 
 **Examples**:
 
-- lastconserv → `"2001-05-12"` _(datetime or string)_
-- objectdate → `1990` _(integer)_, `"ca. 1890"` _(string)_
+- `lastconserv` → `"2001-05-12"` _(datetime or string)_
+- `objectdate` → `1990` _(integer)_, `"ca. 1890"` _(string)_
 
 ::::::::::::::::::::::callout
 
@@ -274,6 +274,7 @@ vs `French`.
 
 :::::::::::::::::::::::::
 
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Write data collection guidelines
@@ -309,6 +310,51 @@ bullet-point guidelines for its collection. For example:
 - If a value is missing, how should it be represented? E.g. NA, None, not applicable
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Data Dictionaries
+
+### What is a Data Dictionary?
+
+A **data dictionary** is a table that describes the variables in your dataset. It provides key information such as:
+
+- **Variable name** (column header)
+- **Description** (what the variable represents)
+- **Data type** (e.g., string, integer, boolean, datetime)
+- **Possible values or format** (especially for categorical variables)
+- **Units** (if relevant)
+
+Data dictionaries help others (and future you!) understand and use your data consistently and correctly.
+
+#### Example: Wildlife Observations Dataset
+
+Here’s a sample data dictionary for a fictional dataset tracking wildlife sightings in a nature reserve:
+
+| Variable Name      | Description                              | Data Type | Possible Values / Format       | Units |
+| ------------------ | ---------------------------------------- | --------- | ------------------------------ | ----- |
+| `sighting_id`      | Unique ID for each observation           | Integer   | 1, 2, 3, …                     | N/A   |
+| `species_name`     | Name of the animal species observed      | String    | e.g., "Red Fox", "Barn Owl"    | N/A   |
+| `count`            | Number of individuals seen               | Integer   | 0, 1, 2, …                     | Count |
+| `observation_date` | Date the observation was recorded        | Datetime  | YYYY-MM-DD                     | N/A   |
+| `location`         | Area of the park where sighting occurred | String    | "North Woods", "Wetland Trail" | N/A   |
+| `is_endangered`    | Whether the species is endangered        | Boolean   | TRUE, FALSE                    | N/A   |
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge: Write a Data Dictionary for Alex
+
+Alex is trying to make sense of the MET museum dataset. Help Alex out by creating a mini data dictionary!
+
+1. Open the file `Met_Objects_Dataset_sample.txt`
+2. Choose **three variables (columns)** from the dataset
+3. For each one, write down:
+   - The **variable name**
+   - A **short description**
+   - The **data type** (e.g., string, integer, date)
+   - Any **possible values** or **units**, if relevant
+
+Work in pairs or small groups and compare your answers.
+
+::::::::::::::::::::::::::::::::::::: 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
