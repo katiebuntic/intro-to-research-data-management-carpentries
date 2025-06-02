@@ -114,7 +114,7 @@ Variables that represent dates or times.
 - lastconserv → `"2001-05-12"` _(datetime or string)_
 - objectdate → `1990` _(integer)_, `"ca. 1890"` _(string)_
 
-::::::::::::::::::::::caution
+::::::::::::::::::::::callout
 
 Note on overlapping types:
 
