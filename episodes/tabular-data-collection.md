@@ -90,8 +90,8 @@ Free-form or descriptive text.
 
 **Examples**:
 
-- artistdisplayname → `"Claude Monet"` _(string)_
-- title → `"Woman with a Parasol"` _(string)_
+- `artistdisplayname` → `"Claude Monet"` _(string)_
+- `title` → `"Woman with a Parasol"` _(string)_
 
 #### Categorical variables
 
@@ -111,8 +111,8 @@ Variables that represent dates or times.
 
 **Examples**:
 
-- lastconserv → `"2001-05-12"` _(datetime or string)_
-- objectdate → `1990` _(integer)_, `"ca. 1890"` _(string)_
+- `lastconserv` → `"2001-05-12"` _(datetime or string)_
+- `objectdate` → `1990` _(integer)_, `"ca. 1890"` _(string)_
 
 ::::::::::::::::::::::callout
 
@@ -248,7 +248,7 @@ Alex is trying to make sense of the MET museum dataset. Help Alex out by creatin
 1. Open the file `Met_Objects_Dataset_sample.txt`
 2. Choose **three variables (columns)** from the dataset
 3. For each one, write down:
-   - The **variable name**@
+   - The **variable name**
    - A **short description**
    - The **data type** (e.g., string, integer, date)
    - Any **possible values** or **units**, if relevant
