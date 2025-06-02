@@ -435,7 +435,7 @@ reinforce the objectives.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -462,7 +462,7 @@ reinforce the objectives.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -742,10 +742,13 @@ a specific year)</em>
 <p>Free-form or descriptive text.</p>
 <p><strong>Examples</strong>:</p>
 <ul>
-<li>artistdisplayname → <code>"Claude Monet"</code>
+<li>
+<code>artistdisplayname</code> → <code>"Claude Monet"</code>
 <em>(string)</em>
 </li>
-<li>title → <code>"Woman with a Parasol"</code> <em>(string)</em>
+<li>
+<code>title</code> → <code>"Woman with a Parasol"</code>
+<em>(string)</em>
 </li>
 </ul>
 </div>
@@ -785,10 +788,12 @@ inherent order (e.g., <code>artistnationality</code>), or
 <p>Variables that represent dates or times.</p>
 <p><strong>Examples</strong>:</p>
 <ul>
-<li>lastconserv → <code>"2001-05-12"</code> <em>(datetime or
-string)</em>
+<li>
+<code>lastconserv</code> → <code>"2001-05-12"</code> <em>(datetime
+or string)</em>
 </li>
-<li>objectdate → <code>1990</code> <em>(integer)</em>,
+<li>
+<code>objectdate</code> → <code>1990</code> <em>(integer)</em>,
 <code>"ca. 1890"</code> <em>(string)</em>
 </li>
 </ul>
@@ -1012,7 +1017,7 @@ analysing the data.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Inconsistencies might include where measurements are in different
 units, there are differing formats for dates, differing cases, or where
@@ -1087,7 +1092,7 @@ could you introduce during data collection?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>There are many different solutions to these inconsistencies, but here
 are some examples:</p>
@@ -1109,6 +1114,126 @@ inconsistencies like <code>France</code> vs <code>French</code>.</li>
 </div>
 </div>
 </div>
+</div>
+</section><section><h2 class="section-heading" id="data-dictionaries">Data Dictionaries<a class="anchor" aria-label="anchor" href="#data-dictionaries"></a>
+</h2>
+<hr class="half-width">
+<div class="section level3">
+<h3 id="what-is-a-data-dictionary">What is a Data Dictionary?<a class="anchor" aria-label="anchor" href="#what-is-a-data-dictionary"></a>
+</h3>
+<p>A <strong>data dictionary</strong> is a table that describes the
+variables in your dataset. It provides key information such as:</p>
+<ul>
+<li>
+<strong>Variable name</strong> (column header)</li>
+<li>
+<strong>Description</strong> (what the variable represents)</li>
+<li>
+<strong>Data type</strong> (e.g., string, integer, boolean,
+datetime)</li>
+<li>
+<strong>Possible values or format</strong> (especially for
+categorical variables)</li>
+<li>
+<strong>Units</strong> (if relevant)</li>
+</ul>
+<p>Data dictionaries help others (and future you!) understand and use
+your data consistently and correctly.</p>
+<div class="section level4">
+<h4 id="example-wildlife-observations-dataset">Example: Wildlife Observations Dataset<a class="anchor" aria-label="anchor" href="#example-wildlife-observations-dataset"></a>
+</h4>
+<p>Here’s a sample data dictionary for a fictional dataset tracking
+wildlife sightings in a nature reserve:</p>
+<table class="table">
+<colgroup>
+<col width="17%">
+<col width="39%">
+<col width="8%">
+<col width="29%">
+<col width="4%">
+</colgroup>
+<thead><tr class="header">
+<th>Variable Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>Possible Values / Format</th>
+<th>Units</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><code>sighting_id</code></td>
+<td>Unique ID for each observation</td>
+<td>Integer</td>
+<td>1, 2, 3, …</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td><code>species_name</code></td>
+<td>Name of the animal species observed</td>
+<td>String</td>
+<td>e.g., “Red Fox”, “Barn Owl”</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td><code>count</code></td>
+<td>Number of individuals seen</td>
+<td>Integer</td>
+<td>0, 1, 2, …</td>
+<td>Count</td>
+</tr>
+<tr class="even">
+<td><code>observation_date</code></td>
+<td>Date the observation was recorded</td>
+<td>Datetime</td>
+<td>YYYY-MM-DD</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td><code>location</code></td>
+<td>Area of the park where sighting occurred</td>
+<td>String</td>
+<td>“North Woods”, “Wetland Trail”</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td><code>is_endangered</code></td>
+<td>Whether the species is endangered</td>
+<td>Boolean</td>
+<td>TRUE, FALSE</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<div id="challenge-write-a-data-dictionary-for-alex" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-write-a-data-dictionary-for-alex" class="callout-inner">
+<h3 class="callout-title">Challenge: Write a Data Dictionary for Alex</h3>
+<div class="callout-content">
+<p>Alex is trying to make sense of the MET museum dataset. Help Alex out
+by creating a mini data dictionary!</p>
+<ol style="list-style-type: decimal">
+<li>Open the file <code>Met_Objects_Dataset_sample.txt</code>
+</li>
+<li>Choose <strong>three variables (columns)</strong> from the
+dataset</li>
+<li>For each one, write down:
+<ul>
+<li>The <strong>variable name</strong>
+</li>
+<li>A <strong>short description</strong>
+</li>
+<li>The <strong>data type</strong> (e.g., string, integer, date)</li>
+<li>Any <strong>possible values</strong> or <strong>units</strong>, if
+relevant</li>
+</ul>
+</li>
+</ol>
+<p>Work in pairs or small groups and compare your answers.</p>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1127,6 +1252,7 @@ inconsistencies like <code>France</code> vs <code>French</code>.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </div>
 </section></section><section id="aio-cleaning-tabular-data"><p>Content from <a href="cleaning-tabular-data.html">How to clean a tabular dataset</a></p>
 <hr>
