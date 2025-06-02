@@ -27,13 +27,6 @@ After following this episode, learners will be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 ## Variables, data types and formats
 
 Alex has received a dataset from the MET museum and needs to understand the types of variables before exploring or analysing it further.
@@ -212,22 +205,82 @@ Inconsistencies might include where measurements are in different units, there a
 
 Next, we’ll look at how to avoid these kinds of issues from happening in the first place.
 
-::::::::::::::::::::::::::::::::::::: callout
+## Prevent inconsistencies during data collection
 
-Callout sections can highlight information.
+As we've seen so far, our dataset contains a number of inconsistencies that will 
+complicate analysis. In an ideal world, we would have avoided introducing these 
+errors while collecting the data. It's always simpler to avoid inconsistencies 
+in the first place, rather than trying to fix them later!
 
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides":
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
+How could we have adjusted our data collection to avoid this? Let's take the 
+`lastconserv` column as an example, which represents the date when the object 
+was last conserved. Here we see a large number of different date / time formats, 
+including:
+
+- 28/01/2025 = day / month / year
+- 07/21/2023 = month / day / year
+- 26.03.23 = day.month.year
+- 07/06/2019 00:00 = day / month / year hour:minute
+
+To avoid this, we could have enforced a specific date/time format during 
+collection. For example, if we were using a form, we could have limited 
+responses in this field to only accept dates as year-month-day, with no time 
+entry allowed. 
+
+There are also some incorrect dates in this column e.g. `30/2/2024` (30th 
+February 2024). February only has 28 days, or 29 during a leap year, so this 
+date is impossible. We could have avoided this by providing some kind of date 
+validation in the form - e.g. using a calendar input that only contains real dates.
+
+### Some general guidelines
+
+- Avoid free text fields during data collection. This increases the risk of 
+spelling mistakes, additional spaces etc., that will complicate the final analysis.
+
+- If a column should only contain particular values, then enforce this! For 
+example, you could use a drop-down menu with set options to choose from.
+
+- Add validation to avoid 'impossible' values. For example, are values only 
+valid within a certain range? Are negative values valid?
+
+- Where multiple formats are possible (e.g. with dates / times), enforce a 
+specific format.
+
+
+::::::::::::::::::::::::::::::::::::: challenge 
+
+## Challenge: Methods to prevent inconsistencies during data collection
+
+In a small group, consider how you could prevent the other inconsistencies you 
+identified in the dataset. What checks or rules could you introduce during data 
+collection?
+
+:::::::::::::::  solution
+
+## Solution
+
+There are many different solutions to these inconsistencies, but here are some 
+examples:
+
+- `istimelinework` could have used a drop down menu that enforced only two 
+choices of `True` or `False`. 
+- a check could have been added to enforce that `accessionyear` (the year the 
+object entered the collection) is always after `objectdate` (the year the object 
+was created).
+- `artistnationality` could have used a drop-down menu containing set 
+nationality options. This would have avoided inconsistencies like `France` 
+vs `French`.
+
+
+:::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::: keypoints
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- keypoint 1
+- keypoint 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
