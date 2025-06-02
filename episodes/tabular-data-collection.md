@@ -202,7 +202,7 @@ Let's have a deep dive into the Met_Objects_Dataset_sample.txt dataset. Using a 
 
 :::::::::::::::::::::::: hint
 
-Inconsistencies might include where measurements are in different units, there are differing formats for dates, differing cases, or where something is indicated ina variety of different ways but all mean the same thing
+Inconsistencies might include where measurements are in different units, there are differing formats for dates, differing cases, or where something is indicated in a variety of different ways but all mean the same thing
 
 ::::::::::::::::::::::::::
 
