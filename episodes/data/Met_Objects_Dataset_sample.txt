@@ -1,0 +1,26 @@
+objectnumber	istimelinework	lastconserv	objectid	accessionyear	objectname	title	artistrole	artistdisplayname	artistalphasort	artistnationality	artistgender	objectdate	medium
+1991.24.3	F	28/01/2025	485769	1991	Painting	The Door, Number 1	Artist	Tim Storrier	Storrier, Tim	Australian	Male	1990	Acrylic and wood, on wood
+1979.292.645	False	05/10/2023	496954	1979	Drawing	Untitled (female nude studies)	Artist	Reginald Marsh	Marsh, Reginald	American	male	ca. 1938	Pen and india ink on paper
+1988.376	False	26.03.23	485168	1988	Curtain	Shimmer Curtain III	Designer	Lia Cook	Cook, Lia	American	Female	1984	Rayon and cotton duck
+2003.433.193a-aa	0	17/08/2024	493594	2003	Print	Passing Bells	Artist	John Walker	Walker, John	British	male	1998	Portfolio of 27 intaglios
+1979.292.208	False	07/06/2019 00:00	496487	1979	DRawing	Untitled (Female nude studies)	Artist	Reginald Marsh	Marsh, Reginald	American	1	ca. 1931	Red chalk on paper
+2017.112	False	2/23/2016 14:30	744950	2017	Drawing	Untitled	Artist	K.G. Subramanyan	Subramanyan, K.G.	Indian	m	1968	Ink marker on paper
+1993.520.1	False	16/12/2024	486313	1993	Sculpture	Nana and Serpent	Artist	Niki de Saint Phalle	Saint, Phalle Niki De	France	Female	ca. 1992	Painted marble
+1999.463.2	False	02/11/2023	490738	1999	Drawing	"Study for ""Portrait of Ruth Bowman"""	Artist	Will Barnet	Barnet, Will	American	m	1967	Graphite on tracing paper
+1972.146.6	No	24/03/2025	480996	1972	Painting	Female Nude (Clipping Nails)	Artist	Vasili Shoukhaiev	Shoukhaiev, Vasili	Russian	1	ca. 1922	Oil on canvas
+1984.315.10	False	30/2/2024	483126	1884	Drawing	Colorful Architecture	Artist	Paul Klee	Klee, Paul	German, born Switzerland	M	1917	Gouache on paper mounted on cardboard
+1983.195	False	16/06/2017 12:30	482663	1983	Sculpture	Melisande	Artist	Robert Laurent	Laurent, Robert	American, born France	1	1945	Alabaster
+2013.638	False	25/07/2024	500436	2013	 Painting	Seated Nude	Artist	Pierre Bonnard	Bonnard, Pierre	French	Male	1919	 Oil on canvas
+2003.433.108a, b	False	07/21/2023	493502	2003	Print	Time Door Time D'Or, from the ¦Welcome to the Water Planet¦ series	Artist	James Rosenquist	Rosenquist, James	American	Male	1989	Colored, pressed paper pulp, lithograph, collage
+2016.237.30	False	01/08/2022	497127	2016	Drawing	"Head of a Woman (Study for ""Nude with Drapery"")"	Artist	Pablo Picasso	Picasso, Pablo	Spanish		Paris, 1907	Gouache and watercolor on tan wove paper; subsequently mounted to panel
+2000.278.8a,b	0	10/04/2025	491570	2000	Burner with holder	Burner with holder	Designer	Josef Hoffmann	Hoffmann, Josef	Austrian	male	ca. 1910	Silver
+2014.40.12	False	07/05/2021 00:00	637122	2014	Photograph	XYZ 1481	Artist	Lucas Samaras	Samaras, Lucas	American, born Greece	Male	2013	Pigment  inkjet print on synthetic polymer paper
+1999.363.7	False	31/10/2023	490029	1999	Painting	 Basket of Bananas	Artist	Pierre Bonnard	Bonnard, Pierre	French	1	1926	Oil on  canvas
+1980.319	False	02/03/2024	482102	1979	Drawing	River Porch III	Artist	Sonia Gechtoff	Gechtoff, Sonia	USA	2	1980	Acrylic and graphite on paper
+68.73.17	Flse	12/11/2027	489750	1968	Textile length	Textile length	Manufacturer	United Merchants & Manufacturers, Inc.	UNITED MERCHANTS &	American		1965	Cotton, vinyl
+23.159.1ab	False	13/08/2024	487288	1923	Bottle with stopper	Bottle with Stopper	Desiner	Maurice Marinot	Marinot, Maurice	French		1922	Glass
+1990.4.58	0	05/17/2023	485614	1990	drawing	Untitled	Artist	Jackson Pollock	Pollock, Jackson	American		ca. 1938–41	Colored pencils and graphite on on paper
+1998.530.2	False	18/06/1989	487099	1998	Textile	Perpetual Indulgence	Designer	Candace Kling	Kling, Candace	American 	F	1989	Balsa wood, mylar-backed acetate, zippers and beads
+1999.363.22	True	07/12/2022	489978	1999	Sculpture	Three Men Walking II	artist	Alberto Giacometti	Giacometti, Alberto	Swiss		1949	Bronze
+1986.416.39	False	19/09/2022	484614	1986	Drawing	Untitled, # 33	Artist	Lucas Samaras	Samaras, Lucas	American, born Greece	M	1981	Pastel on black paper
+2012.576.1a–k	False	08/12/2021 10:00	499632	2012	Cabinet	“Duval” Cabinet (Model AR 1511 / NR 2300)	Artist 	Emile-Jacques Ruhlmann	Ruhlmann, Emile-Jacques	French		designed 1924, probably made ca. 1926	Brazilian rosewood, ivory, amboyna burl, mahogany, oak, plywood
