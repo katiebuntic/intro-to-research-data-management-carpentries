@@ -120,11 +120,11 @@ Note on overlapping types:
 
 Some variables can belong to more than one category depending on their use and format. For example:
 
-objectdate = 1890 might be treated as a numeric variable (discrete integer) if used for sorting or calculations.
+`objectdate = 1890` might be treated as a numeric variable (discrete integer) if used for sorting or calculations.
 
-The same objectdate could also be considered a date/time variable if formatted as "1890-01-01" and used in time-based analyses.
+The same `objectdate` could also be considered a date/time variable if formatted as `"1890-01-01"` and used in time-based analyses.
 
-artistdecade = 1950 could be a categorical variable (ordinal) if grouped into decade-based categories for comparison.
+`artistdecade = 1950` could be a categorical variable (ordinal) if grouped into decade-based categories for comparison.
 
 It’s okay for a single value to have more than one interpretation - what matters is how it's used in context.
 
@@ -156,6 +156,8 @@ Understanding the difference between conceptual types (how the data is used or i
 **Tip for learners (like Alex):**
 
 Understanding both the _conceptual meaning_ and the _technical format_ of your data helps you clean it correctly, document it clearly, and analyse it without errors.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Identify inconsistencies in data
 
