@@ -421,7 +421,7 @@ reinforce the objectives.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing
 challenges associated with the lessons. They appear in the “Instructor
@@ -452,7 +452,7 @@ View”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -479,7 +479,7 @@ View”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -607,7 +607,7 @@ you split them between different folders?</li>
 </div>
 </div></section><section id="aio-tabular-data-collection"><p>Content from <a href="tabular-data-collection.html">Tabular Data Collection</a></p>
 <hr>
-<p>Last updated on 2025-03-28 |
+<p>Last updated on 2025-06-02 |
 
         <a href="https://github.com/katiebuntic/intro-to-research-data-management-carpentries/edit/main/episodes/tabular-data-collection.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 60 minutes</p>
@@ -622,12 +622,15 @@ you split them between different folders?</li>
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>Have a look at a really dirty data set</li>
-<li>Is there a standard set of responses?</li>
-<li>Is it freetext?</li>
-<li>How do you control what data is being collected?</li>
-<li>Asking the right questions</li>
-<li>Data dictionaries</li>
+<li>What types of variables are commonly found in tabular data?</li>
+<li>What kinds of data inconsistencies can affect the quality of a
+dataset?</li>
+<li>What are some common causes of inconsistent or messy data?</li>
+<li>What practices can help ensure clean, consistent data during
+collection and entry?</li>
+<li>Why is it important to provide clear instructions or rules when
+collecting data?</li>
+<li>What is a data dictionary, and why is it useful?</li>
 </ul>
 </div>
 </div>
@@ -665,6 +668,364 @@ View”</p>
 </div>
 </div>
 </div>
+<section><h2 class="section-heading" id="variables-data-types-and-formats">Variables, data types and formats<a class="anchor" aria-label="anchor" href="#variables-data-types-and-formats"></a>
+</h2>
+<hr class="half-width">
+<p>Alex has received a dataset from the MET museum and needs to
+understand the types of variables before exploring or analysing it
+further.</p>
+<div id="follow-along-open-up-the-dataset" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="follow-along-open-up-the-dataset" class="callout-inner">
+<h3 class="callout-title">Follow along: Open up the dataset</h3>
+<div class="callout-content">
+<p>A dataset called Met_Objects_Dataset_sample.txt is in the zip file.
+Please open the file in whatever spreadsheet software you are using
+(e.g. LibreOffice, Excel). The file is tab delimited (i.e. within each
+row a gap is used to separate values into their columns) so you may need
+to use whatever Text to Columns tool your spreadsheet software provides
+to convert it into columnar data. The first row contains the column
+headers.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="what-is-a-data-point">What is a data point?<a class="anchor" aria-label="anchor" href="#what-is-a-data-point"></a>
+</h3>
+<p>A data point is a single piece of information collected for one
+variable about one item.</p>
+<p>In the MET museum dataset Alex is using, each row is an object (like
+a painting or sculpture), and each cell is a data point.</p>
+<p>Alex’s dataset looks like a spreadsheet, but underneath, each column
+contains a specific <strong>data type</strong>. Knowing these helps to
+avoid errors and choose the right tools for analysis.</p>
+<div class="section level4">
+<h4 id="basic-data-types">Basic data types<a class="anchor" aria-label="anchor" href="#basic-data-types"></a>
+</h4>
+<p>Before we look at different types of variables, here are some common
+data types you’ll encounter:</p>
+<ul>
+<li>
+<strong>String</strong>: Text or characters, like
+<code>"Claude Monet"</code> or <code>"Oil on canvas"</code>
+</li>
+<li>
+<strong>Integer</strong>: Whole numbers, like <code>1985</code>,
+<code>42</code>, or <code>0</code>
+</li>
+<li>
+<strong>Float</strong>: Decimal numbers, like <code>27.5</code> or
+<code>3.14</code>
+</li>
+<li>
+<strong>Boolean</strong>: True/False values, like <code>TRUE</code>,
+<code>FALSE</code>, <code>Yes</code>, <code>No</code>
+</li>
+<li>
+<strong>Datetime</strong>: Calendar dates or timestamps, like
+<code>"2020-01-01"</code> or <code>"12/11/2027"</code>
+</li>
+</ul>
+</div>
+</div>
+<div class="section level3">
+<h3 id="what-is-a-variable">What is a variable?<a class="anchor" aria-label="anchor" href="#what-is-a-variable"></a>
+</h3>
+<p>A variable is a characteristic or attribute that can take on
+different values. In tabular data, variables are usually represented as
+columns, where each row contains an observation or entry.</p>
+<p>However, the concept of a variable is independent of format, it’s not
+defined by being a column, but by being a consistent type of information
+collected across observations.</p>
+<p>For example, in Alex’s MET dataset, variables might include objectid,
+artistname, or dateacquired.</p>
+</div>
+<div class="section level3">
+<h3 id="types-of-variables">Types of variables<a class="anchor" aria-label="anchor" href="#types-of-variables"></a>
+</h3>
+<div class="section level4">
+<h4 id="numeric-variables">Numeric variables<a class="anchor" aria-label="anchor" href="#numeric-variables"></a>
+</h4>
+<p>Variables that represent measurable quantities. These can be integers
+or floats. Numeric variables can be <em>Discrete</em>, which means they
+take on specific, separate values (often counts), or
+<em>Continuous</em>, which can take on any value within a range (often
+measurements).</p>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li>
+<code>objectid</code> → <code>12345</code> <em>(integer, discrete —
+a unique ID number)</em>
+</li>
+<li>
+<code>heightcm</code> → <code>23.5</code> <em>(float, continuous — a
+measurement in centimeters)</em>
+</li>
+<li>
+<code>objectdate</code> → <code>1890</code> <em>(integer, discrete —
+a specific year)</em>
+</li>
+</ul>
+</div>
+<div class="section level4">
+<h4 id="string-variables">String variables<a class="anchor" aria-label="anchor" href="#string-variables"></a>
+</h4>
+<p>Free-form or descriptive text.</p>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li>artistdisplayname → <code>"Claude Monet"</code>
+<em>(string)</em>
+</li>
+<li>title → <code>"Woman with a Parasol"</code> <em>(string)</em>
+</li>
+</ul>
+</div>
+<div class="section level4">
+<h4 id="categorical-variables">Categorical variables<a class="anchor" aria-label="anchor" href="#categorical-variables"></a>
+</h4>
+<p>Variables that represent groups or categories. These could be
+strings, integers, or floats - anything used to label a category!<br>
+Categorical variables can be <em>Nominal</em>, which means there is no
+inherent order (e.g., <code>artistnationality</code>), or
+<em>Ordinal</em>, which means the categories follow a logical order
+(e.g., <code>popularity</code>).</p>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li>
+<code>gender</code> → <code>"Female"</code>, <code>"Male"</code>
+<em>(string, nominal)</em>
+</li>
+<li>
+<code>medium</code> → <code>"Marble"</code>, <code>"Bronze"</code>,
+<code>"Oil on canvas"</code> <em>(string, nominal)</em>
+</li>
+<li>
+<code>istimelinework</code> → <code>"Yes"</code> / <code>"No"</code>
+<em>(string, nominal — or Boolean: <code>TRUE</code> /
+<code>FALSE</code>)</em>
+</li>
+<li>
+<code>artistdecade</code> → <code>1950</code>, <code>1960</code>,
+<code>1980</code> <em>(integer, ordinal — ordered decades)</em>
+</li>
+</ul>
+</div>
+<div class="section level4">
+<h4 id="datetime-variables">Date/time variables<a class="anchor" aria-label="anchor" href="#datetime-variables"></a>
+</h4>
+<p>Variables that represent dates or times.</p>
+<p><strong>Examples</strong>:</p>
+<ul>
+<li>lastconserv → <code>"2001-05-12"</code> <em>(datetime or
+string)</em>
+</li>
+<li>objectdate → <code>1990</code> <em>(integer)</em>,
+<code>"ca. 1890"</code> <em>(string)</em>
+</li>
+</ul>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>Note on overlapping types:</p>
+<p>Some variables can belong to more than one category depending on
+their use and format. For example:</p>
+<p><code>objectdate = 1890</code> might be treated as a numeric variable
+(discrete integer) if used for sorting or calculations.</p>
+<p>The same <code>objectdate</code> could also be considered a date/time
+variable if formatted as <code>"1890-01-01"</code> and used in
+time-based analyses.</p>
+<p><code>artistdecade = 1950</code> could be a categorical variable
+(ordinal) if grouped into decade-based categories for comparison.</p>
+<p>It’s okay for a single value to have more than one interpretation -
+what matters is how it’s used in context.</p>
+</div>
+</div>
+</div>
+<div id="caution1" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Caution</h3>
+<div class="callout-content">
+<p>⚠️ Some columns might look like numbers but contain inconsistent
+formats (e.g., “ca. 1890”). These need cleaning before they can be
+analysed as dates.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level4">
+<h4 id="summary">Summary<a class="anchor" aria-label="anchor" href="#summary"></a>
+</h4>
+<p>Understanding the difference between conceptual types (how the data
+is used or interpreted) and technical types (how the data is stored or
+formatted) is key for working effectively with tabular data. For
+example, a column might be technically an integer but conceptually a
+category (like decades or survey scores).</p>
+<table class="table">
+<colgroup>
+<col width="19%">
+<col width="14%">
+<col width="29%">
+<col width="36%">
+</colgroup>
+<thead><tr class="header">
+<th>Conceptual Type</th>
+<th>Technical Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td>String</td>
+<td>Categories, no order</td>
+<td><code>artistnationality = Australian</code></td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>String</td>
+<td>Categories with order</td>
+<td><code>popularity = high</code></td>
+</tr>
+<tr class="odd">
+<td>Discrete Numeric</td>
+<td>Integer</td>
+<td>Countable numbers</td>
+<td><code>objectid = 123456</code></td>
+</tr>
+<tr class="even">
+<td>Continuous Numeric</td>
+<td>Integer, Float</td>
+<td>Measurable, decimals allowed</td>
+<td><code>height = 27.5</code></td>
+</tr>
+<tr class="odd">
+<td>Boolean</td>
+<td>Boolean</td>
+<td>Yes/No, True/False</td>
+<td><code>ishighlight = TRUE</code></td>
+</tr>
+<tr class="even">
+<td>Date/Time</td>
+<td>Datetime</td>
+<td>Dates or times</td>
+<td><code>lastconserv = 12/11/2027</code></td>
+</tr>
+<tr class="odd">
+<td>Textual</td>
+<td>String</td>
+<td>Free text</td>
+<td><code>artistdisplayname = Claude Monet</code></td>
+</tr>
+<tr class="even">
+<td>Identifier</td>
+<td>Integer/String</td>
+<td>Unique reference</td>
+<td><code>objectnumber = 1982.456</code></td>
+</tr>
+</tbody>
+</table>
+<div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p><strong>Tip for learners (like Alex):</strong></p>
+<p>Understanding both the <em>conceptual meaning</em> and the
+<em>technical format</em> of your data helps you clean it correctly,
+document it clearly, and analyse it without errors.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="identify-inconsistencies-in-data">Identify inconsistencies in data<a class="anchor" aria-label="anchor" href="#identify-inconsistencies-in-data"></a>
+</h2>
+<hr class="half-width">
+<p>Before we can clean or analyse data, it’s important to check for
+inconsistencies, values that don’t follow a standard or expected format.
+These might include:</p>
+<ul>
+<li>Different spellings or formats for the same category</li>
+<li>Mixed use of upper/lower case</li>
+<li>Inconsistent date formats</li>
+<li>Unexpected blank or missing values</li>
+<li>Invalid or impossible values (e.g. negative heights, future birth
+dates)</li>
+</ul>
+<p>These inconsistencies can lead to errors or misleading results if not
+corrected.</p>
+<div class="section level3">
+<h3 id="example-inconsistencies-in-the-artistgender-column">Example: Inconsistencies in the <code>artistgender</code>
+column<a class="anchor" aria-label="anchor" href="#example-inconsistencies-in-the-artistgender-column"></a>
+</h3>
+<p>Here’s an example of how the same concept (“artistgender”) can be
+recorded in many different ways:</p>
+<table class="table">
+<thead><tr class="header">
+<th>objectid</th>
+<th>artistgender</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1001</td>
+<td>Female</td>
+</tr>
+<tr class="even">
+<td>1002</td>
+<td>female</td>
+</tr>
+<tr class="odd">
+<td>1003</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>1004</td>
+<td>Male</td>
+</tr>
+<tr class="odd">
+<td>1005</td>
+<td>MALE</td>
+</tr>
+<tr class="even">
+<td>1006</td>
+<td>M</td>
+</tr>
+<tr class="odd">
+<td>1007</td>
+<td>Unknown</td>
+</tr>
+<tr class="even">
+<td>1008</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>We can see:</p>
+<ul>
+<li>
+<code>"Female"</code>, <code>"female"</code>, and <code>"F"</code>
+all refer to the same category</li>
+<li>
+<code>"Male"</code>, <code>"MALE"</code>, and <code>"M"</code> are
+also equivalent</li>
+<li>
+<code>"Unknown"</code> and the blank entry might indicate missing or
+uncertain data</li>
+</ul>
+<p>These differences need to be standardised before analysis — for
+example, converting all values to lowercase and replacing shorthand
+terms with full words.</p>
 <div id="challenge-1-can-you-find-any-inconsistencies-or-problems-with-data-entered-into-a-spreadsheet" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -672,11 +1033,10 @@ View”</p>
 <div id="challenge-1-can-you-find-any-inconsistencies-or-problems-with-data-entered-into-a-spreadsheet" class="callout-inner">
 <h3 class="callout-title">Challenge 1: Can you find any inconsistencies or problems with data entered into a spreadsheet?</h3>
 <div class="callout-content">
-<p>A dataset called ####.csv is in the zip file. Please open the file in
-spreadhseet software (e.g. Google Spredsheets or Excel). Using a
-coloured fill identify any inconsistencies or problem data in the
-spreadsheet that you think might cause problems for anyone analysing the
-data.</p>
+<p>Let’s have a deep dive into the Met_Objects_Dataset_sample.txt
+dataset. Using a coloured fill identify any inconsistencies or problem
+data in the spreadsheet that you think might cause problems for anyone
+analysing the data.</p>
 </div>
 </div>
 </div>
@@ -689,20 +1049,16 @@ data.</p>
 <div class="accordion-body">
 <p>Inconsistencies might include where measurements are in different
 units, there are differing formats for dates, differing cases, or where
-something is indicated ina variety of different ways but all mean the
+something is indicated in a variety of different ways but all mean the
 same thing</p>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+<hr>
+<p>Next, we’ll look at how to avoid these kinds of issues from happening
+in the first place.</p>
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -717,14 +1073,6 @@ to a commonly-asked question.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -749,6 +1097,7 @@ locally</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></section><section id="aio-cleaning-tabular-data"><p>Content from <a href="cleaning-tabular-data.html">How to clean a tabular dataset</a></p>
 <hr>
 <p>Last updated on 2025-03-28 |
@@ -816,7 +1165,7 @@ many?</li>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>There are 7 missing values in the <code>film_title</code>
@@ -920,8 +1269,8 @@ column</li>
   "url": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/instructor/aio.html",
   "identifier": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/instructor/aio.html",
   "dateCreated": "2025-03-27",
-  "dateModified": "2025-05-29",
-  "datePublished": "2025-05-29"
+  "dateModified": "2025-06-02",
+  "datePublished": "2025-06-02"
 }
 
   </script><script>
