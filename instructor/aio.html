@@ -654,20 +654,6 @@ entry that can prevent inconsistencies</li>
 </div>
 </div>
 </div>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
-</div>
-</div>
-</div>
-</div>
 <section><h2 class="section-heading" id="variables-data-types-and-formats">Variables, data types and formats<a class="anchor" aria-label="anchor" href="#variables-data-types-and-formats"></a>
 </h2>
 <hr class="half-width">
@@ -1045,7 +1031,7 @@ analysing the data.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Inconsistencies might include where measurements are in different
 units, there are differing formats for dates, differing cases, or where
@@ -1058,18 +1044,87 @@ same thing</p>
 <hr>
 <p>Next, we’ll look at how to avoid these kinds of issues from happening
 in the first place.</p>
-<div id="callout3" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
+</section><section><h2 class="section-heading" id="prevent-inconsistencies-during-data-collection">Prevent inconsistencies during data collection<a class="anchor" aria-label="anchor" href="#prevent-inconsistencies-during-data-collection"></a>
+</h2>
+<hr class="half-width">
+<p>As we’ve seen so far, our dataset contains a number of
+inconsistencies that will complicate analysis. In an ideal world, we
+would have avoided introducing these errors while collecting the data.
+It’s always simpler to avoid inconsistencies in the first place, rather
+than trying to fix them later!</p>
+<p>How could we have adjusted our data collection to avoid this? Let’s
+take the <code>lastconserv</code> column as an example, which represents
+the date when the object was last conserved. Here we see a large number
+of different date / time formats, including:</p>
+<ul>
+<li>28/01/2025 = day / month / year</li>
+<li>07/21/2023 = month / day / year</li>
+<li>26.03.23 = day.month.year</li>
+<li>07/06/2019 00:00 = day / month / year hour:minute</li>
+</ul>
+<p>To avoid this, we could have enforced a specific date/time format
+during collection. For example, if we were using a form, we could have
+limited responses in this field to only accept dates as year-month-day,
+with no time entry allowed.</p>
+<p>There are also some incorrect dates in this column
+e.g. <code>30/2/2024</code> (30th February 2024). February only has 28
+days, or 29 during a leap year, so this date is impossible. We could
+have avoided this by providing some kind of date validation in the form
+- e.g. using a calendar input that only contains real dates.</p>
+<div class="section level3">
+<h3 id="some-general-guidelines">Some general guidelines<a class="anchor" aria-label="anchor" href="#some-general-guidelines"></a>
+</h3>
+<ul>
+<li><p>Avoid free text fields during data collection. This increases the
+risk of spelling mistakes, additional spaces etc., that will complicate
+the final analysis.</p></li>
+<li><p>If a column should only contain particular values, then enforce
+this! For example, you could use a drop-down menu with set options to
+choose from.</p></li>
+<li><p>Add validation to avoid ‘impossible’ values. For example, are
+values only valid within a certain range? Are negative values
+valid?</p></li>
+<li><p>Where multiple formats are possible (e.g. with dates / times),
+enforce a specific format.</p></li>
+</ul>
+<div id="challenge-methods-to-prevent-inconsistencies-during-data-collection" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-methods-to-prevent-inconsistencies-during-data-collection" class="callout-inner">
+<h3 class="callout-title">Challenge: Methods to prevent inconsistencies during data collection</h3>
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<p>In a small group, consider how you could prevent the other
+inconsistencies you identified in the dataset. What checks or rules
+could you introduce during data collection?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>There are many different solutions to these inconsistencies, but here
+are some examples:</p>
+<ul>
+<li>
+<code>istimelinework</code> could have used a drop down menu that
+enforced only two choices of <code>True</code> or
+<code>False</code>.</li>
+<li>a check could have been added to enforce that
+<code>accessionyear</code> (the year the object entered the collection)
+is always after <code>objectdate</code> (the year the object was
+created).</li>
+<li>
+<code>artistnationality</code> could have used a drop-down menu
+containing set nationality options. This would have avoided
+inconsistencies like <code>France</code> vs <code>French</code>.</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -1081,14 +1136,8 @@ to a commonly-asked question.</p>
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>keypoint 1</li>
+<li>keypoint 2</li>
 </ul>
 </div>
 </div>
