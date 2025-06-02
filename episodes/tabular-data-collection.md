@@ -137,7 +137,7 @@ A dataset called Met_Objects_Dataset_sample.txt is in the zip file. Please open 
 
 :::::::::::::::::::::::: hint
 
-Inconsistencies might include where measurements are in different units, there are differing formats for dates, differing cases, or where something is indicated ina variety of different ways but all mean the same thing
+Inconsistencies might include where measurements are in different units, there are differing formats for dates, differing cases, or where something is indicated in a variety of different ways but all mean the same thing
 
 ::::::::::::::::::::::::::
 
