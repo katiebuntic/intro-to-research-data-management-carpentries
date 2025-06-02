@@ -34,7 +34,7 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Variables and data types and formats
+## Variables, data types and formats
 
 Alex has received a dataset from the MET museum and needs to understand the types of variables before exploring or analysing it further.
 
@@ -52,7 +52,7 @@ A data point is a single piece of information collected for one variable about o
 
 In the MET museum dataset Alex is using, each row is an object (like a painting or sculpture), and each cell is a data point.
 
-Alex’s dataset looks like a spreadsheet, but underneath, each column contains a specific **data type**. Knowing these helps avoid errors and choose the right tools for analysis.
+Alex’s dataset looks like a spreadsheet, but underneath, each column contains a specific **data type**. Knowing these helps to avoid errors and choose the right tools for analysis.
 
 #### Basic data types
 
@@ -156,6 +156,20 @@ Understanding the difference between conceptual types (how the data is used or i
 **Tip for learners (like Alex):**
 
 Understanding both the _conceptual meaning_ and the _technical format_ of your data helps you clean it correctly, document it clearly, and analyse it without errors.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge 1: Can you find any inconsistencies or problems with data entered into a spreadsheet?
+
+A dataset called Met_Objects_Dataset_sample.txt is in the zip file. Please open the file in whatever spreadsheet software you are using (e.g. LibreOffice, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers. Using a coloured fill identify any inconsistencies or problem data in the spreadsheet that you think might cause problems for anyone analysing the data.
+
+:::::::::::::::::::::::: hint
+
+Inconsistencies might include where measurements are in different units, there are differing formats for dates, differing cases, or where something is indicated in a variety of different ways but all mean the same thing
+
+::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
