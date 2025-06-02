@@ -34,7 +34,7 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Variables and data types and formats
+## Variables, data types and formats
 
 Alex has received a dataset from the MET museum and needs to understand the types of variables before exploring or analysing it further.
 
