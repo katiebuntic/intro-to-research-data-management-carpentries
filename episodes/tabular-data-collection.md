@@ -276,7 +276,30 @@ vs `French`.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Write data collection guidelines
 
+As we saw in the last section, there are many additional checks / rules we
+could have added during data collection to make our dataset more consistent and 
+easier to analyse. It's good practice to document these rules before data 
+collection takes place so that it's clear to yourself, along with any 
+collaborators and future users of your dataset, exactly how values were 
+collected. This will also be invaluable when it's time to write the methods 
+section of any papers or reports that use this data.
+
+::::::::::::::::::::::::::::::::::::: challenge 
+
+## Write data collection guidelines
+
+Choose a variable from the dataset (e.g. `lastconserv`) and write some 
+bullet-point guidelines for its collection. For example:
+
+- Which values are valid for this variable?
+
+- Which format should be used?
+
+- Are any checks required against other variables in the table?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
