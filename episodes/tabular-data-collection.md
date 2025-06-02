@@ -38,6 +38,8 @@ associated with the lessons. They appear in the "Instructor View"
 
 Alex has received a dataset from the MET museum and needs to understand the types of variables before exploring or analysing it further.
 
+::::::::::::::::::::::::::::::::::::: prereq
+
 ## Follow along: Open up the dataset
 
 A dataset called Met_Objects_Dataset_sample.txt is in the zip file. Please open the file in whatever spreadsheet software you are using (e.g. LibreOffice, Excel). The file is tab delimited (i.e. within each row a gap is used to separate values into their columns) so you may need to use whatever Text to Columns tool your spreadsheet software provides to convert it into columnar data. The first row contains the column headers.
