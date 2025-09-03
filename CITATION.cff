@@ -13,10 +13,12 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - given-names: Kimberly
+    family-names: Meechan
+  - given-names: Katie
+    family-names: Buntic
+  - given-names: Victoria
+    family-names: Yorke-Edwards
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+This lesson aims to teach those just starting to undertake research how to manage their data and files. The target auduence is masters/PhD/Postdoc researchers at the beginning of their projects. Basic digital skills required (e.g., file management, Excel, some version control exposure). No programming experience necessary.
 license: CC-BY-4.0
