@@ -41,12 +41,33 @@ Here are some common data types you'll encounter:
 
 ### Identifying data types in your own dataset
 
-
 ## Where research data comes from 
 
+### What is a data source?
+
+### Primary data
+
+### Secondary data
+
+### Generated or synthetic data 
+
+### Sensor and observational data
+
+### Data from instruments, tools, and experiments
+
+### Examples of data sources in different disciplines 
+
+### Considering data quality and limitations 
 
 ## Introduction to research data management
 
+### What is Research Data Management (RDM)?
+
+### Why RDM matters
+
+### The research data lifecycle 
+
+### RDM in practice: Alex and the MET Dataset
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
