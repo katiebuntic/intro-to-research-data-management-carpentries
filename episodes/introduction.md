@@ -23,7 +23,20 @@ exercises: 20
 
 ## Understanding data types
 
+Alex is a researcher studying artworks in The Metropolitan Museum of Art. They have just received a dataset containing information about paintings, sculptures, textiles, drawings, and photographs from across the museum’s collection. Before Alex can analyse anything, they need to understand what kinds of data the dataset contains.
+
+Even though the dataset looks like a simple spreadsheet, each column has an underlying data type, and knowing these types will help Alex (and you!) avoid errors, clean the dataset effectively, and choose the right kinds of visualisations or analyses.
+
 ### What is a data type?
+
+A data type describes the kind of information a value represents. It tells the computer how to interpret the data:
+
+- Is it text?
+- A number?
+- A date?
+- A true/false flag?
+
+When a dataset mixes formats (e.g., a date stored as text, or a number stored as a string), analysis becomes harder and mistakes are more likely. Alex will soon discover that the MET dataset contains a mix of clean values and some messy ones - for example, dates written as 1990, "ca. 1931", and "07/06/2019 00:00". Understanding data types helps Alex make sense of this variation.
 
 ### Why data types matter
 
