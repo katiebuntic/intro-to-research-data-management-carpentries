@@ -52,17 +52,7 @@ A data point is a single piece of information collected for one variable about o
 
 In the MET museum dataset Alex is using, each row is an object (like a painting or sculpture), and each cell is a data point.
 
-Alex’s dataset looks like a spreadsheet, but underneath, each column contains a specific **data type**. Knowing these helps to avoid errors and choose the right tools for analysis.
-
-#### Basic data types
-
-Before we look at different types of variables, here are some common data types you'll encounter:
-
-- **String**: Text or characters, like `"Claude Monet"` or `"Oil on canvas"`
-- **Integer**: Whole numbers, like `1985`, `42`, or `0`
-- **Float**: Decimal numbers, like `27.5` or `3.14`
-- **Boolean**: True/False values, like `TRUE`, `FALSE`, `Yes`, `No`
-- **Datetime**: Calendar dates or timestamps, like `"2020-01-01"` or `"12/11/2027"`
+Alex’s dataset looks like a spreadsheet, but underneath, each column contains a specific **data type**, which we covered in section 1. Knowing these helps to avoid errors and choose the right tools for analysis.
 
 ### What is a variable?
 

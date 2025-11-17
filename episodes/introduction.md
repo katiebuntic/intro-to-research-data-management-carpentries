@@ -21,21 +21,33 @@ exercises: 20
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.html) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+## Understanding data types
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+### What is a data type?
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+### Why data types matter
+
+### Common data types
+
+Here are some common data types you'll encounter:
+
+- **String**: Text or characters, like `"Claude Monet"` or `"Oil on canvas"`
+- **Integer**: Whole numbers, like `1985`, `42`, or `0`
+- **Float**: Decimal numbers, like `27.5` or `3.14`
+- **Boolean**: True/False values, like `TRUE`, `FALSE`, `Yes`, `No`
+- **Datetime**: Calendar dates or timestamps, like `"2020-01-01"` or `"12/11/2027"`
+
+### Examples from the MET Museum dataset
+
+### Identifying data types in your own dataset
+
+
+## Where research data comes from 
+
+
+## Introduction to research data management
+
+
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
@@ -95,15 +107,6 @@ e.g. by providing the answer to a commonly-asked question.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
-
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 - Use `.md` files for episodes when you want static content
@@ -112,5 +115,3 @@ Cool, right?
 - Run `sandpaper::build_lesson()` to preview your lesson locally
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-[r-markdown]: https://rmarkdown.rstudio.com/
