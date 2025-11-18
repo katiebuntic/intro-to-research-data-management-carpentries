@@ -60,6 +60,40 @@ Here are some common data types you'll encounter:
 - **Boolean**: True/False values, like `TRUE`, `FALSE`, `Yes`, `No`
 - **Datetime**: Calendar dates or timestamps, like `"2020-01-01"` or `"12/11/2027"`
 
+::::::::::::::::::::::::::::::::::::: challenge
+
+Challenge: What data type is it?
+
+Alex found the following values in the MET dataset. For each one, decide what data type it currently is (it may not be what you think it should be!).
+
+```
+"Claude Monet"
+1872
+"ca. 1931"
+"07/06/2019 00:00"
+2021-07-14
+27.5
+"Oil on canvas"
+TRUE
+```
+
+Write down the data type you would assign to each value.
+
+:::::::::::::::::::::::: solution
+
+```
+"Claude Monet"            → String
+1872                      → Integer
+"ca. 1931"                → String (messy date)
+"07/06/2019 00:00"        → String (looks like a date but stored as text)
+2021-07-14                → Date               
+27.5                      → Float
+"Oil on canvas"           → String
+TRUE                      → Boolean
+```
+
+:::::::::::::::::::::::::::::::::
+
 ### Examples from the MET Museum dataset
 
 ### Identifying data types in your own dataset
