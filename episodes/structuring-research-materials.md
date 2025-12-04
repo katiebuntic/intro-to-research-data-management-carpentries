@@ -34,7 +34,13 @@ In groups, look through the folder of data that you have been given:
 - What problems can you identify with how files are organised?
 - How many different datasets can you identify?
 - Which files are 'raw' vs 'processed' data?
-- How would you improve the organisation of the files? E.g. how would you split them between different folders?
+- How would you improve the organisation of the files?
+
+:::::::::::::::::::::::: hint
+
+When thinking about how you could improve the organisation of the files, consider whether it might be easier to split them between different folders and whether any might need renaming
+
+::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::
 
