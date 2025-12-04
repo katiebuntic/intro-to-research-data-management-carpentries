@@ -22,8 +22,12 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Storing Files in a folder system
+
+Alex has recently started a PhD on a project that has been running for a few years. He has been given access to the project's folders and has been asked by his supervisor to look through the folders left by a researcher who recently left.
+
 :::::::::::::::::::::::::::: discussion
-### Organising files into a folder structure
+### Organising files into a folder structure Part I
 
 In groups, look through the folder of data that you have been given:
 
@@ -33,3 +37,6 @@ In groups, look through the folder of data that you have been given:
 - How would you improve the organisation of the files? E.g. how would you split them between different folders?
 
 ::::::::::::::::::::::::::::::::::::::
+
+
+
