@@ -95,6 +95,7 @@ TRUE                     is a boolean
 ```
 
 :::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::
 
 Notice how several values look like dates or numbers but are stored as text - this is common in real datasets and affects how we analyse them.
 
