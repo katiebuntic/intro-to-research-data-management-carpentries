@@ -48,9 +48,9 @@ Data types are important because they affect how the computer reads, stores, and
 - Choosing the right visualisation: Charts depend on data types. A timeline needs dates; a bar chart grouping by artist needs clean text labels; averages require numeric data.
 - Improving data quality: Identifying incorrect or mixed data types early helps Alex avoid downstream issues, especially when merging datasets or building models.
 
-In short: knowing data types helps ensure the dataset is trustworthy, analysable, and ready for exploration
+In summary: knowing data types helps ensure the dataset is trustworthy, analysable, and ready for exploration
 
-### Common data types
+### Common data types, examples from the MET Museum dataset
 
 Here are some common data types you'll encounter:
 
@@ -59,6 +59,8 @@ Here are some common data types you'll encounter:
 - **Float**: Decimal numbers, like `27.5` or `3.14`
 - **Boolean**: True/False values, like `TRUE`, `FALSE`, `Yes`, `No`
 - **Datetime**: Calendar dates or timestamps, like `"2020-01-01"` or `"12/11/2027"`
+
+Now that Alex has identified the main data types, let's try classifying some values ourselves.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
@@ -82,19 +84,20 @@ Write down the data type you would assign to each value.
 :::::::::::::::::::::::: solution
 
 ```
-"Claude Monet"            → String
-1872                      → Integer
-"ca. 1931"                → String (messy date)
-"07/06/2019 00:00"        → String (looks like a date but stored as text)
-2021-07-14                → Date               
-27.5                      → Float
-"Oil on canvas"           → String
-TRUE                      → Boolean
+"Claude Monet"           is a string
+1872                     is an integer
+"ca. 1931"               is a string (messy date)
+"07/06/2019 00:00"       is a string (looks like a date but stored as text)
+2021-07-14               is a date               
+27.5                     is a float
+"Oil on canvas"          is a string
+TRUE                     is a boolean
 ```
 
 :::::::::::::::::::::::::::::::::
 
-### Examples from the MET Museum dataset
+Notice how several values look like dates or numbers but are stored as text - this is common in real datasets and affects how we analyse them.
+
 
 ### Identifying data types in your own dataset
 
