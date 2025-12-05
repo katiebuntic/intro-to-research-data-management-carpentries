@@ -36,7 +36,8 @@ In groups, look through the folder of data that you have been given:
 - Which files are 'raw' vs 'processed' data?
 - How would you improve the organisation of the files?
 
-  :::::::::::::::::::::::: hint
+
+:::::::::::::::::::::::: hint
 
 When thinking about how you could improve the organisation of the files, consider whether it might be easier to split them between different folders and whether any might need renaming
 
