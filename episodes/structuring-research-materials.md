@@ -26,7 +26,7 @@ exercises: 10
 
 Alex has recently started a PhD on a project that has been running for a few years. He has been given access to the project's folders and has been asked by his supervisor to look through some files left by a researcher who recently left.
 
-:::::::::::::::::::::::::::: discussion
+:::::::::::::::::::::::::::: challenge
 ### Organising files into a folder structure Part I
 
 In groups, look through the folder of data that you have been given:
