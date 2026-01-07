@@ -29,7 +29,7 @@ Alex has recently started a PhD on a project that has been running for a few yea
 :::::::::::::::::::::::::::: challenge
 ### Organising files into a folder structure Part I
 
-In groups, look through the folder of data that you have been given:
+In groups, look through the folder of data that you have been given and discuss the following questions:
 
 - What problems can you identify with how files are organised?
 - How many different datasets can you identify?
@@ -46,4 +46,25 @@ When thinking about how you could improve the organisation of the files, conside
 ::::::::::::::::::::::::::::::::::::::
 
 Alex goes to his supervisor and explains the problems he has found. His supervisor asks him to improve the organisation of the files as he is concerned that no-one will be able to find anything. 
+
+:::::::::::::::::::::::::::: challenge
+### Organising files into a folder structure Part II
+
+Individually, look at the folder of files again and within it create a set of folders to organise them into. You may want to create subfolders inside some of these folders too. Organise the files into your folders.
+
+:::::::::::::::::::::::: hint
+
+Alex sees that during the project the researcher gave a presentation at a conference and that alongside the slides there are lots of documents relating to his attendance.
+
+::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::
+
+
+## File naming
+
+## Version control
+
+## Version control tools
+
 
