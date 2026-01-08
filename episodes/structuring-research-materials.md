@@ -63,8 +63,9 @@ Individually, look at the folder of files again and within it create a set of fo
 
 Poor organisation can make it difficult to find files or to even see that a specific file exists.  This can become a massive problem where multiple people are working together or on projects that run over a number of years. Out-of-date versions of files may end up being used and shared, and important documents effectively lost. Relying on search tools to find documents assumes that you know that the document exists, and that you know how it was named; if you weren't the person who created it how would you know about it? If you think back to documents you created a few years ago, would you still be able to say what they were all called, what the latest versions were called, and what they all related to?
 
-Taking a few moments to think about the structures you use to store files can save a lot of stress, and time, both for you and anyone you work with. If you work across multiple projects it can be worth coming up with a consistent approach, so that you and anyone you work with always knows where in the folder structure to find the same types of files. Structure folders heirarchically too: start broad and drill-down into specific areas. It can be worth thinking of an old fashioned set of filing cabinets:
+Taking a few moments to think about the structures you use to store files can save a lot of stress, and time, both for you and anyone you work with. If you work across multiple projects it can be worth coming up with a consistent approach, so that you and anyone you work with always knows where in the folder structure to find the same types of files. Structure folders heirarchically too: start broad and drill-down into specific areas.
 
+It can be worth thinking of an old fashioned set of filing cabinets:
 - each filing cabinet is a project
 - each drawer is a an aspect of the project e.g. drawer 1 for data collection; drawer 2 for analysis; drawer 3 for papers and presentations
 - within each drawer are folders containing files about specific subsections of that aspect e.g. in drawer 2 there are separate folders for code, raw data, cleaned data, graphs/ figures, and reports
@@ -72,11 +73,22 @@ Taking a few moments to think about the structures you use to store files can sa
 
 However, do be sensible about the level and number of folders you use: if you have lots of folders that only contain one file, you may have too many, making it more difficult and time-consuming to navigate. If you have very few folders then there may be too many files in a folder, making it difficult to find the relevant one.
 
-Whatever structures you choose, it is worth preiodically reviewing them to make sure they're still fulfilling their purpose. Perhaps a section of the project can be archived? Perhaps there are now enough files of a particular type to necessitate a new section?
+Give each folder a name that is meaningful and concisely describes the contents of the folder, such as "raw_data", "conference_presentations", "expenses".
 
+Whatever structures you choose, it is worth periodically reviewing it to make sure it is still fulfilling its purpose. Perhaps a section of the project folders can be archived? Perhaps there are now enough files of a particular type to necessitate a new folder?
 
+In summary:
+
+- Use folders! Don't just save files onto your desktop and expect to be able to find everything in future.
+- Structure hierarchically. Start broad and drill-down into specific areas or projects
+- Use a sensible number of folders. Too few or too many may both make it difficult or time-consuming to find files.
+- Use sensible names. Consider project names and the types of files in each folder, such as "raw_data", "conference_presentations" or "expenses"
+- Develop a consistent approach across projects
+- Review folder content periodically, and consider moving folders and files that are no longer needed into an ‘archive’ folder
 
 ## File naming
+
+
 
 ## Version control
 
