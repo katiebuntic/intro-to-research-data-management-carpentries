@@ -71,7 +71,6 @@ Within each folder in each drawer there may be further sub-sections.... However,
 
 Whatever structures you choose, it is worth preiodically reviewing them to make sure they're still fulfilling their purpose. Perhaps a section of the project can be archived? Perhaps there are now enough files of a particular type to necessitate a new section?
 
-::::::::::::::::::::::::::::
 
 
 ## File naming
