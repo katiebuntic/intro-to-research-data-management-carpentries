@@ -59,6 +59,8 @@ Individually, look at the folder of files again and within it create a set of fo
 
 ::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::::
+
 Poor organisation can make it difficult to find files or to even see that a specific file exists.  This can become a massive problem where multiple people are working together or on projects that run over a number of years. Out-of-date versions of files may end up being used and shared, and important documents effectively lost. Relying on search tools to find documents assumes that you know that the document exists, and that you know how it was named; if you weren't the person who created it how would you know about it? If you think back to documents you created a few years ago, would you still be able to say what they were all called, what the latest versions were called, and what they all related to?
 
 Taking a few moments to think about the structures you use to store files can save a lot of stress, and time, both for you and anyone you work with. If you work across multiple projects it can be worth coming up with a consistent approach, so that you and anyone you work with always knows where in the folder structure to find the same types of files. Structure folders heirarchically too: start broad and drill-down into specific areas. It can be worth thinking of an old fashioned set of filing cabinets:
@@ -69,7 +71,7 @@ Within each folder in each drawer there may be further sub-sections.... However,
 
 Whatever structures you choose, it is worth preiodically reviewing them to make sure they're still fulfilling their purpose. Perhaps a section of the project can be archived? Perhaps there are now enough files of a particular type to necessitate a new section?
 
-::::::::::::::::::::::::::::::::::::::
+
 
 ## File naming
 
