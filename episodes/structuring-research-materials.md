@@ -88,6 +88,15 @@ In summary:
 
 ## File naming
 
+Alex takes another look at the folder system he has created. The files are easier to search through but he notices that there are lots of inconsistencies in how they are named.
+
+:::::::::::::::::::::::::::: discussion
+
+Open the _______ folder and look at the names of the files. Can you identify any problems with the way the files are named? What kinds of issues might they cause for those working on the project?
+
+::::::::::::::::::::::::::::
+
+
 
 
 ## Version control
