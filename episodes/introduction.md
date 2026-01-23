@@ -21,21 +21,115 @@ exercises: 20
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.html) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+## Understanding data types
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+Alex is a researcher studying artworks in The Metropolitan Museum of Art. They have just received a dataset containing information about paintings, sculptures, textiles, drawings, and photographs from across the museum’s collection. Before Alex can analyse anything, they need to understand what kinds of data the dataset contains.
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+Even though the dataset looks like a simple spreadsheet, each column has an underlying data type, and knowing these types will help Alex (and you!) avoid errors, clean the dataset effectively, and choose the right kinds of visualisations or analyses.
+
+### What is a data type?
+
+A data type describes the kind of information a value represents. It tells the computer how to interpret the data:
+
+- Is it text?
+- A number?
+- A date?
+- A true/false flag?
+
+When a dataset mixes formats (e.g., a date stored as text, or a number stored as a string), analysis becomes harder and mistakes are more likely. Alex will soon discover that the MET dataset contains a mix of clean values and some messy ones - for example, dates written as 1990, "ca. 1931", and "07/06/2019 00:00". Understanding data types helps Alex make sense of this variation.
+
+### Why data types matter
+
+Data types are important because they affect how the computer reads, stores, and analyses information. If a column is stored in the wrong format, it can lead to errors, misleading results, or limitations in what you can do with the data. For example:
+
+- Accurate analysis: If dates are stored as text, Alex won’t be able to sort artworks chronologically or calculate how old an object is.
+- Avoiding mistakes: Numbers stored as strings (e.g., "1980" instead of 1980) may be ignored in calculations or treated incorrectly.
+- Cleaning data effectively: Understanding data types helps Alex spot inconsistencies, such as mixing "ca. 1931" with 1931, so they know what needs fixing.
+- Choosing the right visualisation: Charts depend on data types. A timeline needs dates; a bar chart grouping by artist needs clean text labels; averages require numeric data.
+- Improving data quality: Identifying incorrect or mixed data types early helps Alex avoid downstream issues, especially when merging datasets or building models.
+
+In summary: knowing data types helps ensure the dataset is trustworthy, analysable, and ready for exploration
+
+### Common data types, examples from the MET Museum dataset
+
+Here are some common data types you'll encounter:
+
+- **String**: Text or characters, like `"Claude Monet"` or `"Oil on canvas"`
+- **Integer**: Whole numbers, like `1985`, `42`, or `0`
+- **Float**: Decimal numbers, like `27.5` or `3.14`
+- **Boolean**: True/False values, like `TRUE`, `FALSE`, `Yes`, `No`
+- **Datetime**: Calendar dates or timestamps, like `"2020-01-01"` or `"12/11/2027"`
+
+Now that Alex has identified the main data types, let's try classifying some values ourselves.
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+Challenge: What data type is it?
+
+Alex found the following values in the MET dataset. For each one, decide what data type it currently is (it may not be what you think it should be!).
+
+```
+"Claude Monet"
+1872
+"ca. 1931"
+"07/06/2019 00:00"
+2021-07-14
+27.5
+"Oil on canvas"
+TRUE
+```
+
+Write down the data type you would assign to each value.
+
+:::::::::::::::::::::::: solution
+
+```
+"Claude Monet"           is a string
+1872                     is an integer
+"ca. 1931"               is a string (messy date)
+"07/06/2019 00:00"       is a string (looks like a date but stored as text)
+2021-07-14               is a date               
+27.5                     is a float
+"Oil on canvas"          is a string
+TRUE                     is a boolean
+```
+
+:::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::
+
+Notice how several values look like dates or numbers but are stored as text - this is common in real datasets and affects how we analyse them.
+
+
+### Identifying data types in your own dataset
+
+## Where research data comes from 
+
+### What is a data source?
+
+### Primary data
+
+### Secondary data
+
+### Generated or synthetic data 
+
+### Sensor and observational data
+
+### Data from instruments, tools, and experiments
+
+### Examples of data sources in different disciplines 
+
+### Considering data quality and limitations 
+
+## Introduction to research data management
+
+### What is Research Data Management (RDM)?
+
+### Why RDM matters
+
+### The research data lifecycle 
+
+### RDM in practice: Alex and the MET Dataset
+
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
@@ -95,15 +189,6 @@ e.g. by providing the answer to a commonly-asked question.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
-
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 - Use `.md` files for episodes when you want static content
@@ -112,5 +197,3 @@ Cool, right?
 - Run `sandpaper::build_lesson()` to preview your lesson locally
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-[r-markdown]: https://rmarkdown.rstudio.com/
