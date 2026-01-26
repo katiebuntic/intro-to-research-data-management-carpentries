@@ -98,6 +98,16 @@ Open the _______ folder and look at the names of the files. Can you identify any
 
 Poor file naming practices can make it difficult and time-consuming to find files, and lead to people working on the wrong files, or even overwriting important files, thus losing important data. Just as with folder structure, taking some time early in a project to develop a naming convention can save time and effort in the long run, both for your future self, and for any colleagues you work with. Below are some key considerations when creating file names:
 
+### What information to include
+
+Carefully consider what information someone would need about the file to know it is the one they want. Do they need to know when it was created? Do they need to know what type of data it contains, for example, raw data, clean data? Does the file relate to a specific ID number? Some of those items of information might be good candidates to form part of the file name.
+
+### Whether you need to be able to order the files by a characteristic
+
+For example, will you need to be able to easily select the file that was created most recently? Or quickly find a file by a sample ID? If so, you will want that element of the name to be at the beginning of the file name. Sometimes you might have to prioritise one of those requirements: for example, maybe you need to find the most recent file relating to a specific sample, in which case you might name the files using the format:
+
+<sampleID>_<date>
+
 ### Special Characters and Spaces
 
 Avoid using special characters (such as ?#!"£$%^&*{}@/|\<> ) as operating systems and apps may handle these very differently, sometimes being completely unable to open a file with them in their name, or not recognising them at all. Some special characters have a meaning in particular programming languages, and may be interpreted as instructions to the computer rather than as part of the file name. 
@@ -131,24 +141,56 @@ Recommendation: Use only numbers and letters (without accents) and use hyphens a
 ### Dates
 
 :::::::::::::::::::::::::::: challenge
+
 Look at the file names below:
 
-A 01022026_sputum_culture_results.csv
-B 03_09_2025_sputum_culture_results.csv
-C 120126_sputum_culture_results.csv
-D 
-E
+A) 01022026_sputum_culture_results.csv
+
+B) 03_09_2025_sputum_culture_results.csv
+
+C) 05Jun25_sputum_culture_results.csv
+
+D) 120126_sputum_culture_results.csv
+
+E) 12252026_sputum_culture_results.csv
 
 What order were those files created in? Are you sure?
 
-Note that they were given in the order they would apear in a folder, i.e. in numerical and alphabetical order.
-Can you think of a better way to write the dates, so that the files appear in date order? Are there any other considerations you need to give?
+:::::::::::::: hint
 
+If the files came from laboratories in both the UK and in the USA, would that raise any concerns about how to read the dates on the files?
+
+::::::::::::::
 
 ::::::::::::::::::::::::::::
 
+Dates are a frequent cause of issues for researchers. Researchers from different countries may read date numbers differently: "05062026" may be one person's 5th of June (e.g. in the UK), while for another it's 6th of May (e.g. in the USA). Ensuring that everyone looking at the date reads it correctly can be the difference between the correct file being selected, and the wrong one. 
+
+:::::::::::::::::::::::::::: challenge
+
+Look at those file names again:
+
+A) 01022026_sputum_culture_results.csv
+
+B) 03_09_2025_sputum_culture_results.csv
+
+C) 05Jun25_sputum_culture_results.csv
+
+D) 120126_sputum_culture_results.csv
+
+E) 12252026_sputum_culture_results.csv
+
+Note that they were given in the order they would appear in a folder, i.e. in numerical and alphabetical order.
+
+Can you think of a better way to write the dates, so that the files appear in date order? 
+
+::::::::::::::::::::::::::::
+
+A good format for dates is YYYYMMDD (the ISO 8601 standard), or YYYY-MM-DD. This format ensures that everything can be easily ordered by year, then month, and then day. Seeing the year at the start of the date also indicates to those looking at the files that the date is probably being handled in this way.
 
 ## Version control
+
+
 
 ## Version control tools
 
