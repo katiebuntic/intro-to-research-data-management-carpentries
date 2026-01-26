@@ -422,7 +422,7 @@ reinforce the objectives.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing
 challenges associated with the lessons. They appear in the “Instructor
@@ -454,7 +454,7 @@ View”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -483,7 +483,7 @@ challenge blocks?</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -779,13 +779,43 @@ you rewrite the name to avoid that?</p>
 as showing that the end of the file name has been reached, and therefore
 not treat the rest of the name as part of the file name. Alternatively,
 it may interepret it as several file names listed one after the other
-e.g. STAR final results.xls is either: 1 file named STAR followed by the
-command ‘final’… 3 files named: - STAR - final - results.xls</p>
+e.g. STAR final results.xls is either:</p>
+<p>1 file named STAR followed by the command ‘final’…</p>
+<p>3 files named:</p>
+<ul>
+<li>STAR</li>
+<li>final</li>
+<li>results.xls</li>
+</ul>
 <p>A better way to write this file name would be STAR_final_results.xls
 or STAR-final-results.xls</p>
 <p>Recommendation: Use only numbers and letters (without accents) and
-use hyphens and underscores instead of spaces, to sperate the different
+use hyphens and underscores instead of spaces, to separate the different
 parts of the file name.</p>
+</div>
+<div class="section level3">
+<h3 id="dates">Dates<a class="anchor" aria-label="anchor" href="#dates"></a>
+</h3>
+<div id="discussion3" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Look at the file names below:</p>
+<p>A 01022026_sputum_culture_results.csv B
+03_09_2025_sputum_culture_results.csv C
+120126_sputum_culture_results.csv D E</p>
+<p>What order were those files created in? Are you sure?</p>
+<p>Note that they were given in the order they would apear in a folder,
+i.e. in numerical and alphabetical order. Can you think of a better way
+to write the dates, so that the files appear in date order? Are there
+any other considerations you need to give?</p>
+</div>
+</div>
+</div>
 </div>
 </section><section><h2 class="section-heading" id="version-control">Version control<a class="anchor" aria-label="anchor" href="#version-control"></a>
 </h2>
