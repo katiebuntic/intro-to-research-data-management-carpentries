@@ -437,7 +437,7 @@ reinforce the objectives.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -466,7 +466,7 @@ challenge blocks?</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -734,6 +734,29 @@ naming convention can save time and effort in the long run, both for
 your future self, and for any colleagues you work with. Below are some
 key considerations when creating file names:</p>
 <div class="section level3">
+<h3 id="what-information-to-include">What information to include<a class="anchor" aria-label="anchor" href="#what-information-to-include"></a>
+</h3>
+<p>Carefully consider what information someone would need about the file
+to know it is the one they want. Do they need to know when it was
+created? Do they need to know what type of data it contains, for
+example, raw data, clean data? Does the file relate to a specific ID
+number? Some of those items of information might be good candidates to
+form part of the file name.</p>
+</div>
+<div class="section level3">
+<h3 id="whether-you-need-to-be-able-to-order-the-files-by-a-characteristic">Whether you need to be able to order the files by a
+characteristic<a class="anchor" aria-label="anchor" href="#whether-you-need-to-be-able-to-order-the-files-by-a-characteristic"></a>
+</h3>
+<p>For example, will you need to be able to easily select the file that
+was created most recently? Or quickly find a file by a sample ID? If so,
+you will want that element of the name to be at the beginning of the
+file name. Sometimes you might have to prioritise one of those
+requirements: for example, maybe you need to find the most recent file
+relating to a specific sample, in which case you might name the files
+using the format:</p>
+<p><sampleid>_<date></date></sampleid></p>
+</div>
+<div class="section level3">
 <h3 id="special-characters-and-spaces">Special Characters and Spaces<a class="anchor" aria-label="anchor" href="#special-characters-and-spaces"></a>
 </h3>
 <p>Avoid using special characters (such as ?#!“£$%^&amp;*{}@/|&lt;&gt; )
@@ -778,6 +801,46 @@ parts of the file name.</p>
 <div class="section level3">
 <h3 id="dates">Dates<a class="anchor" aria-label="anchor" href="#dates"></a>
 </h3>
+<div id="challenge3" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Look at the file names below:</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>01022026_sputum_culture_results.csv</p></li>
+<li><p>03_09_2025_sputum_culture_results.csv</p></li>
+<li><p>05Jun25_sputum_culture_results.csv</p></li>
+<li><p>120126_sputum_culture_results.csv</p></li>
+<li><p>12252026_sputum_culture_results.csv</p></li>
+</ol>
+<p>What order were those files created in? Are you sure?</p>
+</div>
+</div>
+</div>
+<div id="accordionHint3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint3" aria-expanded="false" aria-controls="collapseHint3">
+  <h4 class="accordion-header" id="headingHint3"> Give me a hint </h4>
+</button>
+<div id="collapseHint3" class="accordion-collapse collapse" data-bs-parent="#accordionHint3" aria-labelledby="headingHint3">
+<div class="accordion-body">
+<p>If the files came from laboratories in both the UK and in the USA,
+would that raise any concerns about how to read the dates on the
+files?</p>
+</div>
+</div>
+</div>
+</div>
+<p>Dates are a frequent cause of issues for researchers. Researchers
+from different countries may read date numbers differently: “05062026”
+may be one person’s 5th of June (e.g. in the UK), while for another it’s
+6th of May (e.g. in the USA). Ensuring that everyone looking at the date
+reads it correctly can be the difference between the correct file being
+selected, and the wrong one.</p>
 <div id="discussion3" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -786,18 +849,26 @@ parts of the file name.</p>
 <div class="callout-inner">
 <h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
-<p>Look at the file names below:</p>
-<p>A 01022026_sputum_culture_results.csv B
-03_09_2025_sputum_culture_results.csv C
-120126_sputum_culture_results.csv D E</p>
-<p>What order were those files created in? Are you sure?</p>
-<p>Note that they were given in the order they would apear in a folder,
-i.e. in numerical and alphabetical order. Can you think of a better way
-to write the dates, so that the files appear in date order? Are there
-any other considerations you need to give?</p>
+<p>Look at those file names again:</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>01022026_sputum_culture_results.csv</p></li>
+<li><p>03_09_2025_sputum_culture_results.csv</p></li>
+<li><p>05Jun25_sputum_culture_results.csv</p></li>
+<li><p>120126_sputum_culture_results.csv</p></li>
+<li><p>12252026_sputum_culture_results.csv</p></li>
+</ol>
+<p>Note that they were given in the order they would appear in a folder,
+i.e. in numerical and alphabetical order.</p>
+<p>Can you think of a better way to write the dates, so that the files
+appear in date order?</p>
 </div>
 </div>
 </div>
+<p>A good format for dates is YYYYMMDD (the ISO 8601 standard), or
+YYYY-MM-DD. This format ensures that everything can be easily ordered by
+year, then month, and then day. Seeing the year at the start of the date
+also indicates to those looking at the files that the date is probably
+being handled in this way.</p>
 </div>
 </section><section><h2 class="section-heading" id="version-control">Version control<a class="anchor" aria-label="anchor" href="#version-control"></a>
 </h2>
@@ -1240,7 +1311,7 @@ analysing the data.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Inconsistencies might include where measurements are in different
 units, there are differing formats for dates, differing cases, or where
@@ -1317,7 +1388,7 @@ could you introduce during data collection?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>There are many different solutions to these inconsistencies, but here
 are some examples:</p>
