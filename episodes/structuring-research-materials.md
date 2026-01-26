@@ -115,16 +115,37 @@ How might you rewrite the name to avoid that?
 ::::::::::::::::::::::::::::
 
 If you have spaces in a file name, the computer may interpret a space as showing that the end of the file name has been reached, and therefore not treat the rest of the name as part of the file name. Alternatively, it may interepret it as several file names listed one after the other e.g. STAR final results.xls is either:
+
 1 file named STAR followed by the command 'final'...
+
 3 files named:
+
 - STAR
 - final
 - results.xls
 
 A better way to write this file name would be STAR_final_results.xls or STAR-final-results.xls
 
-Recommendation: Use only numbers and letters (without accents) and use hyphens and underscores instead of spaces, to sperate the different parts of the file name.
+Recommendation: Use only numbers and letters (without accents) and use hyphens and underscores instead of spaces, to separate the different parts of the file name.
 
+### Dates
+
+:::::::::::::::::::::::::::: challenge
+Look at the file names below:
+
+A 01022026_sputum_culture_results.csv
+B 03_09_2025_sputum_culture_results.csv
+C 120126_sputum_culture_results.csv
+D 
+E
+
+What order were those files created in? Are you sure?
+
+Note that they were given in the order they would apear in a folder, i.e. in numerical and alphabetical order.
+Can you think of a better way to write the dates, so that the files appear in date order? Are there any other considerations you need to give?
+
+
+::::::::::::::::::::::::::::
 
 
 ## Version control
