@@ -106,7 +106,7 @@ Carefully consider what information someone would need about the file to know it
 
 For example, will you need to be able to easily select the file that was created most recently? Or quickly find a file by a sample ID? If so, you will want that element of the name to be at the beginning of the file name. Sometimes you might have to prioritise one of those requirements: for example, maybe you need to find the most recent file relating to a specific sample, in which case you might name the files using the format:
 
-<sampleID>_<date>
+sampleID_date
 
 ### Special Characters and Spaces
 
@@ -166,7 +166,7 @@ If the files came from laboratories in both the UK and in the USA, would that ra
 
 Dates are a frequent cause of issues for researchers. Researchers from different countries may read date numbers differently: "05062026" may be one person's 5th of June (e.g. in the UK), while for another it's 6th of May (e.g. in the USA). Ensuring that everyone looking at the date reads it correctly can be the difference between the correct file being selected, and the wrong one. 
 
-:::::::::::::::::::::::::::: challenge
+:::::::::::::::::::::::::::::: challenge
 
 Look at those file names again:
 
@@ -184,7 +184,7 @@ Note that they were given in the order they would appear in a folder, i.e. in nu
 
 Can you think of a better way to write the dates, so that the files appear in date order? 
 
-::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::
 
 A good format for dates is YYYYMMDD (the ISO 8601 standard), or YYYY-MM-DD. This format ensures that everything can be easily ordered by year, then month, and then day. Seeing the year at the start of the date also indicates to those looking at the files that the date is probably being handled in this way.
 
