@@ -96,6 +96,34 @@ Open the _______ folder and look at the names of the files. Can you identify any
 
 ::::::::::::::::::::::::::::
 
+Poor file naming practices can make it difficult and time-consuming to find files, and lead to people working on the wrong files, or even overwriting important files, thus losing important data. Just as with folder structure, taking some time early in a project to develop a naming convention can save time and effort in the long run, both for your future self, and for any colleagues you work with. Below are some key considerations when creating file names:
+
+### Special Characters and Spaces
+
+Avoid using special characters (such as ?#!"£$%^&*{}@/|\<> ) as operating systems and apps may handle these very differently, sometimes being completely unable to open a file with them in their name, or not recognising them at all. Some special characters have a meaning in particular programming languages, and may be interpreted as instructions to the computer rather than as part of the file name. 
+
+Similarly, spaces in file names can cause problems:
+
+:::::::::::::::::::::::::::: discussion
+Look at the file name below:
+
+STAR final results.xls
+
+How do you think this might be interpreted by a computer?
+How might you rewrite the name to avoid that?
+
+::::::::::::::::::::::::::::
+
+If you have spaces in a file name, the computer may interpret a space as showing that the end of the file name has been reached, and therefore not treat the rest of the name as part of the file name. Alternatively, it may interepret it as several file names listed one after the other e.g. STAR final results.xls is either:
+1 file named STAR followed by the command 'final'...
+3 files named:
+- STAR
+- final
+- results.xls
+
+A better way to write this file name would be STAR_final_results.xls or STAR-final-results.xls
+
+Recommendation: Use only numbers and letters (without accents) and use hyphens and underscores instead of spaces, to sperate the different parts of the file name.
 
 
 
