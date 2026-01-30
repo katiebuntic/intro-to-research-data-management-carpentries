@@ -115,6 +115,7 @@ Avoid using special characters (such as ?#!"£$%^&*{}@/|\<> ) as operating syste
 Similarly, spaces in file names can cause problems:
 
 :::::::::::::::::::::::::::: discussion
+
 Look at the file name below:
 
 STAR final results.xls
