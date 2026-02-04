@@ -410,6 +410,23 @@ understand what kinds of data the dataset contains.</p>
 has an underlying data type, and knowing these types will help Alex (and
 you!) avoid errors, clean the dataset effectively, and choose the right
 kinds of visualisations or analyses.</p>
+<div id="quick-think" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="quick-think" class="callout-inner">
+<h3 class="callout-title">Quick think</h3>
+<div class="callout-content">
+<p>Before reading on, ask yourself:</p>
+<ul>
+<li>What kinds of columns would <em>you</em> expect to see in a museum
+dataset?</li>
+</ul>
+<p>Titles? Dates? Measurements? Artist names?</p>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="what-is-a-data-type">What is a data type?<a class="anchor" aria-label="anchor" href="#what-is-a-data-type"></a>
 </h3>
@@ -436,22 +453,29 @@ stores, and analyses information. If a column is stored in the wrong
 format, it can lead to errors, misleading results, or limitations in
 what you can do with the data. For example:</p>
 <ul>
-<li>Accurate analysis: If dates are stored as text, Alex won’t be able
-to sort artworks chronologically or calculate how old an object is.</li>
-<li>Avoiding mistakes: Numbers stored as strings (e.g., “1980” instead
-of 1980) may be ignored in calculations or treated incorrectly.</li>
-<li>Cleaning data effectively: Understanding data types helps Alex spot
-inconsistencies, such as mixing “ca. 1931” with 1931, so they know what
-needs fixing.</li>
-<li>Choosing the right visualisation: Charts depend on data types. A
-timeline needs dates; a bar chart grouping by artist needs clean text
-labels; averages require numeric data.</li>
-<li>Improving data quality: Identifying incorrect or mixed data types
-early helps Alex avoid downstream issues, especially when merging
-datasets or building models.</li>
+<li>
+<strong>Accurate analysis</strong>: If dates are stored as text,
+Alex won’t be able to sort artworks chronologically or calculate how old
+an object is.</li>
+<li>
+<strong>Avoiding mistakes</strong>: Numbers stored as strings (e.g.,
+“1980” instead of 1980) may be ignored in calculations or treated
+incorrectly.</li>
+<li>
+<strong>Cleaning data effectively</strong>: Understanding data types
+helps Alex spot inconsistencies, such as mixing “ca. 1931” with 1931, so
+they know what needs fixing.</li>
+<li>
+<strong>Choosing the right visualisation</strong>: Charts depend on
+data types. A timeline needs dates; a bar chart grouping by artist needs
+clean text labels; averages require numeric data.</li>
+<li>
+<strong>Improving data quality</strong>: Identifying incorrect or
+mixed data types early helps Alex avoid downstream issues, especially
+when merging datasets or building models.</li>
 </ul>
-<p>In summary: knowing data types helps ensure the dataset is
-trustworthy, analysable, and ready for exploration</p>
+<p><strong>In summary</strong>: knowing data types helps ensure the
+dataset is trustworthy, analysable, and ready for exploration</p>
 </div>
 <div class="section level3">
 <h3 id="common-data-types-examples-from-the-met-museum-dataset">Common data types, examples from the MET Museum dataset<a class="anchor" aria-label="anchor" href="#common-data-types-examples-from-the-met-museum-dataset"></a>
@@ -599,20 +623,72 @@ For each column, Alex checks:</p>
 <li>Do all the values follow the same format?</li>
 <li>Are there any “odd” entries that don’t match the rest?</li>
 </ul>
-<p>For example:</p>
+<div id="challenge-trust-the-name-or-the-values" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="challenge-trust-the-name-or-the-values" class="callout-inner">
+<h3 class="callout-title">Challenge: Trust the name or the values?</h3>
+<div class="callout-content">
+<p>Which of these columns would you <strong>inspect most
+carefully</strong>, and why?</p>
+<ul>
+<li><code>Year</code></li>
+<li><code>ID</code></li>
+<li><code>Notes</code></li>
+<li><code>Height_cm</code></li>
+</ul>
+<p>Write down one reason based on the <em>values you might expect to
+see</em>.</p>
+</div>
+</div>
+</div>
+<div id="challenge-what-do-you-notice" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-what-do-you-notice" class="callout-inner">
+<h3 class="callout-title">Challenge: What do you notice?</h3>
+<div class="callout-content">
+<p>For each column, write down the data type and any things to be aware
+of:</p>
 <ul>
 <li>
-<strong>Artist</strong>: text (string)</li>
+<code>Artist</code>: Claude Monet, Unknown, Rembrandt<br>
+</li>
 <li>
-<strong>Height (cm)</strong>: numeric (float), even though some
-values look like whole numbers</li>
+<code>Height (cm)</code>: 200.5, 27, 98<br>
+</li>
 <li>
-<strong>Is Public Domain</strong>: boolean</li>
-<li>
-<strong>Object Date</strong>: mixed: some look like numbers, some
-like text, some like dates</li>
+<code>Object Date</code>: 1906, ca. 1931, 07/06/2019</li>
 </ul>
-<p>Watch out for the last one!</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<ul>
+<li>
+<strong>Artist</strong> will be a string<br>
+</li>
+<li>
+<strong>Height (cm)</strong> will be numeric numeric (float)<br>
+</li>
+<li>
+<strong>Object Date</strong> is mixed formats (likely stored as
+text) - trickier one!</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section level4">
 <h4 id="step-2-watch-out-for-mixed-data-types-in-a-single-column">Step 2: Watch out for mixed data types in a single column<a class="anchor" aria-label="anchor" href="#step-2-watch-out-for-mixed-data-types-in-a-single-column"></a>
@@ -662,19 +738,6 @@ cleaning later)</li>
 </ul>
 <p>Writing this down helps Alex plan their data cleaning and analysis
 steps.</p>
-</div>
-<div class="section level4">
-<h4 id="key-takeaway">Key takeaway<a class="anchor" aria-label="anchor" href="#key-takeaway"></a>
-</h4>
-<p>When working with your own dataset in a spreadsheet:</p>
-<ul>
-<li>Data types usually apply at the <strong>column level</strong>
-</li>
-<li>Mixed formats are common and normal</li>
-<li>Identifying data types early helps prevent errors later</li>
-<li>You don’t need to fix everything right away, just notice and
-document it</li>
-</ul>
 <div id="challenge-what-data-type-is-this-column" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -692,7 +755,7 @@ information about exhibitions and acquisitions.</p>
 </colgroup>
 <thead><tr class="header">
 <th>Column name</th>
-<th>Example values</th>
+<th>Values</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
@@ -742,12 +805,12 @@ analysis.</li>
 </div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> One possible solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <table class="table">
 <thead><tr class="header">
@@ -958,12 +1021,12 @@ government agency.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p><strong>Secondary data</strong> because you didn’t collect it
 yourself.</p>
@@ -982,7 +1045,7 @@ this?</h3>
 <div class="callout-content">
 <p>Below are several research scenarios. For each one, decide
 <strong>what type of data source</strong> is being described.</p>
-<p>You may find that more than one category could apply — choose the
+<p>You may find that more than one category could apply, choose the
 <strong>best fit</strong>.</p>
 <ol style="list-style-type: decimal">
 <li><p>A researcher records temperature and humidity every 10 minutes
@@ -999,12 +1062,12 @@ machine in a laboratory experiment.</p></li>
 </div>
 </div>
 </div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4"> One possible solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> One possible solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><p><strong>Sensor and observational data</strong><br>
@@ -1065,7 +1128,7 @@ View”</p>
 syntax:</p>
 <p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
 <figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout3" class="callout">
+</figure><div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1862,7 +1925,7 @@ analysing the data.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Inconsistencies might include where measurements are in different
 units, there are differing formats for dates, differing cases, or where
@@ -1939,7 +2002,7 @@ could you introduce during data collection?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>There are many different solutions to these inconsistencies, but here
 are some examples:</p>
@@ -2211,7 +2274,7 @@ many?</li>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>There are 7 missing values in the <code>film_title</code>
