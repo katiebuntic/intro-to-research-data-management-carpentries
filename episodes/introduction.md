@@ -305,7 +305,7 @@ Is this:
 
 :::::::::::::::::::::::: solution
 
-**Secondary data** — you didn’t collect it yourself.
+**Secondary data** because you didn’t collect it yourself.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
