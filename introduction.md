@@ -136,9 +136,9 @@ Which of these columns would you **inspect most carefully**, and why?
 - `ObjectID`
 - `Title`
 - `Artist`
-- 'Object Date'
-- 'Medium'
-- 'Is Public Domain'
+- `Object Date`
+- `Medium`
+- `Is Public Domain`
 - `Height_cm`
 
 Write down one reason based on the _values you might expect to see_.
@@ -229,11 +229,11 @@ Think about:
 - Columns that look numeric but include text
 - Dates written in different ways
 
-You do not need to clean the data — just identify the data types.
+You do not need to clean the data, just identify the data types.
 
 :::::::::::::::::::::::: solution
 
-### Possible solution
+### Show me the solution
 
 | Column name      | Current data type    | Ideal data type |
 | ---------------- | -------------------- | --------------- |
@@ -308,7 +308,7 @@ Sensor and observational data is collected automatically or systematically throu
 
 ### Data from instruments, tools, and experiments
 
-This type of data is produced by scientific instruments, laboratory equipment, or specialised tools. Examples include microscope images, sequencing data, spectrometer readings, or experimental measurements. Instrument data often requires calibration, metadata, and specialised software to interpret.
+Scientific instruments, laboratory equipment, or specialised tools produce this type of data. Examples include microscope images, sequencing data, spectrometer readings, or experimental measurements. Instrument data often requires calibration, metadata, and specialised software to interpret.
 
 ::::::::::::::::::::::::::::::::::::: callout
 
@@ -350,7 +350,7 @@ Is this:
 
 Below are several research scenarios. For each one, decide **what type of data source** is being described.
 
-You may find that more than one category could apply, choose the **best fit**.
+You may find that more than one category could apply; choose the **best fit**.
 
 1. A researcher records temperature and humidity every 10 minutes using a weather station on a university rooftop.
 
