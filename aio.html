@@ -448,29 +448,7 @@ Alex make sense of this variation.</p>
 <p>Data types are important because they affect how the computer reads,
 stores, and analyses information. If a column is stored in the wrong
 format, it can lead to errors, misleading results, or limitations in
-what you can do with the data. For example:</p>
-<ul>
-<li>
-<strong>Accurate analysis</strong>: If dates are stored as text,
-Alex won’t be able to sort artworks chronologically or calculate how old
-an object is.</li>
-<li>
-<strong>Avoiding mistakes</strong>: Numbers stored as strings (e.g.,
-“1980” instead of 1980) may be ignored in calculations or treated
-incorrectly.</li>
-<li>
-<strong>Cleaning data effectively</strong>: Understanding data types
-helps Alex spot inconsistencies, such as mixing “ca. 1931” with 1931, so
-they know what needs fixing.</li>
-<li>
-<strong>Choosing the right visualisation</strong>: Charts depend on
-data types. A timeline needs dates; a bar chart grouping by artist needs
-clean text labels; averages require numeric data.</li>
-<li>
-<strong>Improving data quality</strong>: Identifying incorrect or
-mixed data types early helps Alex avoid downstream issues, especially
-when merging datasets or building models.</li>
-</ul>
+what you can do with the data.</p>
 <p><strong>In summary</strong>: knowing data types helps ensure the
 dataset is trustworthy, analysable, and ready for exploration</p>
 </div>
@@ -531,7 +509,7 @@ should be!).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre><code>"Claude Monet"           is a string
 1872                     is an integer
@@ -631,58 +609,16 @@ For each column, Alex checks:</p>
 <p>Which of these columns would you <strong>inspect most
 carefully</strong>, and why?</p>
 <ul>
-<li><code>Year</code></li>
-<li><code>ID</code></li>
-<li><code>Notes</code></li>
+<li><code>ObjectID</code></li>
+<li><code>Title</code></li>
+<li><code>Artist</code></li>
+<li>‘Object Date’</li>
+<li>‘Medium’</li>
+<li>‘Is Public Domain’</li>
 <li><code>Height_cm</code></li>
 </ul>
 <p>Write down one reason based on the <em>values you might expect to
 see</em>.</p>
-</div>
-</div>
-</div>
-<div id="challenge-what-do-you-notice" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-what-do-you-notice" class="callout-inner">
-<h3 class="callout-title">Challenge: What do you notice?</h3>
-<div class="callout-content">
-<p>For each column, write down the data type and any things to be aware
-of:</p>
-<ul>
-<li>
-<code>Artist</code>: Claude Monet, Unknown, Rembrandt<br>
-</li>
-<li>
-<code>Height (cm)</code>: 200.5, 27, 98<br>
-</li>
-<li>
-<code>Object Date</code>: 1906, ca. 1931, 07/06/2019</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<ul>
-<li>
-<strong>Artist</strong> will be a string<br>
-</li>
-<li>
-<strong>Height (cm)</strong> will be numeric numeric (float)<br>
-</li>
-<li>
-<strong>Object Date</strong> is mixed formats (likely stored as
-text) - trickier one!</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -704,6 +640,55 @@ Date</em> contains:</p>
 <p>Even though these all describe dates, the computer will usually treat
 the entire column as <strong>text</strong>, which makes it hard to sort,
 filter, or calculate with.</p>
+<div id="challenge-re-write-the-dates-to-match-a-single-format" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-re-write-the-dates-to-match-a-single-format" class="callout-inner">
+<h3 class="callout-title">Challenge: Re-write the dates to match a
+single format</h3>
+<div class="callout-content">
+<p>Alex wants to store all dates in a consistent format:
+<code>YYYY-MM-DD</code>.</p>
+<p>Rewrite each value below so it matches this format <strong>as closely
+as possible</strong>.<br>
+If a value cannot be converted exactly, note how you would handle
+it.</p>
+<ul>
+<li><code>1906</code></li>
+<li><code>ca. 1931</code></li>
+<li><code>07/06/2019</code></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Show me the solution:</p>
+<ul>
+<li>
+<code>1906</code> to <code>1906-01-01</code> (year known, month/day
+unknown)</li>
+<li>
+<code>ca. 1931</code> to <code>1931-01-01</code> (approximate date,
+uncertainty noted elsewhere)</li>
+<li>
+<code>07/06/2019</code> to <code>2019-06-07</code> <em>or</em>
+<code>2019-07-06</code> (depends on date convention)</li>
+</ul>
+<p><strong>Key point:</strong></p>
+<p>Some dates require assumptions or additional metadata. Recording
+those assumptions is part of good data management.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section level4">
 <h4 id="step-3-use-spreadsheet-tools-to-check-data-types">Step 3: Use spreadsheet tools to check data types<a class="anchor" aria-label="anchor" href="#step-3-use-spreadsheet-tools-to-check-data-types"></a>
@@ -807,7 +792,7 @@ analysis.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Possible solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <table class="table">
 <thead><tr class="header">
@@ -1023,7 +1008,7 @@ government agency.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p><strong>Secondary data</strong> because you didn’t collect it
 yourself.</p>
@@ -1064,7 +1049,7 @@ machine in a laboratory experiment.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> One possible solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><p><strong>Sensor and observational data</strong><br>
@@ -1228,7 +1213,7 @@ and discuss the following questions:</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>When thinking about how you could improve the organisation of the
 files, consider whether it might be easier to split them between
@@ -1261,7 +1246,7 @@ your folders.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint2" aria-expanded="false" aria-controls="collapseHint2">
   <h4 class="accordion-header" id="headingHint2"> Give me a hint </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
 <div class="accordion-body">
 <ul>
 <li>Alex sees that during the project the researcher gave a presentation
@@ -1449,7 +1434,7 @@ parts of the file name.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint3" aria-expanded="false" aria-controls="collapseHint3">
   <h4 class="accordion-header" id="headingHint3"> Give me a hint </h4>
 </button>
-<div id="collapseHint3" class="accordion-collapse collapse" aria-labelledby="headingHint3" data-bs-parent="#accordionHint3">
+<div id="collapseHint3" class="accordion-collapse collapse" data-bs-parent="#accordionHint3" aria-labelledby="headingHint3">
 <div class="accordion-body">
 <p>If the files came from laboratories in both the UK and in the USA,
 would that raise any concerns about how to read the dates on the
@@ -1907,7 +1892,7 @@ analysing the data.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Inconsistencies might include where measurements are in different
 units, there are differing formats for dates, differing cases, or where
@@ -1984,7 +1969,7 @@ could you introduce during data collection?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>There are many different solutions to these inconsistencies, but here
 are some examples:</p>
