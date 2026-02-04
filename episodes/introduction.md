@@ -33,12 +33,11 @@ Even though the dataset looks like a simple spreadsheet, each column has an unde
 
 Before reading on, ask yourself:
 
-- What kinds of columns would *you* expect to see in a museum dataset?
+- What kinds of columns would _you_ expect to see in a museum dataset?
 
 Titles? Dates? Measurements? Artist names?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 ### What is a data type?
 
@@ -53,13 +52,7 @@ When a dataset mixes formats (e.g., a date stored as text, or a number stored as
 
 ### Why data types matter
 
-Data types are important because they affect how the computer reads, stores, and analyses information. If a column is stored in the wrong format, it can lead to errors, misleading results, or limitations in what you can do with the data. For example:
-
-- **Accurate analysis**: If dates are stored as text, Alex won’t be able to sort artworks chronologically or calculate how old an object is.
-- **Avoiding mistakes**: Numbers stored as strings (e.g., "1980" instead of 1980) may be ignored in calculations or treated incorrectly.
-- **Cleaning data effectively**: Understanding data types helps Alex spot inconsistencies, such as mixing "ca. 1931" with 1931, so they know what needs fixing.
-- **Choosing the right visualisation**: Charts depend on data types. A timeline needs dates; a bar chart grouping by artist needs clean text labels; averages require numeric data.
-- **Improving data quality**: Identifying incorrect or mixed data types early helps Alex avoid downstream issues, especially when merging datasets or building models.
+Data types are important because they affect how the computer reads, stores, and analyses information. If a column is stored in the wrong format, it can lead to errors, misleading results, or limitations in what you can do with the data.
 
 **In summary**: knowing data types helps ensure the dataset is trustworthy, analysable, and ready for exploration
 
@@ -140,32 +133,15 @@ Column names are helpful, but they don’t always tell the full story. For each 
 
 Which of these columns would you **inspect most carefully**, and why?
 
-- `Year`
-- `ID`
-- `Notes`
+- `ObjectID`
+- `Title`
+- `Artist`
+- 'Object Date'
+- 'Medium'
+- 'Is Public Domain'
 - `Height_cm`
 
-Write down one reason based on the *values you might expect to see*.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge
-
-### Challenge: What do you notice?
-
-For each column, write down the data type and any things to be aware of:
-
-- `Artist`: Claude Monet, Unknown, Rembrandt  
-- `Height (cm)`: 200.5, 27, 98  
-- `Object Date`: 1906, ca. 1931, 07/06/2019
-
-:::::::::::::::::::::::: solution
-
-- **Artist** will be a string  
-- **Height (cm)** will be numeric numeric (float)  
-- **Object Date** is mixed formats (likely stored as text) - trickier one!
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+Write down one reason based on the _values you might expect to see_.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -178,6 +154,34 @@ One of the most common problems in spreadsheets is **mixing data types in the sa
 - `07/06/2019` (date-like text)
 
 Even though these all describe dates, the computer will usually treat the entire column as **text**, which makes it hard to sort, filter, or calculate with.
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+### Challenge: Re-write the dates to match a single format
+
+Alex wants to store all dates in a consistent format: `YYYY-MM-DD`.
+
+Rewrite each value below so it matches this format **as closely as possible**.  
+If a value cannot be converted exactly, note how you would handle it.
+
+- `1906`
+- `ca. 1931`
+- `07/06/2019`
+
+:::::::::::::::::::::::: solution
+
+Show me the solution:
+
+- `1906` to `1906-01-01` (year known, month/day unknown)
+- `ca. 1931` to `1931-01-01` (approximate date, uncertainty noted elsewhere)
+- `07/06/2019` to `2019-06-07` _or_ `2019-07-06` (depends on date convention)
+
+**Key point:**
+
+Some dates require assumptions or additional metadata. Recording those assumptions is part of good data management.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 #### Step 3: Use spreadsheet tools to check data types
 
@@ -204,7 +208,7 @@ Writing this down helps Alex plan their data cleaning and analysis steps.
 
 Alex opens a _different_ part of the MET dataset containing information about exhibitions and acquisitions.
 
-| Column name      | Values                                         |
+| Column name      | Values                                                 |
 | ---------------- | ------------------------------------------------------ |
 | Accession Number | 1975.1, 2003.45a, 1988.12                              |
 | Department       | European Paintings, Asian Art, Modern and Contemporary |
