@@ -52,13 +52,7 @@ When a dataset mixes formats (e.g., a date stored as text, or a number stored as
 
 ### Why data types matter
 
-Data types are important because they affect how the computer reads, stores, and analyses information. If a column is stored in the wrong format, it can lead to errors, misleading results, or limitations in what you can do with the data. For example:
-
-- **Accurate analysis**: If dates are stored as text, Alex won’t be able to sort artworks chronologically or calculate how old an object is.
-- **Avoiding mistakes**: Numbers stored as strings (e.g., "1980" instead of 1980) may be ignored in calculations or treated incorrectly.
-- **Cleaning data effectively**: Understanding data types helps Alex spot inconsistencies, such as mixing "ca. 1931" with 1931, so they know what needs fixing.
-- **Choosing the right visualisation**: Charts depend on data types. A timeline needs dates; a bar chart grouping by artist needs clean text labels; averages require numeric data.
-- **Improving data quality**: Identifying incorrect or mixed data types early helps Alex avoid downstream issues, especially when merging datasets or building models.
+Data types are important because they affect how the computer reads, stores, and analyses information. If a column is stored in the wrong format, it can lead to errors, misleading results, or limitations in what you can do with the data.
 
 **In summary**: knowing data types helps ensure the dataset is trustworthy, analysable, and ready for exploration
 
