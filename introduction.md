@@ -27,6 +27,19 @@ Alex is a researcher studying artworks in The Metropolitan Museum of Art. They h
 
 Even though the dataset looks like a simple spreadsheet, each column has an underlying data type, and knowing these types will help Alex (and you!) avoid errors, clean the dataset effectively, and choose the right kinds of visualisations or analyses.
 
+::::::::::::::::::::::::::::::::::::: callout
+
+### Quick think
+
+Before reading on, ask yourself:
+
+- What kinds of columns would *you* expect to see in a museum dataset?
+
+Titles? Dates? Measurements? Artist names?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ### What is a data type?
 
 A data type describes the kind of information a value represents. It tells the computer how to interpret the data:
@@ -42,13 +55,13 @@ When a dataset mixes formats (e.g., a date stored as text, or a number stored as
 
 Data types are important because they affect how the computer reads, stores, and analyses information. If a column is stored in the wrong format, it can lead to errors, misleading results, or limitations in what you can do with the data. For example:
 
-- Accurate analysis: If dates are stored as text, Alex won’t be able to sort artworks chronologically or calculate how old an object is.
-- Avoiding mistakes: Numbers stored as strings (e.g., "1980" instead of 1980) may be ignored in calculations or treated incorrectly.
-- Cleaning data effectively: Understanding data types helps Alex spot inconsistencies, such as mixing "ca. 1931" with 1931, so they know what needs fixing.
-- Choosing the right visualisation: Charts depend on data types. A timeline needs dates; a bar chart grouping by artist needs clean text labels; averages require numeric data.
-- Improving data quality: Identifying incorrect or mixed data types early helps Alex avoid downstream issues, especially when merging datasets or building models.
+- **Accurate analysis**: If dates are stored as text, Alex won’t be able to sort artworks chronologically or calculate how old an object is.
+- **Avoiding mistakes**: Numbers stored as strings (e.g., "1980" instead of 1980) may be ignored in calculations or treated incorrectly.
+- **Cleaning data effectively**: Understanding data types helps Alex spot inconsistencies, such as mixing "ca. 1931" with 1931, so they know what needs fixing.
+- **Choosing the right visualisation**: Charts depend on data types. A timeline needs dates; a bar chart grouping by artist needs clean text labels; averages require numeric data.
+- **Improving data quality**: Identifying incorrect or mixed data types early helps Alex avoid downstream issues, especially when merging datasets or building models.
 
-In summary: knowing data types helps ensure the dataset is trustworthy, analysable, and ready for exploration
+**In summary**: knowing data types helps ensure the dataset is trustworthy, analysable, and ready for exploration
 
 ### Common data types, examples from the MET Museum dataset
 
@@ -121,14 +134,40 @@ Column names are helpful, but they don’t always tell the full story. For each 
 - Do all the values follow the same format?
 - Are there any “odd” entries that don’t match the rest?
 
-For example:
+::::::::::::::::::::::::::::::::::::: challenge
 
-- **Artist**: text (string)
-- **Height (cm)**: numeric (float), even though some values look like whole numbers
-- **Is Public Domain**: boolean
-- **Object Date**: mixed: some look like numbers, some like text, some like dates
+### Challenge: Trust the name or the values?
 
-Watch out for the last one!
+Which of these columns would you **inspect most carefully**, and why?
+
+- `Year`
+- `ID`
+- `Notes`
+- `Height_cm`
+
+Write down one reason based on the *values you might expect to see*.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+### Challenge: What do you notice?
+
+For each column, write down the data type and any things to be aware of:
+
+- `Artist`: Claude Monet, Unknown, Rembrandt  
+- `Height (cm)`: 200.5, 27, 98  
+- `Object Date`: 1906, ca. 1931, 07/06/2019
+
+:::::::::::::::::::::::: solution
+
+- **Artist** will be a string  
+- **Height (cm)** will be numeric numeric (float)  
+- **Object Date** is mixed formats (likely stored as text) - trickier one!
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 #### Step 2: Watch out for mixed data types in a single column
 
@@ -159,22 +198,13 @@ For example:
 
 Writing this down helps Alex plan their data cleaning and analysis steps.
 
-#### Key takeaway
-
-When working with your own dataset in a spreadsheet:
-
-- Data types usually apply at the **column level**
-- Mixed formats are common and normal
-- Identifying data types early helps prevent errors later
-- You don’t need to fix everything right away, just notice and document it
-
 ::::::::::::::::::::::::::::::::::::: challenge
 
 ### Challenge: What data type is this column?
 
 Alex opens a _different_ part of the MET dataset containing information about exhibitions and acquisitions.
 
-| Column name      | Example values                                         |
+| Column name      | Values                                         |
 | ---------------- | ------------------------------------------------------ |
 | Accession Number | 1975.1, 2003.45a, 1988.12                              |
 | Department       | European Paintings, Asian Art, Modern and Contemporary |
@@ -199,7 +229,7 @@ You do not need to clean the data — just identify the data types.
 
 :::::::::::::::::::::::: solution
 
-### One possible solution
+### Possible solution
 
 | Column name      | Current data type    | Ideal data type |
 | ---------------- | -------------------- | --------------- |
@@ -316,7 +346,7 @@ Is this:
 
 Below are several research scenarios. For each one, decide **what type of data source** is being described.
 
-You may find that more than one category could apply — choose the **best fit**.
+You may find that more than one category could apply, choose the **best fit**.
 
 1. A researcher records temperature and humidity every 10 minutes using a weather station on a university rooftop.
 
