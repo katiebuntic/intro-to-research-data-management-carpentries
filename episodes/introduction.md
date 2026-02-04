@@ -220,6 +220,7 @@ You do not need to clean the data — just identify the data types.
 - _Last Updated_ represents dates, but inconsistent formats prevent it from being treated as a date automatically.
 
 :::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Where research data comes from
 
@@ -229,17 +230,16 @@ Research data can originate from many different sources. Understanding where dat
 
 A data source is the origin of the data - where it was collected, generated, or obtained. This could be a person, an instrument, a database, a sensor, or a computational process.
 
-
 ::::::::::::::::::::::::::::::::::::: challenge
 
 ### Quick check
 
 Which of the following could be considered a data source?
 
-- A spreadsheet downloaded from a website  
-- A survey respondent  
-- A microscope  
-- A computer model  
+- A spreadsheet downloaded from a website
+- A survey respondent
+- A microscope
+- A computer model
 
 **Answer:** All of them.
 
@@ -248,7 +248,6 @@ Which of the following could be considered a data source?
 ### Primary data
 
 Primary data is data collected directly by the researcher for a specific research question. This might include surveys, interviews, experiments, field observations, or measurements. Primary data offers high relevance but often requires more time and resources to collect.
-
 
 ::::::::::::::::::::::::::::::::::::: callout
 
@@ -300,6 +299,7 @@ Every data source has limitations. Researchers should consider how the data was 
 You download a CSV file of air pollution measurements collected by a government agency.
 
 Is this:
+
 - Primary data
 - Secondary data
 
@@ -307,6 +307,7 @@ Is this:
 
 **Secondary data** — you didn’t collect it yourself.
 
+::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: challenge
@@ -347,6 +348,7 @@ You may find that more than one category could apply — choose the **best fit**
    (Data produced by specialised scientific equipment.)
 
 :::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction to research data management
 
