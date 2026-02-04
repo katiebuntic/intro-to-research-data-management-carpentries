@@ -217,8 +217,10 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#figures">Figures</a></li>
-<li><a href="#math">Math</a></li>
+        <ul><li><a href="#understanding-data-types">Understanding data types</a></li>
+<li><a href="#where-research-data-comes-from">Where research data comes from</a></li>
+<li><a href="#introduction-to-research-data-management">Introduction to research data management</a></li>
+<li><a href="#figures">Figures</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -319,7 +321,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>What is Research Data?</h1>
-        <p>Last updated on 2025-03-28 |
+        <p>Last updated on 2026-02-04 |
 
         <a href="https://github.com/katiebuntic/intro-to-research-data-management-carpentries/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -359,89 +361,533 @@ sharing etc)</li>
 </div>
 </div>
 </div>
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal"><li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
+<section><h2 class="section-heading" id="understanding-data-types">Understanding data types<a class="anchor" aria-label="anchor" href="#understanding-data-types"></a></h2>
+<hr class="half-width"><p>Alex is a researcher studying artworks in The Metropolitan Museum of
+Art. They have just received a dataset containing information about
+paintings, sculptures, textiles, drawings, and photographs from across
+the museum’s collection. Before Alex can analyse anything, they need to
+understand what kinds of data the dataset contains.</p>
+<p>Even though the dataset looks like a simple spreadsheet, each column
+has an underlying data type, and knowing these types will help Alex (and
+you!) avoid errors, clean the dataset effectively, and choose the right
+kinds of visualisations or analyses.</p>
+<div class="section level3">
+<h3 id="what-is-a-data-type">What is a data type?<a class="anchor" aria-label="anchor" href="#what-is-a-data-type"></a></h3>
+<p>A data type describes the kind of information a value represents. It
+tells the computer how to interpret the data:</p>
+<ul><li>Is it text?</li>
+<li>A number?</li>
+<li>A date?</li>
+<li>A true/false flag?</li>
+</ul><p>When a dataset mixes formats (e.g., a date stored as text, or a
+number stored as a string), analysis becomes harder and mistakes are
+more likely. Alex will soon discover that the MET dataset contains a mix
+of clean values and some messy ones - for example, dates written as
+1990, “ca. 1931”, and “07/06/2019 00:00”. Understanding data types helps
+Alex make sense of this variation.</p>
+</div>
+<div class="section level3">
+<h3 id="why-data-types-matter">Why data types matter<a class="anchor" aria-label="anchor" href="#why-data-types-matter"></a></h3>
+<p>Data types are important because they affect how the computer reads,
+stores, and analyses information. If a column is stored in the wrong
+format, it can lead to errors, misleading results, or limitations in
+what you can do with the data. For example:</p>
+<ul><li>Accurate analysis: If dates are stored as text, Alex won’t be able
+to sort artworks chronologically or calculate how old an object is.</li>
+<li>Avoiding mistakes: Numbers stored as strings (e.g., “1980” instead
+of 1980) may be ignored in calculations or treated incorrectly.</li>
+<li>Cleaning data effectively: Understanding data types helps Alex spot
+inconsistencies, such as mixing “ca. 1931” with 1931, so they know what
+needs fixing.</li>
+<li>Choosing the right visualisation: Charts depend on data types. A
+timeline needs dates; a bar chart grouping by artist needs clean text
+labels; averages require numeric data.</li>
+<li>Improving data quality: Identifying incorrect or mixed data types
+early helps Alex avoid downstream issues, especially when merging
+datasets or building models.</li>
+</ul><p>In summary: knowing data types helps ensure the dataset is
+trustworthy, analysable, and ready for exploration</p>
+</div>
+<div class="section level3">
+<h3 id="common-data-types-examples-from-the-met-museum-dataset">Common data types, examples from the MET Museum dataset<a class="anchor" aria-label="anchor" href="#common-data-types-examples-from-the-met-museum-dataset"></a></h3>
+<p>Here are some common data types you’ll encounter:</p>
+<ul><li>
+<strong>String</strong>: Text or characters, like
+<code>"Claude Monet"</code> or <code>"Oil on canvas"</code>
+</li>
 <li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
+<strong>Integer</strong>: Whole numbers, like <code>1985</code>,
+<code>42</code>, or <code>0</code>
+</li>
 <li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol><div id="challenge-1-can-you-do-it" class="callout challenge">
+<strong>Float</strong>: Decimal numbers, like <code>27.5</code> or
+<code>3.14</code>
+</li>
+<li>
+<strong>Boolean</strong>: True/False values, like <code>TRUE</code>,
+<code>FALSE</code>, <code>Yes</code>, <code>No</code>
+</li>
+<li>
+<strong>Datetime</strong>: Calendar dates or timestamps, like
+<code>"2020-01-01"</code> or <code>"12/11/2027"</code>
+</li>
+</ul><p>Now that Alex has identified the main data types, let’s try
+classifying some values ourselves.</p>
+<div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
+<p>Challenge: What data type is it?</p>
+<p>Alex found the following values in the MET dataset. For each one,
+decide what data type it currently is (it may not be what you think it
+should be!).</p>
+<pre><code><span><span class="st">"Claude Monet"</span></span>
+<span><span class="fl">1872</span></span>
+<span><span class="st">"ca. 1931"</span></span>
+<span><span class="st">"07/06/2019 00:00"</span></span>
+<span><span class="fl">2021</span><span class="op">-</span><span class="fl">07</span><span class="op">-</span><span class="fl">14</span></span>
+<span><span class="fl">27.5</span></span>
+<span><span class="st">"Oil on canvas"</span></span>
+<span><span class="cn">TRUE</span></span></code></pre>
+<p>Write down the data type you would assign to each value.</p>
 </div>
 </div>
 </div>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+<pre><code>"Claude Monet"           is a string
+1872                     is an integer
+"ca. 1931"               is a string (messy date)
+"07/06/2019 00:00"       is a string (looks like a date but stored as text)
+2021-07-14               is a date
+27.5                     is a float
+"Oil on canvas"          is a string
+TRUE                     is a boolean</code></pre>
 </div>
 </div>
 </div>
 </div>
+<p>Notice how several values look like dates or numbers but are stored
+as text - this is common in real datasets and affects how we analyse
+them.</p>
 </div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+<div class="section level3">
+<h3 id="identifying-data-types-in-your-own-dataset">Identifying data types in your own dataset<a class="anchor" aria-label="anchor" href="#identifying-data-types-in-your-own-dataset"></a></h3>
+<p>So far, Alex has been looking at individual values. In practice,
+researchers usually work with whole datasets at once, often in
+spreadsheets, CSV files, or databases. Let’s think about how to identify
+data types when your data is laid out in columns.</p>
+<p>Imagine Alex opens the MET Museum dataset in a spreadsheet. Each
+column represents a variable, and each row represents an artwork. The
+column headers might look something like this:</p>
+<table class="table"><colgroup><col width="10%"><col width="18%"><col width="13%"><col width="12%"><col width="15%"><col width="17%"><col width="12%"></colgroup><thead><tr class="header"><th>Object ID</th>
+<th>Title</th>
+<th>Artist</th>
+<th>Object Date</th>
+<th>Medium</th>
+<th>Is Public Domain</th>
+<th>Height (cm)</th>
+</tr></thead><tbody><tr class="odd"><td>436121</td>
+<td>Water Lilies</td>
+<td>Claude Monet</td>
+<td>1906</td>
+<td>Oil on canvas</td>
+<td>TRUE</td>
+<td>200.5</td>
+</tr><tr class="even"><td>459055</td>
+<td>Untitled</td>
+<td>Unknown</td>
+<td>ca. 1931</td>
+<td>Gelatin silver</td>
+<td>FALSE</td>
+<td>27</td>
+</tr><tr class="odd"><td>12345</td>
+<td>Portrait of a Man</td>
+<td>Rembrandt</td>
+<td>07/06/2019</td>
+<td>Oil on panel</td>
+<td>TRUE</td>
+<td>98.0</td>
+</tr></tbody></table><p>Even without doing any analysis, Alex can already start identifying
+data types by asking a few simple questions about each column.</p>
+<div class="section level4">
+<h4 id="step-1-look-at-the-values-not-just-the-column-name">Step 1: Look at the values, not just the column name<a class="anchor" aria-label="anchor" href="#step-1-look-at-the-values-not-just-the-column-name"></a></h4>
+<p>Column names are helpful, but they don’t always tell the full story.
+For each column, Alex checks:</p>
+<ul><li>Are the values mostly text, numbers, dates, or true/false?</li>
+<li>Do all the values follow the same format?</li>
+<li>Are there any “odd” entries that don’t match the rest?</li>
+</ul><p>For example:</p>
+<ul><li>
+<strong>Artist</strong>: text (string)</li>
+<li>
+<strong>Height (cm)</strong>: numeric (float), even though some
+values look like whole numbers</li>
+<li>
+<strong>Is Public Domain</strong>: boolean</li>
+<li>
+<strong>Object Date</strong>: mixed: some look like numbers, some
+like text, some like dates</li>
+</ul><p>Watch out for the last one!</p>
+</div>
+<div class="section level4">
+<h4 id="step-2-watch-out-for-mixed-data-types-in-a-single-column">Step 2: Watch out for mixed data types in a single column<a class="anchor" aria-label="anchor" href="#step-2-watch-out-for-mixed-data-types-in-a-single-column"></a></h4>
+<p>One of the most common problems in spreadsheets is <strong>mixing
+data types in the same column</strong>. Alex notices that <em>Object
+Date</em> contains:</p>
+<ul><li>
+<code>1906</code> (looks like an integer)</li>
+<li>
+<code>ca. 1931</code> (text)</li>
+<li>
+<code>07/06/2019</code> (date-like text)</li>
+</ul><p>Even though these all describe dates, the computer will usually treat
+the entire column as <strong>text</strong>, which makes it hard to sort,
+filter, or calculate with.</p>
+</div>
+<div class="section level4">
+<h4 id="step-3-use-spreadsheet-tools-to-check-data-types">Step 3: Use spreadsheet tools to check data types<a class="anchor" aria-label="anchor" href="#step-3-use-spreadsheet-tools-to-check-data-types"></a></h4>
+<p>Spreadsheets don’t just display data, they also interpret it. Most
+spreadsheet software gives visual and functional clues that indicate how
+values are stored, which can help you identify the underlying data type
+of a column.</p>
+</div>
+<div class="section level4">
+<h4 id="step-4-ask-what-should-this-data-type-be">Step 4: Ask “what should this data type be?”<a class="anchor" aria-label="anchor" href="#step-4-ask-what-should-this-data-type-be"></a></h4>
+<p>A useful habit is to separate:</p>
+<ul><li>what the data type <strong>currently is</strong>
+</li>
+<li>from what the data type <strong>should ideally be</strong>
+</li>
+</ul><p>For example:</p>
+<ul><li>
+<em>Height (cm)</em>: should be numeric</li>
+<li>
+<em>Is Public Domain</em>: should be boolean</li>
+<li>
+<em>Object Date</em>: should be a date (even if that requires
+cleaning later)</li>
+</ul><p>Writing this down helps Alex plan their data cleaning and analysis
+steps.</p>
+</div>
+<div class="section level4">
+<h4 id="key-takeaway">Key takeaway<a class="anchor" aria-label="anchor" href="#key-takeaway"></a></h4>
+<p>When working with your own dataset in a spreadsheet:</p>
+<ul><li>Data types usually apply at the <strong>column level</strong>
+</li>
+<li>Mixed formats are common and normal</li>
+<li>Identifying data types early helps prevent errors later</li>
+<li>You don’t need to fix everything right away, just notice and
+document it</li>
+</ul><div id="challenge-what-data-type-is-this-column" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?</h3>
+<div id="challenge-what-data-type-is-this-column" class="callout-inner">
+<h3 class="callout-title">Challenge: What data type is this column?</h3>
 <div class="callout-content">
-
+<p>Alex opens a <em>different</em> part of the MET dataset containing
+information about exhibitions and acquisitions.</p>
+<table class="table"><colgroup><col width="22%"><col width="77%"></colgroup><thead><tr class="header"><th>Column name</th>
+<th>Example values</th>
+</tr></thead><tbody><tr class="odd"><td>Accession Number</td>
+<td>1975.1, 2003.45a, 1988.12</td>
+</tr><tr class="even"><td>Department</td>
+<td>European Paintings, Asian Art, Modern and Contemporary</td>
+</tr><tr class="odd"><td>Acquisition Year</td>
+<td>1998, 2005, Unknown</td>
+</tr><tr class="even"><td>Credit Line</td>
+<td>Gift of John Smith, Purchase, Bequest</td>
+</tr><tr class="odd"><td>On Display</td>
+<td>Yes, No</td>
+</tr><tr class="even"><td>Gallery Number</td>
+<td>802, 305, NA</td>
+</tr><tr class="odd"><td>Last Updated</td>
+<td>2022-11-03, 03/07/2021, 15 Aug 2020</td>
+</tr></tbody></table><p>For <strong>each column</strong>:</p>
+<ol style="list-style-type: decimal"><li>Decide what the data type <strong>currently is</strong> in the
+spreadsheet.</li>
+<li>Decide what the data type <strong>should ideally be</strong> for
+analysis.</li>
+</ol><p>Think about:</p>
+<ul><li>Mixed formats and missing values</li>
+<li>Columns that look numeric but include text</li>
+<li>Dates written in different ways</li>
+</ul><p>You do not need to clean the data — just identify the data types.</p>
 </div>
 </div>
 </div>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+  <h4 class="accordion-header" id="headingSolution2"> One possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
+<table class="table"><thead><tr class="header"><th>Column name</th>
+<th>Current data type</th>
+<th>Ideal data type</th>
+</tr></thead><tbody><tr class="odd"><td>Accession Number</td>
+<td>String</td>
+<td>String</td>
+</tr><tr class="even"><td>Department</td>
+<td>String</td>
+<td>String</td>
+</tr><tr class="odd"><td>Acquisition Year</td>
+<td>String (mixed)</td>
+<td>Integer or date</td>
+</tr><tr class="even"><td>Credit Line</td>
+<td>String</td>
+<td>String</td>
+</tr><tr class="odd"><td>On Display</td>
+<td>String</td>
+<td>Boolean</td>
+</tr><tr class="even"><td>Gallery Number</td>
+<td>String (mixed)</td>
+<td>Integer</td>
+</tr><tr class="odd"><td>Last Updated</td>
+<td>String (mixed dates)</td>
+<td>Date</td>
+</tr></tbody></table><p><strong>Notes:</strong></p>
+<ul><li>
+<em>Accession Number</em> looks numeric but contains letters and
+punctuation, so it must be text.</li>
+<li>
+<em>Acquisition Year</em> mixes numbers with <code>"Unknown"</code>,
+forcing the column to be stored as text.</li>
+<li>
+<em>On Display</em> represents a yes/no value but is stored as
+strings.</li>
+<li>
+<em>Gallery Number</em> includes numeric values and missing data
+(<code>NA</code>), which often results in text storage.</li>
+<li>
+<em>Last Updated</em> represents dates, but inconsistent formats
+prevent it from being treated as a date automatically.</li>
+</ul></div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a></h2>
+</div>
+</section><section><h2 class="section-heading" id="where-research-data-comes-from">Where research data comes from<a class="anchor" aria-label="anchor" href="#where-research-data-comes-from"></a></h2>
+<hr class="half-width"><p>Research data can originate from many different sources.
+Understanding where data comes from helps researchers assess its
+reliability, limitations, and appropriate uses.</p>
+<div class="section level3">
+<h3 id="what-is-a-data-source">What is a data source?<a class="anchor" aria-label="anchor" href="#what-is-a-data-source"></a></h3>
+<p>A data source is the origin of the data - where it was collected,
+generated, or obtained. This could be a person, an instrument, a
+database, a sensor, or a computational process.</p>
+<div id="quick-check" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="quick-check" class="callout-inner">
+<h3 class="callout-title">Quick check</h3>
+<div class="callout-content">
+<p>Which of the following could be considered a data source?</p>
+<ul><li>A spreadsheet downloaded from a website</li>
+<li>A survey respondent</li>
+<li>A microscope</li>
+<li>A computer model</li>
+</ul><p><strong>Answer:</strong> All of them.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="primary-data">Primary data<a class="anchor" aria-label="anchor" href="#primary-data"></a></h3>
+<p>Primary data is data collected directly by the researcher for a
+specific research question. This might include surveys, interviews,
+experiments, field observations, or measurements. Primary data offers
+high relevance but often requires more time and resources to
+collect.</p>
+<div id="reflect" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="reflect" class="callout-inner">
+<h3 class="callout-title">Reflect</h3>
+<div class="callout-content">
+<p>Have you ever collected primary data?</p>
+<ul><li>What made it valuable?</li>
+<li>What made it challenging?</li>
+</ul></div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="secondary-data">Secondary data<a class="anchor" aria-label="anchor" href="#secondary-data"></a></h3>
+<p>Secondary data is data that was originally collected by someone else
+for a different purpose and reused in a new study. Examples include
+government statistics, museum collections, published datasets, or
+previously published research data. Secondary data saves time but may
+not perfectly match the research question.</p>
+</div>
+<div class="section level3">
+<h3 id="generated-or-synthetic-data">Generated or synthetic data<a class="anchor" aria-label="anchor" href="#generated-or-synthetic-data"></a></h3>
+<p>Generated or synthetic data is created through computational
+processes such as simulations, models, or algorithms. This includes data
+produced by climate models, agent-based simulations, or machine learning
+systems. Synthetic data is useful for testing hypotheses or protecting
+privacy, but depends heavily on the assumptions of the model.</p>
+</div>
+<div class="section level3">
+<h3 id="sensor-and-observational-data">Sensor and observational data<a class="anchor" aria-label="anchor" href="#sensor-and-observational-data"></a></h3>
+<p>Sensor and observational data is collected automatically or
+systematically through observation, often over time. Examples include
+environmental sensors, satellite imagery, traffic counters, or wildlife
+cameras. This data can be large and continuous, requiring careful
+storage and management.</p>
+</div>
+<div class="section level3">
+<h3 id="data-from-instruments-tools-and-experiments">Data from instruments, tools, and experiments<a class="anchor" aria-label="anchor" href="#data-from-instruments-tools-and-experiments"></a></h3>
+<p>This type of data is produced by scientific instruments, laboratory
+equipment, or specialised tools. Examples include microscope images,
+sequencing data, spectrometer readings, or experimental measurements.
+Instrument data often requires calibration, metadata, and specialised
+software to interpret.</p>
+<div id="metadata-moment" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="metadata-moment" class="callout-inner">
+<h3 class="callout-title">Metadata moment</h3>
+<div class="callout-content">
+<p>Why might metadata (for example, calibration settings or units) be
+especially important for this kind of data?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="examples-of-data-sources-in-different-disciplines">Examples of data sources in different disciplines<a class="anchor" aria-label="anchor" href="#examples-of-data-sources-in-different-disciplines"></a></h3>
+<p>Different fields rely on different data sources. For example,
+historians may use archival documents, social scientists may use surveys
+or census data, natural scientists may collect experimental
+measurements, and digital humanities researchers may work with digitised
+texts or images.</p>
+</div>
+<div class="section level3">
+<h3 id="considering-data-quality-and-limitations">Considering data quality and limitations<a class="anchor" aria-label="anchor" href="#considering-data-quality-and-limitations"></a></h3>
+<p>Every data source has limitations. Researchers should consider how
+the data was collected, potential biases, missing values, accuracy, and
+whether the data is appropriate for their research question.
+Understanding these limitations is essential for responsible analysis
+and interpretation.</p>
+<div id="classify-it" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="classify-it" class="callout-inner">
+<h3 class="callout-title">Classify it</h3>
+<div class="callout-content">
+<p>You download a CSV file of air pollution measurements collected by a
+government agency.</p>
+<p>Is this:</p>
+<ul><li>Primary data</li>
+<li>Secondary data</li>
+</ul></div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p><strong>Secondary data</strong> because you didn’t collect it
+yourself.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge-what-kind-of-data-source-is-this" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-what-kind-of-data-source-is-this" class="callout-inner">
+<h3 class="callout-title">Challenge: What kind of data source is
+this?</h3>
+<div class="callout-content">
+<p>Below are several research scenarios. For each one, decide
+<strong>what type of data source</strong> is being described.</p>
+<p>You may find that more than one category could apply — choose the
+<strong>best fit</strong>.</p>
+<ol style="list-style-type: decimal"><li><p>A researcher records temperature and humidity every 10 minutes
+using a weather station on a university rooftop.</p></li>
+<li><p>A PhD student analyses digitised letters from a national archive
+that were scanned and published online by another institution.</p></li>
+<li><p>A social scientist designs and distributes a questionnaire to
+study students’ experiences of remote learning.</p></li>
+<li><p>A computer scientist creates a simulated dataset to test how an
+algorithm behaves under different conditions.</p></li>
+<li><p>A biologist collects gene expression data using a sequencing
+machine in a laboratory experiment.</p></li>
+</ol></div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> One possible solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<ol style="list-style-type: decimal"><li><p><strong>Sensor and observational data</strong><br>
+(Data collected automatically and repeatedly over time.)</p></li>
+<li><p><strong>Secondary data</strong><br>
+(Data reused from an existing collection created by others.)</p></li>
+<li><p><strong>Primary data</strong><br>
+(Data collected directly by the researcher for a specific
+study.)</p></li>
+<li><p><strong>Generated or synthetic data</strong><br>
+(Data created through simulation or computational processes.)</p></li>
+<li><p><strong>Data from instruments, tools, and
+experiments</strong><br>
+(Data produced by specialised scientific equipment.)</p></li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="introduction-to-research-data-management">Introduction to research data management<a class="anchor" aria-label="anchor" href="#introduction-to-research-data-management"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="what-is-research-data-management-rdm">What is Research Data Management (RDM)?<a class="anchor" aria-label="anchor" href="#what-is-research-data-management-rdm"></a></h3>
+</div>
+<div class="section level3">
+<h3 id="why-rdm-matters">Why RDM matters<a class="anchor" aria-label="anchor" href="#why-rdm-matters"></a></h3>
+</div>
+<div class="section level3">
+<h3 id="the-research-data-lifecycle">The research data lifecycle<a class="anchor" aria-label="anchor" href="#the-research-data-lifecycle"></a></h3>
+</div>
+<div class="section level3">
+<h3 id="rdm-in-practice-alex-and-the-met-dataset">RDM in practice: Alex and the MET Dataset<a class="anchor" aria-label="anchor" href="#rdm-in-practice-alex-and-the-met-dataset"></a></h3>
+
+</div>
+</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a></h2>
 <hr class="half-width"><p>You can use standard markdown for static figures with the following
 syntax:</p>
 <p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
 <figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+</figure><div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -456,12 +902,6 @@ to a commonly-asked question.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a></h2>
-<hr class="half-width"><p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -544,8 +984,8 @@ any links that you are not going to use.
   "url": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/introduction.html",
   "identifier": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/introduction.html",
   "dateCreated": "2025-03-27",
-  "dateModified": "2025-03-28",
-  "datePublished": "2026-02-03"
+  "dateModified": "2026-02-04",
+  "datePublished": "2026-02-04"
 }
 
   </script><script>
