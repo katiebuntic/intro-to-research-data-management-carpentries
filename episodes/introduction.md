@@ -157,35 +157,36 @@ Even though these all describe dates, the computer will usually treat the entire
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
-### Challenge: Re-write the dates to match a single format
+### Challenge: Thinking about date formats
 
-Alex wants to store all dates in a consistent format: `YYYY-MM-DD`.
-
-Rewrite each value below so it matches this format **as closely as possible**.  
-If a value cannot be converted exactly, note how you would handle it.
+Look at the following values:
 
 - `1906`
 - `ca. 1931`
 - `07/06/2019`
 
+- Which values would be easy to convert?
+- Which values would be difficult or ambiguous?
+- What information is missing?
+- What assumptions might you need to make?
+
 :::::::::::::::::::::::: solution
 
-Show me the solution:
+### Discussion points
 
-- `1906` to `1906-01-01` (year known, month/day unknown)
-- `ca. 1931` to `1931-01-01` (approximate date, uncertainty noted elsewhere)
-- `07/06/2019` to `2019-06-07` _or_ `2019-07-06` (depends on date convention)
+- Some values only include a **year**, with no month or day.
+- Some values include **uncertainty or approximation** (e.g. “ca.”).
+- Some values depend on **regional date conventions**, making them ambiguous.
+- Converting dates may require **assumptions**, additional metadata, or decisions about how to represent uncertainty.
 
-**Key point:**
-
-Some dates require assumptions or additional metadata. Recording those assumptions is part of good data management.
+These are common issues in real datasets and will be addressed later in the course.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 #### Use spreadsheet tools to check data types
 
-Spreadsheets don’t just display data, they also interpret it. Most spreadsheet software gives visual and functional clues that indicate how values are stored, which can help you identify the underlying data type of a column.
+Spreadsheets don’t just display data; they also interpret it. Most spreadsheet software gives visual and functional clues that indicate how values are stored, which can help you identify the underlying data type of a column.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
