@@ -91,6 +91,7 @@ In summary:
 Alex takes another look at the folder system he has created. The files are easier to search through but he notices that there are lots of inconsistencies in how they are named.
 
 :::::::::::::::::::::::::::: discussion
+### Naming Files Part I
 
 Open the _______ folder and look at the names of the files. Can you identify any problems with the way the files are named? What kinds of issues might they cause for those working on the project?
 
@@ -115,6 +116,7 @@ Avoid using special characters (such as ?#!"£$%^&*{}@/|\<> ) as operating syste
 Similarly, spaces in file names can cause problems:
 
 :::::::::::::::::::::::::::: discussion
+### Naming Files Part II
 
 Look at the file name below:
 
@@ -142,6 +144,7 @@ Recommendation: Use only numbers and letters (without accents) and use hyphens a
 ### Dates
 
 :::::::::::::::::::::::::::: challenge
+### Naming Files Part III
 
 Look at the file names below:
 
@@ -168,6 +171,7 @@ If the files came from laboratories in both the UK and in the USA, would that ra
 Dates are a frequent cause of issues for researchers. Researchers from different countries may read date numbers differently: "05062026" may be one person's 5th of June (e.g. in the UK), while for another it's 6th of May (e.g. in the USA). Ensuring that everyone looking at the date reads it correctly can be the difference between the correct file being selected, and the wrong one. 
 
 :::::::::::::::::::::::::::::: challenge
+### Naming Files Part IV
 
 Look at those file names again:
 
