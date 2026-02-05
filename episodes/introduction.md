@@ -119,7 +119,7 @@ Imagine Alex opens the MET Museum dataset in a spreadsheet. Each column represen
 
 Even without doing any analysis, Alex can already start identifying data types by asking a few simple questions about each column.
 
-#### Step 1: Look at the values, not just the column name
+#### Look at the values, not just the column name
 
 Column names are helpful, but they don’t always tell the full story. For each column, Alex checks:
 
@@ -145,7 +145,7 @@ Write down one reason based on the _values you might expect to see_.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-#### Step 2: Watch out for mixed data types in a single column
+#### Watch out for mixed data types in a single column
 
 One of the most common problems in spreadsheets is **mixing data types in the same column**. Alex notices that _Object Date_ contains:
 
@@ -183,24 +183,9 @@ Some dates require assumptions or additional metadata. Recording those assumptio
 ::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-#### Step 3: Use spreadsheet tools to check data types
+#### Use spreadsheet tools to check data types
 
 Spreadsheets don’t just display data, they also interpret it. Most spreadsheet software gives visual and functional clues that indicate how values are stored, which can help you identify the underlying data type of a column.
-
-#### Step 4: Ask “what should this data type be?”
-
-A useful habit is to separate:
-
-- what the data type **currently is**
-- from what the data type **should ideally be**
-
-For example:
-
-- _Height (cm)_: should be numeric
-- _Is Public Domain_: should be boolean
-- _Object Date_: should be a date (even if that requires cleaning later)
-
-Writing this down helps Alex plan their data cleaning and analysis steps.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
@@ -283,7 +268,7 @@ Which of the following could be considered a data source?
 
 Primary data is data collected directly by the researcher for a specific research question. This might include surveys, interviews, experiments, field observations, or measurements. Primary data offers high relevance but often requires more time and resources to collect.
 
-::::::::::::::::::::::::::::::::::::: callout
+::::::::::::::::::::::::::::::::::::: discussion
 
 ### Reflect
 
@@ -310,7 +295,7 @@ Sensor and observational data is collected automatically or systematically throu
 
 Scientific instruments, laboratory equipment, or specialised tools produce this type of data. Examples include microscope images, sequencing data, spectrometer readings, or experimental measurements. Instrument data often requires calibration, metadata, and specialised software to interpret.
 
-::::::::::::::::::::::::::::::::::::: callout
+::::::::::::::::::::::::::::::::::::: discussion
 
 ### Metadata moment
 
@@ -364,7 +349,7 @@ You may find that more than one category could apply; choose the **best fit**.
 
 :::::::::::::::::::::::: solution
 
-### One possible solution
+### Show me the solution
 
 1. **Sensor and observational data**  
    (Data collected automatically and repeatedly over time.)
