@@ -464,7 +464,7 @@ should be!).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre><code>"Claude Monet"           is a string
 1872                     is an integer
@@ -565,47 +565,43 @@ Date</em> contains:</p>
 </ul><p>Even though these all describe dates, the computer will usually treat
 the entire column as <strong>text</strong>, which makes it hard to sort,
 filter, or calculate with.</p>
-<div id="challenge-re-write-the-dates-to-match-a-single-format" class="callout challenge">
+<div id="challenge-thinking-about-date-formats" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-re-write-the-dates-to-match-a-single-format" class="callout-inner">
-<h3 class="callout-title">Challenge: Re-write the dates to match a
-single format</h3>
+<div id="challenge-thinking-about-date-formats" class="callout-inner">
+<h3 class="callout-title">Challenge: Thinking about date formats</h3>
 <div class="callout-content">
-<p>Alex wants to store all dates in a consistent format:
-<code>YYYY-MM-DD</code>.</p>
-<p>Rewrite each value below so it matches this format <strong>as closely
-as possible</strong>.<br>
-If a value cannot be converted exactly, note how you would handle
-it.</p>
-<ul><li><code>1906</code></li>
-<li><code>ca. 1931</code></li>
-<li><code>07/06/2019</code></li>
+<p>Look at the following values:</p>
+<ul><li><p><code>1906</code></p></li>
+<li><p><code>ca. 1931</code></p></li>
+<li><p><code>07/06/2019</code></p></li>
+<li><p>Which values would be easy to convert?</p></li>
+<li><p>Which values would be difficult or ambiguous?</p></li>
+<li><p>What information is missing?</p></li>
+<li><p>What assumptions might you need to make?</p></li>
 </ul></div>
 </div>
 </div>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+  <h4 class="accordion-header" id="headingSolution2"> Discussion points </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>Show me the solution:</p>
-<ul><li>
-<code>1906</code> to <code>1906-01-01</code> (year known, month/day
-unknown)</li>
-<li>
-<code>ca. 1931</code> to <code>1931-01-01</code> (approximate date,
-uncertainty noted elsewhere)</li>
-<li>
-<code>07/06/2019</code> to <code>2019-06-07</code> <em>or</em>
-<code>2019-07-06</code> (depends on date convention)</li>
-</ul><p><strong>Key point:</strong></p>
-<p>Some dates require assumptions or additional metadata. Recording
-those assumptions is part of good data management.</p>
+<ul><li>Some values only include a <strong>year</strong>, with no month or
+day.</li>
+<li>Some values include <strong>uncertainty or approximation</strong>
+(e.g. “ca.”).</li>
+<li>Some values depend on <strong>regional date conventions</strong>,
+making them ambiguous.</li>
+<li>Converting dates may require <strong>assumptions</strong>,
+additional metadata, or decisions about how to represent
+uncertainty.</li>
+</ul><p>These are common issues in real datasets and will be addressed later
+in the course.</p>
 </div>
 </div>
 </div>
@@ -613,7 +609,7 @@ those assumptions is part of good data management.</p>
 </div>
 <div class="section level4">
 <h4 id="use-spreadsheet-tools-to-check-data-types">Use spreadsheet tools to check data types<a class="anchor" aria-label="anchor" href="#use-spreadsheet-tools-to-check-data-types"></a></h4>
-<p>Spreadsheets don’t just display data, they also interpret it. Most
+<p>Spreadsheets don’t just display data; they also interpret it. Most
 spreadsheet software gives visual and functional clues that indicate how
 values are stored, which can help you identify the underlying data type
 of a column.</p>
@@ -661,7 +657,7 @@ analysis.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <table class="table"><thead><tr class="header"><th>Column name</th>
 <th>Current data type</th>
@@ -839,7 +835,7 @@ government agency.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p><strong>Secondary data</strong> because you didn’t collect it
 yourself.</p>
@@ -878,7 +874,7 @@ machine in a laboratory experiment.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li><p><strong>Sensor and observational data</strong><br>
 (Data collected automatically and repeatedly over time.)</p></li>
