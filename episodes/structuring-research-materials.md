@@ -320,6 +320,19 @@ Also consider scale: one person vs a team? One week vs several years
 
 :::::::::::::::::::::::::::: callout
 
+### Git and GitHub
+
+Git is a version control tool, and GitHub is a platform that hosts Git projects and supports collaboration.
+
+They are particularly useful for certain types of data, especially files that are:
+- text-based (such as code, scripts, and documentation)
+- edited frequently
+- worked on by more than one person
+
+They are less useful for large binary files (such as images or complex spreadsheets), where other approaches may be more appropriate.
+
+You will not be expected to use Git or GitHub yet. For now, it’s enough to understand *why* such tools exist and *when* they might be helpful.
+
 ### Terminology preview
 
 You may hear version control tools described using terms like:
