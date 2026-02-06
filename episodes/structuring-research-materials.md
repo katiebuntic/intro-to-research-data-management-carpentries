@@ -293,7 +293,6 @@ In small groups, discuss:
 Imagine two people editing the file at the same time - what would be easy to reconcile, and what would be painful?
 
 ::::::::::::::::::::
-
 ::::::::::::::::::::
 
 Not all files benefit equally from version control tools. Large binary files (such as images or Excel files) can be harder to manage, while plain text files work particularly well.
@@ -324,7 +323,7 @@ Also consider scale:
 ::::::::::::::::::::
 ::::::::::::::::::::
 
-:::::::::::::::::::::::::::: note
+:::::::::::::::::::::::::::: callout
 ### Terminology preview
 
 You may hear version control tools described using terms like:
