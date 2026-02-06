@@ -214,7 +214,7 @@ Some files include 'final' in the name... sometimes more than once.
 
 ::::::::::::::: challenge
 
-Versions Everywhere
+##  Versions Everywhere
 
 Look at the files in the _______ folder.
 
@@ -251,5 +251,60 @@ Version control is about tracking change over time, so that you can:
 File naming conventions can help, but they are often not enough on their own.
 
 ## Version control tools
+
+For some types of work, particularly text-based files like code, scripts, and documentation, specialised version control tools can be extremely useful.
+
+These tools are designed to:
+
+- Automatically record changes
+
+- Keep a history of edits
+
+- Show exactly what changed between versions
+
+- Support collaboration without overwriting others’ work
+
+:::::::::::::::::::: discussion
+
+## When might tools help?
+
+Consider the following types of files:
+
+- Word documents
+
+- Spreadsheets
+
+- Analysis scripts (e.g. R, Python)
+
+- Survey questionnaires
+
+- Images or PDFs
+
+In small groups, discuss:
+
+- Which of these changes frequently?
+
+- Which are hard to merge if two people edit them?
+
+- Which might benefit most from automated version tracking?
+
+::::::::::::::::::::
+
+Not all files benefit equally from version control tools. Large binary files (such as images or Excel files) can be harder to manage, while plain text files work particularly well.
+
+:::::::::::::::::::: challenge
+
+## Thinking ahead
+
+Without worrying about how to use them yet:
+
+What advantages might a version control tool offer over manual file naming?
+
+What new challenges might it introduce?
+
+In what situations might it be unnecessary or overkill?
+
+::::::::::::::::::::
+
 
 
