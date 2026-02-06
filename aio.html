@@ -1478,15 +1478,14 @@ of the same file, and it’s not always clear:</p>
 <li><p>Who made those changes, or why</p></li>
 </ul>
 <p>Some files include ‘final’ in the name… sometimes more than once.</p>
-<div id="challenge5" class="callout challenge">
+<div id="versions-everywhere" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="versions-everywhere" class="callout-inner">
+<h3 class="callout-title">Versions Everywhere</h3>
 <div class="callout-content">
-<p>Versions Everywhere</p>
 <p>Look at the files in the _______ folder.</p>
 <ul>
 <li><p>How many different versions of the same document can you
@@ -1532,10 +1531,66 @@ their own.</p>
 </section><section><h2 class="section-heading" id="version-control-tools">Version control tools<a class="anchor" aria-label="anchor" href="#version-control-tools"></a>
 </h2>
 <hr class="half-width">
+<p>For some types of work, particularly text-based files like code,
+scripts, and documentation, specialised version control tools can be
+extremely useful.</p>
+<p>These tools are designed to:</p>
+<ul>
+<li><p>Automatically record changes</p></li>
+<li><p>Keep a history of edits</p></li>
+<li><p>Show exactly what changed between versions</p></li>
+<li><p>Support collaboration without overwriting others’ work</p></li>
+</ul>
+<div id="when-might-tools-help" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="when-might-tools-help" class="callout-inner">
+<h3 class="callout-title">When might tools help?</h3>
+<div class="callout-content">
+<p>Consider the following types of files:</p>
+<ul>
+<li><p>Word documents</p></li>
+<li><p>Spreadsheets</p></li>
+<li><p>Analysis scripts (e.g. R, Python)</p></li>
+<li><p>Survey questionnaires</p></li>
+<li><p>Images or PDFs</p></li>
+</ul>
+<p>In small groups, discuss:</p>
+<ul>
+<li><p>Which of these changes frequently?</p></li>
+<li><p>Which are hard to merge if two people edit them?</p></li>
+<li><p>Which might benefit most from automated version
+tracking?</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p>Not all files benefit equally from version control tools. Large
+binary files (such as images or Excel files) can be harder to manage,
+while plain text files work particularly well.</p>
+<div id="thinking-ahead" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="thinking-ahead" class="callout-inner">
+<h3 class="callout-title">Thinking ahead</h3>
+<div class="callout-content">
+<p>Without worrying about how to use them yet:</p>
+<p>What advantages might a version control tool offer over manual file
+naming?</p>
+<p>What new challenges might it introduce?</p>
+<p>In what situations might it be unnecessary or overkill?</p>
+</div>
+</div>
+</div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></section></section><section id="aio-tabular-data-collection"><p>Content from <a href="tabular-data-collection.html">Tabular Data Collection</a></p>
+ -->
+</section></section><section id="aio-tabular-data-collection"><p>Content from <a href="tabular-data-collection.html">Tabular Data Collection</a></p>
 <hr>
 <p>Last updated on 2026-02-04 |
 
@@ -1941,7 +1996,7 @@ analysing the data.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Inconsistencies might include where measurements are in different
 units, there are differing formats for dates, differing cases, or where
@@ -2018,7 +2073,7 @@ could you introduce during data collection?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>There are many different solutions to these inconsistencies, but here
 are some examples:</p>
@@ -2289,7 +2344,7 @@ many?</li>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>There are 7 missing values in the <code>film_title</code>
