@@ -288,6 +288,12 @@ In small groups, discuss:
 
 - Which might benefit most from automated version tracking?
 
+:::::::::::::::::::: hint
+
+Imagine two people editing the file at the same time - what would be easy to reconcile, and what would be painful?
+
+::::::::::::::::::::
+
 ::::::::::::::::::::
 
 Not all files benefit equally from version control tools. Large binary files (such as images or Excel files) can be harder to manage, while plain text files work particularly well.
@@ -298,13 +304,38 @@ Not all files benefit equally from version control tools. Large binary files (su
 
 Without worrying about how to use them yet:
 
-What advantages might a version control tool offer over manual file naming?
+- What advantages might a version control tool offer over manual file naming?
 
-What new challenges might it introduce?
+- What new challenges might it introduce?
 
-In what situations might it be unnecessary or overkill?
+- In what situations might it be unnecessary or overkill?
+
+:::::::::::::::::::: hint
+
+You might want to think about:
+- how you currently keep track of changes
+- what information gets lost when files are renamed or overwritten
+- whether seeing a clear record of changes would help — or get in the way
+
+Also consider scale:
+- one person vs a team
+- one week vs several years
 
 ::::::::::::::::::::
+::::::::::::::::::::
+
+:::::::::::::::::::::::::::: note
+### Terminology preview
+
+You may hear version control tools described using terms like:
+
+- **Repository**: a project’s home: the files *and* their record of changes  
+- **Commit**: a saved snapshot of changes, with a short note about what was done  
+- **History**: the timeline of commits showing how the project evolved  
+
+You don’t need to know how to use these yet. For now, just think of them as names for ideas you’ve already encountered when trying to keep track of different versions of files.
+::::::::::::::::::::::::::::
+
 
 
 
