@@ -200,7 +200,55 @@ A good format for dates is YYYYMMDD (the ISO 8601 standard), or YYYY-MM-DD. This
 
 ## Version control
 
+Alex has now organised the folders and renamed many of the files. Things look much better, but as he works through the project, he notices something worrying.
 
+For several documents, there are multiple slightly different versions of the same file, and it’s not always clear:
+
+- Which one is the most recent
+
+- What changed between versions
+
+- Who made those changes, or why
+
+Some files include 'final' in the name... sometimes more than once.
+
+::::::::::::::: challenge
+
+Versions Everywhere
+
+Look at the files in the _______ folder.
+
+- How many different versions of the same document can you find?
+
+- How can you tell which one is the “latest”?
+
+- Are you confident you’d pick the right file to work on?
+
+- What might go wrong if different people used different versions?
+
+::::::::::::::: hint
+
+You don’t need to open the files to answer these questions.  
+Focus on the *file names* themselves:
+
+- Look for words like `final`, `draft`, `v1`, `v2`, or dates
+- Notice whether the versioning scheme is consistent across files
+- Ask yourself what assumptions you’re making when deciding which file is “latest”
+
+Would someone new to the project make the same assumptions?
+
+:::::::::::::::
+:::::::::::::::
+
+Version control is about tracking change over time, so that you can:
+
+- See what changed
+
+- Return to earlier versions if needed
+
+- Understand how a file reached its current state
+
+File naming conventions can help, but they are often not enough on their own.
 
 ## Version control tools
 
