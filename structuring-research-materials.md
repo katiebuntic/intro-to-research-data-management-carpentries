@@ -66,6 +66,8 @@ Poor organisation can make it difficult to find files or to even see that a spec
 Taking a few moments to think about the structures you use to store files can save a lot of stress, and time, both for you and anyone you work with. If you work across multiple projects it can be worth coming up with a consistent approach, so that you and anyone you work with always knows where in the folder structure to find the same types of files. Structure folders heirarchically too: start broad and drill-down into specific areas.
 
 It can be worth thinking of an old fashioned set of filing cabinets:
+![Image of a filing cabinet](figures/Filing_cabinet.png){alt="clipart image of a 3-drawered green filing cabinet with the top draw open to show a set of files inside"}
+
 - each filing cabinet is a project
 - each drawer is a an aspect of the project e.g. drawer 1 for data collection; drawer 2 for analysis; drawer 3 for papers and presentations
 - within each drawer are folders containing files about specific subsections of that aspect e.g. in drawer 2 there are separate folders for code, raw data, cleaned data, graphs/ figures, and reports
