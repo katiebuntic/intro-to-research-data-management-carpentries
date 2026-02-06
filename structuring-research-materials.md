@@ -329,9 +329,11 @@ They are particularly useful for certain types of data, especially files that ar
 - edited frequently
 - worked on by more than one person
 
-They are less useful for large binary files (such as images or complex spreadsheets), where other approaches may be more appropriate.
+They are generally less helpful for files like images, PDFs, spreadsheets, or heavily formatted documents (such as Word or LibreOffice files), where combining changes is difficult.
 
-You will not be expected to use Git or GitHub yet. For now, it’s enough to understand *why* such tools exist and *when* they might be helpful.
+File naming can help manage *major* versions (for example, `report_v1`, `report_v2`), but version control tools go further; they can record *every change* and allow you to return to a specific point in time, a bit like “Track Changes” for an entire project.
+
+You won’t be expected to use Git or GitHub yet. For now, it’s enough to understand why such tools exist and when they might be useful.
 
 ### Terminology preview
 
@@ -341,7 +343,7 @@ You may hear version control tools described using terms like:
 - **Commit**: a saved snapshot of changes, with a short note about what was done  
 - **History**: the timeline of commits showing how the project evolved  
 
-You don’t need to know how to use these yet. For now, just think of them as names for ideas you’ve already encountered when trying to keep track of different versions of files.
+You don’t need to know how to use these yet. For now, think of them as names for ideas you’ve already encountered when trying to keep track of different versions of files.
 
 ::::::::::::::::::::::::::::
 
