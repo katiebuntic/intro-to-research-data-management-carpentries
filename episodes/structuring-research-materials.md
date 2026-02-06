@@ -125,6 +125,7 @@ STAR final results.xls
 How do you think this might be interpreted by a computer?
 How might you rewrite the name to avoid that?
 
+
 :::::::::::::::::::::::::::: solution
 
 If you have spaces in a file name, the computer may interpret a space as showing that the end of the file name has been reached, and therefore not treat the rest of the name as part of the file name. Alternatively, it may interepret it as several file names listed one after the other e.g. STAR final results.xls is either:
