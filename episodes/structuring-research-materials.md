@@ -67,7 +67,7 @@ Taking a few moments to think about the structures you use to store files can sa
 
 It can be worth thinking of an old fashioned set of filing cabinets:
 
-![Image of a filing cabinet](figures/Filing_cabinet_small.png){alt="clipart image of a 3-drawered green filing cabinet with the top draw open to show a set of files inside"}
+![Image of a filing cabinet](fig/Filing_cabinet_small.png){alt="clipart image of a 3-drawered green filing cabinet with the top draw open to show a set of files inside"}
 
 - each filing cabinet is a project
 - each drawer is a an aspect of the project e.g. drawer 1 for data collection; drawer 2 for analysis; drawer 3 for papers and presentations
