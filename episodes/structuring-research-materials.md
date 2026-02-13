@@ -15,7 +15,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Organise their research data into a standard folder structure
+- Organise you research data into a standard folder structure
 - Name files with a consistent naming convention
 - Understand why version control is important, and how to incorporate this into your naming conventions
 - Explain why version control software such as Git/GitHub can be useful for certain types of data.
