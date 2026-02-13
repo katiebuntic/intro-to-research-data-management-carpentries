@@ -251,7 +251,16 @@ Version control is about tracking change over time, so that you can:
 
 - Understand how a file reached its current state
 
-File naming conventions can help, but they are often not enough on their own.
+Just setting out clear file naming conventions and using them consistently can go a long way towards ensuring you can do all of these things. 
+
+### Recommendations
+
+- Use version numbers to indicate the order that document versions were created in. Decimal points can be used to indicate intermediate versions; whole numbers to indicate major versions at key points in the document's lifecycle. For example, v0.1 might indicate a very early first draft of a paper, v1.0 might be the first version that was circulated to other authors for intial comments, v1.1 an updated version based on the comments, v2.0 might be the version that was submitted to the publisher and v3.0 might be the version that was resubmitted after revisions based on reviewer comments.
+- Sometimes appending dates may be more appropriate, if so use the YYYYMMDD format and consider its position in the file name so that the files are always ordered correctly if sorted alphabetically
+- Where a document has reached a key point in its lifecycle, such as being submitted to a publisher, it may be helpful to append a short word or phrase such as "Submitted", "Submitted revision", to clarify that (but do use version numbers too!)
+- Where there are lots of versions of a document in a folder, it may be appropriate to create a subfolder to keep previous versions in: this helps you and any colleagues to be able to quickly find the current version, particularly important if the document is a Standard Operating Procedure or Manual.
+
+However, while file naming conventions can help, they aren't always enough on their own.
 
 ## Version control tools
 
