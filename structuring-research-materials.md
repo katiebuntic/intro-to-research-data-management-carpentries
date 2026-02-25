@@ -15,7 +15,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Organise you research data into a standard folder structure
+- Organise your research data into a standard folder structure
 - Name files with a consistent naming convention
 - Understand why version control is important, and how to incorporate this into your naming conventions
 - Explain why version control software such as Git/GitHub can be useful for certain types of data.
@@ -50,35 +50,35 @@ Alex goes to his supervisor and explains the problems he has found. His supervis
 :::::::::::::::::::::::::::: challenge
 ### Organising files into a folder structure Part II
 
-Individually, look at the folder of files again and within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders.
+Individually, look at the folder of files again and, within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders.
 
 :::::::::::::::::::::::: hint
 
-- Alex sees that during the project the researcher gave a presentation at a conference and that alongside the slides there are lots of documents relating to his attendance. Think about the different ways files related to the conference might be stored and consider which might be better for a team needing to share files, versus how an individual might be happy to store them.
+- Alex sees that during the project the researcher gave a presentation at a conference and that alongside the slides, there are lots of documents relating to his attendance. Think about the different ways files related to the conference might be stored and consider which might be better for a team needing to share files, versus how an individual might be happy to store them.
 - There are also various files related to a data analysis: can you see the different stages of that analysis process? How might you organise them?
 
 ::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::
 
-Poor organisation can make it difficult to find files or to even see that a specific file exists.  This can become a massive problem where multiple people are working together or on projects that run over a number of years. Out-of-date versions of files may end up being used and shared, and important documents effectively lost. Relying on search tools to find documents assumes that you know that the document exists, and that you know how it was named; if you weren't the person who created it how would you know about it? If you think back to documents you created a few years ago, would you still be able to say what they were all called, what the latest versions were called, and what they all related to?
+Poor organisation can make it difficult to find files or to even see that a specific file exists.  This can become a massive problem where multiple people are working together or on projects that run over a number of years. Out-of-date versions of files may end up being used and shared, and important documents may be effectively lost. Relying on search tools to find documents assumes that you know that the document exists, and that you know how it was named; if you weren't the person who created it how would you know about it? If you think back to documents you created a few years ago, would you still be able to say what they were all called, what the latest versions were called, and what they all related to?
 
-Taking a few moments to think about the structures you use to store files can save a lot of stress, and time, both for you and anyone you work with. If you work across multiple projects it can be worth coming up with a consistent approach, so that you and anyone you work with always knows where in the folder structure to find the same types of files. Structure folders heirarchically too: start broad and drill-down into specific areas.
+Taking a few moments to think about the structures you use to store files can save a lot of stress, and time, both for you and anyone you work with. If you work across multiple projects it can be worth coming up with a consistent approach, so that you and anyone you work with always knows where in the folder structure to find the same types of files. Structure folders hierarchically too: start broad and drill-down into specific areas.
 
 It can be worth thinking of an old fashioned set of filing cabinets:
 
 ![Image of a filing cabinet](fig/Filing_cabinet_small.png){alt="clipart image of a 3-drawered green filing cabinet with the top draw open to show a set of files inside"}
 
 - each filing cabinet is a project
-- each drawer is a an aspect of the project e.g. drawer 1 for data collection; drawer 2 for analysis; drawer 3 for papers and presentations
+- each drawer is an aspect of the project e.g. drawer 1 for data collection; drawer 2 for analysis; drawer 3 for papers and presentations
 - within each drawer are folders containing files about specific subsections of that aspect e.g. in drawer 2 there are separate folders for code, raw data, cleaned data, graphs/ figures, and reports
-- within each folder in each drawer there may be further sub-sections....
+- within each folder in each drawer, there may be further sub-sections....
 
-However, do be sensible about the level and number of folders you use: if you have lots of folders that only contain one file, you may have too many, making it more difficult and time-consuming to navigate. If you have very few folders then there may be too many files in a folder, making it difficult to find the relevant one.
+However, do be sensible about the level and number of folders you use: if you have lots of folders that only contain one file, you may have too many, making it more difficult and time-consuming to navigate. If you have very few folders, then there may be too many files in a folder, making it difficult to find the relevant one.
 
 Give each folder a name that is meaningful and concisely describes the contents of the folder, such as "raw_data", "conference_presentations", "expenses".
 
-Whatever structures you choose, it is worth periodically reviewing it to make sure it is still fulfilling its purpose. Perhaps a section of the project folders can be archived? Perhaps there are now enough files of a particular type to necessitate a new folder?
+Whatever structures you choose, it is worth periodically reviewing them to make sure they are still fulfilling their purpose. Perhaps a section of the project folders can be archived? Perhaps there are now enough files of a particular type to necessitate a new folder?
 
 In summary:
 
@@ -91,7 +91,7 @@ In summary:
 
 ## File naming
 
-Alex takes another look at the folder system he has created. The files are easier to search through but he notices that there are lots of inconsistencies in how they are named.
+Alex takes another look at the folder system he has created. The files are easier to search through, but he notices that there are lots of inconsistencies in how they are named.
 
 :::::::::::::::::::::::::::: discussion
 ### Naming Files Part I
@@ -307,7 +307,7 @@ Imagine two people editing the file at the same time: what would be easy to reco
 ::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::
 
-Not all files benefit equally from version control tools. Large binary files (such as images or Excel files) can be harder to manage, while plain text files work particularly well.
+Not all files benefit equally from version control tools. Files such as images or Excel files (known as binary files, i.e. non text file) can be harder to manage, while plain text files work particularly well.
 
 :::::::::::::::::::: challenge
 
