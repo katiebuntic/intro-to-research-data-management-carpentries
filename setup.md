@@ -14,6 +14,14 @@ This file is a shortened and modified version of the [Metropolitan Museum of
 Art's Open Access CSV](https://github.com/metmuseum/openaccess), released under 
 a CC0 license on github.
 
+## Lesson resources
+
+We will be using some example files and folders from the [resources folder](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/tree/main/episodes/resources). In order to have this on your local, you will need to download the repository.
+
+To do this: 
+
+Within the GitHub repository, click the green button in the top right `Code`, then `Download ZIP`.
+
 ## Software Setup
 
 ::::::::::::::::::::::::::::::::::::::: discussion
