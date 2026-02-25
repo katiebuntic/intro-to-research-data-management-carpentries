@@ -20,7 +20,7 @@ We will be using some example files and folders from the [resources folder](http
 
 To do this: 
 
-Within the GitHub repository, click the green button in the top right `Code`, then `Download ZIP`.
+Within the [GitHub repository](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/tree/main), click the green button in the top right `Code`, then `Download ZIP`.
 
 ## Software Setup
 
