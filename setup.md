@@ -14,7 +14,7 @@ This file is a shortened and modified version of the [Metropolitan Museum of
 Art's Open Access CSV](https://github.com/metmuseum/openaccess), released under 
 a CC0 license on github.
 
-## Lesson resources
+## Lesson Resources
 
 We will be using some example files and folders during the workshop.
 
