@@ -22,10 +22,7 @@ Please download them before the session begins:
 
 [Download lesson resources (ZIP)](Folder_Structures_Resources.zip)
 
-After downloading:
-- Locate the ZIP file in your Downloads folder.
-- Right-click and select **Extract All** (or double click on Mac).
-- Move the extracted folder somewhere easy to access (e.g. Desktop).
+After downloading, locate the ZIP file in your Downloads folder. Right-click and select **Extract All** (or double click on Mac). Move the extracted folder somewhere easy to access (e.g. Desktop).
 
 ## Software Setup
 
