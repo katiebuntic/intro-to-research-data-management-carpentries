@@ -20,7 +20,7 @@ We will be using some example files and folders during the workshop.
 
 Please download them before the session begins:
 
-[Download lesson resources (ZIP)](/intro-to-research-data-management-carpentries/files/Folder_Structures_Resources.zip)
+[Download lesson resources (ZIP)](Folder_Structures_Resources.zip)
 
 After downloading:
 1. Locate the ZIP file in your Downloads folder.
