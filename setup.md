@@ -16,11 +16,18 @@ a CC0 license on github.
 
 ## Lesson resources
 
-We will be using some example files and folders from the [resources folder](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/tree/main/episodes/resources). In order to have this on your local, you will need to download the repository.
+We will be using some example files and folders during the workshop.
 
-To do this: 
+Please download them before the session begins:
 
-Within the [GitHub repository](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/tree/main), click the green button in the top right `Code`, then `Download ZIP`.
+<a class="btn btn-primary" href="{{ site.baseurl }}/files/Folder_Structures_Resources.zip">
+Download lesson resources (ZIP)
+</a>
+
+After downloading:
+1. Locate the ZIP file in your Downloads folder.
+2. Right-click and select **Extract All** (or double click on Mac).
+3. Move the extracted folder somewhere easy to access (e.g. Desktop).
 
 ## Software Setup
 
