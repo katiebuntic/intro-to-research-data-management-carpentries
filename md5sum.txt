@@ -12,5 +12,5 @@
 "episodes/intro-to-r.md" "47a7de1aa94241c8478ea55367aefa8b" "site/built/intro-to-r.md" "2025-03-28"
 "instructors/instructor-notes.md" "cae72b6712578d74a49fea7513099f8c" "site/built/instructor-notes.md" "2023-03-16"
 "learners/reference.md" "1c7cc4e229304d9806a13f69ca1b8ba4" "site/built/reference.md" "2023-03-16"
-"learners/setup.md" "390e76d90aa6a3e4401d6562fd69d03e" "site/built/setup.md" "2026-03-02"
+"learners/setup.md" "81f6908809941a232e20ed163c4b6449" "site/built/setup.md" "2026-03-02"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2022-04-22"
