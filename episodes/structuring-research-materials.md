@@ -307,7 +307,7 @@ Imagine two people editing the file at the same time: what would be easy to reco
 ::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::
 
-Not all files benefit equally from version control tools. Files such as images or Excel files (known as binary files, i.e. non text file) can be harder to manage, while plain text files work particularly well.
+Not all files benefit equally from version control tools. Files such as images or spreadsheets (i.e. non-text files) can be harder to manage, while plain text files work particularly well.
 
 :::::::::::::::::::: challenge
 
