@@ -29,7 +29,7 @@ Alex has recently started a PhD on a project that has been running for a few yea
 :::::::::::::::::::::::::::: challenge
 ### Organising files into a folder structure Part I
 
-In groups, look through Folder 2.1 and discuss the following questions:
+In groups, look through Folder 2.1, without opening any of the files in it, and discuss the following questions:
 
 - What problems can you identify with how files are organised?
 - How many different datasets can you identify?
@@ -50,7 +50,7 @@ Alex goes to his supervisor and explains the problems he has found. His supervis
 :::::::::::::::::::::::::::: challenge
 ### Organising files into a folder structure Part II
 
-Individually, look at Folder 2.1 again and, within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders.
+Individually, look at Folder 2.1 again and, within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders. You will not need to open any of the files for this exercise.
 
 :::::::::::::::::::::::: hint
 
@@ -96,7 +96,7 @@ Alex takes another look at the folder system he has created. The files are easie
 :::::::::::::::::::::::::::: discussion
 ### Naming Files Part I
 
-Open Folder 2.2 and look at the names of the files. Can you identify any problems with the way the files are named? What kinds of issues might they cause for those working on the project?
+Open Folder 2.2 and look at the names of the files (you will not need to to open the files). Can you identify any problems with the way the files are named? What kinds of issues might they cause for those working on the project?
 
 ::::::::::::::::::::::::::::
 
@@ -219,7 +219,7 @@ Some files include 'final' in the name... sometimes more than once.
 
 ##  Versions Everywhere
 
-Look at the files in Folder 2.3:
+Look at the files in Folder 2.3 (do not open the files):
 
 - How many different versions of the same document can you find?
 
