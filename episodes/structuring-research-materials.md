@@ -50,7 +50,7 @@ Alex goes to his supervisor and explains the problems he has found. His supervis
 :::::::::::::::::::::::::::: challenge
 ### Organising files into a folder structure Part II
 
-Individually, look at Folder 2.1 again and, within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders. You will not need to open any of the files for this exercise.
+Individually, look at Folder 2.1 again and, within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders. You will not need to open or rename any of the files for this exercise).
 
 :::::::::::::::::::::::: hint
 
