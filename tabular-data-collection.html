@@ -528,39 +528,39 @@ is used or interpreted) and technical types (how the data is stored or
 formatted) is key for working effectively with tabular data. For
 example, a column might be technically an integer but conceptually a
 category (like decades or survey scores).</p>
-<table class="table"><colgroup><col width="19%"><col width="14%"><col width="29%"><col width="36%"></colgroup><thead><tr class="header"><th>Conceptual Type</th>
+<table class="table"><colgroup><col width="19%"><col width="14%"><col width="29%"><col width="36%"></colgroup><thead><tr><th>Conceptual Type</th>
 <th>Technical Type</th>
 <th>Description</th>
 <th>Example</th>
-</tr></thead><tbody><tr class="odd"><td>Nominal</td>
+</tr></thead><tbody><tr><td>Nominal</td>
 <td>String</td>
 <td>Categories, no order</td>
 <td><code>artistnationality = Australian</code></td>
-</tr><tr class="even"><td>Ordinal</td>
+</tr><tr><td>Ordinal</td>
 <td>String</td>
 <td>Categories with order</td>
 <td><code>popularity = high</code></td>
-</tr><tr class="odd"><td>Discrete Numeric</td>
+</tr><tr><td>Discrete Numeric</td>
 <td>Integer</td>
 <td>Countable numbers</td>
 <td><code>objectid = 123456</code></td>
-</tr><tr class="even"><td>Continuous Numeric</td>
+</tr><tr><td>Continuous Numeric</td>
 <td>Integer, Float</td>
 <td>Measurable, decimals allowed</td>
 <td><code>height = 27.5</code></td>
-</tr><tr class="odd"><td>Boolean</td>
+</tr><tr><td>Boolean</td>
 <td>Boolean</td>
 <td>Yes/No, True/False</td>
 <td><code>ishighlight = TRUE</code></td>
-</tr><tr class="even"><td>Date/Time</td>
+</tr><tr><td>Date/Time</td>
 <td>Datetime</td>
 <td>Dates or times</td>
 <td><code>lastconserv = 12/11/2027</code></td>
-</tr><tr class="odd"><td>Textual</td>
+</tr><tr><td>Textual</td>
 <td>String</td>
 <td>Free text</td>
 <td><code>artistdisplayname = Claude Monet</code></td>
-</tr><tr class="even"><td>Identifier</td>
+</tr><tr><td>Identifier</td>
 <td>Integer/String</td>
 <td>Unique reference</td>
 <td><code>objectnumber = 1982.456</code></td>
@@ -597,23 +597,23 @@ corrected.</p>
 column<a class="anchor" aria-label="anchor" href="#example-inconsistencies-in-the-artistgender-column"></a></h3>
 <p>Here’s an example of how the same concept (“artistgender”) can be
 recorded in many different ways:</p>
-<table class="table"><thead><tr class="header"><th>objectid</th>
+<table class="table"><thead><tr><th>objectid</th>
 <th>artistgender</th>
-</tr></thead><tbody><tr class="odd"><td>1001</td>
+</tr></thead><tbody><tr><td>1001</td>
 <td>Female</td>
-</tr><tr class="even"><td>1002</td>
+</tr><tr><td>1002</td>
 <td>female</td>
-</tr><tr class="odd"><td>1003</td>
+</tr><tr><td>1003</td>
 <td>F</td>
-</tr><tr class="even"><td>1004</td>
+</tr><tr><td>1004</td>
 <td>Male</td>
-</tr><tr class="odd"><td>1005</td>
+</tr><tr><td>1005</td>
 <td>MALE</td>
-</tr><tr class="even"><td>1006</td>
+</tr><tr><td>1006</td>
 <td>M</td>
-</tr><tr class="odd"><td>1007</td>
+</tr><tr><td>1007</td>
 <td>Unknown</td>
-</tr><tr class="even"><td>1008</td>
+</tr><tr><td>1008</td>
 <td></td>
 </tr></tbody></table><p>We can see:</p>
 <ul><li>
@@ -798,37 +798,37 @@ your data consistently and correctly.</p>
 <h4 id="example-wildlife-observations-dataset">Example: Wildlife Observations Dataset<a class="anchor" aria-label="anchor" href="#example-wildlife-observations-dataset"></a></h4>
 <p>Here’s a sample data dictionary for a fictional dataset tracking
 wildlife sightings in a nature reserve:</p>
-<table class="table"><colgroup><col width="17%"><col width="39%"><col width="8%"><col width="29%"><col width="4%"></colgroup><thead><tr class="header"><th>Variable Name</th>
+<table class="table"><colgroup><col width="17%"><col width="39%"><col width="8%"><col width="29%"><col width="4%"></colgroup><thead><tr><th>Variable Name</th>
 <th>Description</th>
 <th>Data Type</th>
 <th>Possible Values / Format</th>
 <th>Units</th>
-</tr></thead><tbody><tr class="odd"><td><code>sighting_id</code></td>
+</tr></thead><tbody><tr><td><code>sighting_id</code></td>
 <td>Unique ID for each observation</td>
 <td>Integer</td>
 <td>1, 2, 3, …</td>
 <td>N/A</td>
-</tr><tr class="even"><td><code>species_name</code></td>
+</tr><tr><td><code>species_name</code></td>
 <td>Name of the animal species observed</td>
 <td>String</td>
 <td>e.g., “Red Fox”, “Barn Owl”</td>
 <td>N/A</td>
-</tr><tr class="odd"><td><code>count</code></td>
+</tr><tr><td><code>count</code></td>
 <td>Number of individuals seen</td>
 <td>Integer</td>
 <td>0, 1, 2, …</td>
 <td>Count</td>
-</tr><tr class="even"><td><code>observation_date</code></td>
+</tr><tr><td><code>observation_date</code></td>
 <td>Date the observation was recorded</td>
 <td>Datetime</td>
 <td>YYYY-MM-DD</td>
 <td>N/A</td>
-</tr><tr class="odd"><td><code>location</code></td>
+</tr><tr><td><code>location</code></td>
 <td>Area of the park where sighting occurred</td>
 <td>String</td>
 <td>“North Woods”, “Wetland Trail”</td>
 <td>N/A</td>
-</tr><tr class="even"><td><code>is_endangered</code></td>
+</tr><tr><td><code>is_endangered</code></td>
 <td>Whether the species is endangered</td>
 <td>Boolean</td>
 <td>TRUE, FALSE</td>
@@ -940,7 +940,7 @@ any links that you are not going to use.
   "identifier": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/tabular-data-collection.html",
   "dateCreated": "2025-03-27",
   "dateModified": "2026-02-04",
-  "datePublished": "2026-04-28"
+  "datePublished": "2026-05-05"
 }
 
   </script><script>

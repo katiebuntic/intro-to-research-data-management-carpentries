@@ -460,7 +460,7 @@ should be!).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre><code>"Claude Monet"           is a string
 1872                     is an integer
@@ -487,28 +487,28 @@ data types when your data is laid out in columns.</p>
 <p>Imagine Alex opens the MET Museum dataset in a spreadsheet. Each
 column represents a variable, and each row represents an artwork. The
 column headers might look something like this:</p>
-<table class="table"><colgroup><col width="10%"><col width="18%"><col width="13%"><col width="12%"><col width="15%"><col width="17%"><col width="12%"></colgroup><thead><tr class="header"><th>Object ID</th>
+<table class="table"><colgroup><col width="10%"><col width="18%"><col width="13%"><col width="12%"><col width="15%"><col width="17%"><col width="12%"></colgroup><thead><tr><th>Object ID</th>
 <th>Title</th>
 <th>Artist</th>
 <th>Object Date</th>
 <th>Medium</th>
 <th>Is Public Domain</th>
 <th>Height (cm)</th>
-</tr></thead><tbody><tr class="odd"><td>436121</td>
+</tr></thead><tbody><tr><td>436121</td>
 <td>Water Lilies</td>
 <td>Claude Monet</td>
 <td>1906</td>
 <td>Oil on canvas</td>
 <td>TRUE</td>
 <td>200.5</td>
-</tr><tr class="even"><td>459055</td>
+</tr><tr><td>459055</td>
 <td>Untitled</td>
 <td>Unknown</td>
 <td>ca. 1931</td>
 <td>Gelatin silver</td>
 <td>FALSE</td>
 <td>27</td>
-</tr><tr class="odd"><td>12345</td>
+</tr><tr><td>12345</td>
 <td>Portrait of a Man</td>
 <td>Rembrandt</td>
 <td>07/06/2019</td>
@@ -585,7 +585,7 @@ filter, or calculate with.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Discussion points </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul><li>Some values only include a <strong>year</strong>, with no month or
 day.</li>
@@ -619,21 +619,21 @@ of a column.</p>
 <div class="callout-content">
 <p>Alex opens a <em>different</em> part of the MET dataset containing
 information about exhibitions and acquisitions.</p>
-<table class="table"><colgroup><col width="22%"><col width="77%"></colgroup><thead><tr class="header"><th>Column name</th>
+<table class="table"><colgroup><col width="22%"><col width="77%"></colgroup><thead><tr><th>Column name</th>
 <th>Values</th>
-</tr></thead><tbody><tr class="odd"><td>Accession Number</td>
+</tr></thead><tbody><tr><td>Accession Number</td>
 <td>1975.1, 2003.45a, 1988.12</td>
-</tr><tr class="even"><td>Department</td>
+</tr><tr><td>Department</td>
 <td>European Paintings, Asian Art, Modern and Contemporary</td>
-</tr><tr class="odd"><td>Acquisition Year</td>
+</tr><tr><td>Acquisition Year</td>
 <td>1998, 2005, Unknown</td>
-</tr><tr class="even"><td>Credit Line</td>
+</tr><tr><td>Credit Line</td>
 <td>Gift of John Smith, Purchase, Bequest</td>
-</tr><tr class="odd"><td>On Display</td>
+</tr><tr><td>On Display</td>
 <td>Yes, No</td>
-</tr><tr class="even"><td>Gallery Number</td>
+</tr><tr><td>Gallery Number</td>
 <td>802, 305, NA</td>
-</tr><tr class="odd"><td>Last Updated</td>
+</tr><tr><td>Last Updated</td>
 <td>2022-11-03, 03/07/2021, 15 Aug 2020</td>
 </tr></tbody></table><p>For <strong>each column</strong>:</p>
 <ol style="list-style-type: decimal"><li>Decide what the data type <strong>currently is</strong> in the
@@ -653,30 +653,30 @@ analysis.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
-<table class="table"><thead><tr class="header"><th>Column name</th>
+<table class="table"><thead><tr><th>Column name</th>
 <th>Current data type</th>
 <th>Ideal data type</th>
-</tr></thead><tbody><tr class="odd"><td>Accession Number</td>
+</tr></thead><tbody><tr><td>Accession Number</td>
 <td>String</td>
 <td>String</td>
-</tr><tr class="even"><td>Department</td>
+</tr><tr><td>Department</td>
 <td>String</td>
 <td>String</td>
-</tr><tr class="odd"><td>Acquisition Year</td>
+</tr><tr><td>Acquisition Year</td>
 <td>String (mixed)</td>
 <td>Integer or date</td>
-</tr><tr class="even"><td>Credit Line</td>
+</tr><tr><td>Credit Line</td>
 <td>String</td>
 <td>String</td>
-</tr><tr class="odd"><td>On Display</td>
+</tr><tr><td>On Display</td>
 <td>String</td>
 <td>Boolean</td>
-</tr><tr class="even"><td>Gallery Number</td>
+</tr><tr><td>Gallery Number</td>
 <td>String (mixed)</td>
 <td>Integer</td>
-</tr><tr class="odd"><td>Last Updated</td>
+</tr><tr><td>Last Updated</td>
 <td>String (mixed dates)</td>
 <td>Date</td>
 </tr></tbody></table><p><strong>Notes:</strong></p>
@@ -831,7 +831,7 @@ government agency.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p><strong>Secondary data</strong> because you didn’t collect it
 yourself.</p>
@@ -870,7 +870,7 @@ machine in a laboratory experiment.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li><p><strong>Sensor and observational data</strong><br>
 (Data collected automatically and repeatedly over time.)</p></li>
@@ -1006,7 +1006,7 @@ any links that you are not going to use.
   "identifier": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/introduction.html",
   "dateCreated": "2025-03-27",
   "dateModified": "2026-02-05",
-  "datePublished": "2026-04-28"
+  "datePublished": "2026-05-05"
 }
 
   </script><script>

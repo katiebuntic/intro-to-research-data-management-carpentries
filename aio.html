@@ -502,7 +502,7 @@ should be!).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre><code>"Claude Monet"           is a string
 1872                     is an integer
@@ -540,7 +540,7 @@ column headers might look something like this:</p>
 <col width="17%">
 <col width="12%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Object ID</th>
 <th>Title</th>
 <th>Artist</th>
@@ -550,7 +550,7 @@ column headers might look something like this:</p>
 <th>Height (cm)</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>436121</td>
 <td>Water Lilies</td>
 <td>Claude Monet</td>
@@ -559,7 +559,7 @@ column headers might look something like this:</p>
 <td>TRUE</td>
 <td>200.5</td>
 </tr>
-<tr class="even">
+<tr>
 <td>459055</td>
 <td>Untitled</td>
 <td>Unknown</td>
@@ -568,7 +568,7 @@ column headers might look something like this:</p>
 <td>FALSE</td>
 <td>27</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>12345</td>
 <td>Portrait of a Man</td>
 <td>Rembrandt</td>
@@ -659,7 +659,7 @@ filter, or calculate with.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Discussion points </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>Some values only include a <strong>year</strong>, with no month or
@@ -701,36 +701,36 @@ information about exhibitions and acquisitions.</p>
 <col width="22%">
 <col width="77%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Column name</th>
 <th>Values</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Accession Number</td>
 <td>1975.1, 2003.45a, 1988.12</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Department</td>
 <td>European Paintings, Asian Art, Modern and Contemporary</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Acquisition Year</td>
 <td>1998, 2005, Unknown</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Credit Line</td>
 <td>Gift of John Smith, Purchase, Bequest</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>On Display</td>
 <td>Yes, No</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Gallery Number</td>
 <td>802, 305, NA</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Last Updated</td>
 <td>2022-11-03, 03/07/2021, 15 Aug 2020</td>
 </tr>
@@ -758,46 +758,46 @@ analysis.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <table class="table">
-<thead><tr class="header">
+<thead><tr>
 <th>Column name</th>
 <th>Current data type</th>
 <th>Ideal data type</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Accession Number</td>
 <td>String</td>
 <td>String</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Department</td>
 <td>String</td>
 <td>String</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Acquisition Year</td>
 <td>String (mixed)</td>
 <td>Integer or date</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Credit Line</td>
 <td>String</td>
 <td>String</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>On Display</td>
 <td>String</td>
 <td>Boolean</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Gallery Number</td>
 <td>String (mixed)</td>
 <td>Integer</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Last Updated</td>
 <td>String (mixed dates)</td>
 <td>Date</td>
@@ -974,7 +974,7 @@ government agency.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p><strong>Secondary data</strong> because you didn’t collect it
 yourself.</p>
@@ -1015,7 +1015,7 @@ machine in a laboratory experiment.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><p><strong>Sensor and observational data</strong><br>
@@ -1179,7 +1179,7 @@ in it, and discuss the following questions:</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>When thinking about how you could improve the organisation of the
 files, consider whether it might be easier to split them between
@@ -1213,7 +1213,7 @@ exercise).</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint2" aria-expanded="false" aria-controls="collapseHint2">
   <h4 class="accordion-header" id="headingHint2"> Give me a hint </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
 <div class="accordion-body">
 <ul>
 <li>Alex sees that during the project the researcher gave a presentation
@@ -1369,7 +1369,7 @@ you rewrite the name to avoid that?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>If you have spaces in a file name, the computer may interpret a space
 as showing that the end of the file name has been reached, and therefore
@@ -1421,7 +1421,7 @@ parts of the file name.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint3" aria-expanded="false" aria-controls="collapseHint3">
   <h4 class="accordion-header" id="headingHint3"> Give me a hint </h4>
 </button>
-<div id="collapseHint3" class="accordion-collapse collapse" aria-labelledby="headingHint3" data-bs-parent="#accordionHint3">
+<div id="collapseHint3" class="accordion-collapse collapse" data-bs-parent="#accordionHint3" aria-labelledby="headingHint3">
 <div class="accordion-body">
 <p>If the files came from laboratories in both the UK and in the USA,
 would that raise any concerns about how to read the dates on the
@@ -1504,7 +1504,7 @@ versions?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint4" aria-expanded="false" aria-controls="collapseHint4">
   <h4 class="accordion-header" id="headingHint4"> Give me a hint </h4>
 </button>
-<div id="collapseHint4" class="accordion-collapse collapse" aria-labelledby="headingHint4" data-bs-parent="#accordionHint4">
+<div id="collapseHint4" class="accordion-collapse collapse" data-bs-parent="#accordionHint4" aria-labelledby="headingHint4">
 <div class="accordion-body">
 <p>You don’t need to open the files to answer these questions.<br>
 Focus on the <em>file names</em> themselves:</p>
@@ -1603,7 +1603,7 @@ tracking?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint5" aria-expanded="false" aria-controls="collapseHint5">
   <h4 class="accordion-header" id="headingHint5"> Give me a hint </h4>
 </button>
-<div id="collapseHint5" class="accordion-collapse collapse" aria-labelledby="headingHint5" data-bs-parent="#accordionHint5">
+<div id="collapseHint5" class="accordion-collapse collapse" data-bs-parent="#accordionHint5" aria-labelledby="headingHint5">
 <div class="accordion-body">
 <p>Imagine two people editing the file at the same time: what would be
 easy to reconcile, and what would be painful?</p>
@@ -1637,7 +1637,7 @@ file naming?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint6" aria-expanded="false" aria-controls="collapseHint6">
   <h4 class="accordion-header" id="headingHint6"> Give me a hint </h4>
 </button>
-<div id="collapseHint6" class="accordion-collapse collapse" aria-labelledby="headingHint6" data-bs-parent="#accordionHint6">
+<div id="collapseHint6" class="accordion-collapse collapse" data-bs-parent="#accordionHint6" aria-labelledby="headingHint6">
 <div class="accordion-body">
 <p>You might want to think about: how do you currently keep track of
 changes? What information gets lost when files are renamed or
@@ -1934,56 +1934,56 @@ category (like decades or survey scores).</p>
 <col width="29%">
 <col width="36%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Conceptual Type</th>
 <th>Technical Type</th>
 <th>Description</th>
 <th>Example</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Nominal</td>
 <td>String</td>
 <td>Categories, no order</td>
 <td><code>artistnationality = Australian</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Ordinal</td>
 <td>String</td>
 <td>Categories with order</td>
 <td><code>popularity = high</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Discrete Numeric</td>
 <td>Integer</td>
 <td>Countable numbers</td>
 <td><code>objectid = 123456</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Continuous Numeric</td>
 <td>Integer, Float</td>
 <td>Measurable, decimals allowed</td>
 <td><code>height = 27.5</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Boolean</td>
 <td>Boolean</td>
 <td>Yes/No, True/False</td>
 <td><code>ishighlight = TRUE</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Date/Time</td>
 <td>Datetime</td>
 <td>Dates or times</td>
 <td><code>lastconserv = 12/11/2027</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Textual</td>
 <td>String</td>
 <td>Free text</td>
 <td><code>artistdisplayname = Claude Monet</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Identifier</td>
 <td>Integer/String</td>
 <td>Unique reference</td>
@@ -2030,40 +2030,40 @@ column<a class="anchor" aria-label="anchor" href="#example-inconsistencies-in-th
 <p>Here’s an example of how the same concept (“artistgender”) can be
 recorded in many different ways:</p>
 <table class="table">
-<thead><tr class="header">
+<thead><tr>
 <th>objectid</th>
 <th>artistgender</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1001</td>
 <td>Female</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1002</td>
 <td>female</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1003</td>
 <td>F</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1004</td>
 <td>Male</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1005</td>
 <td>MALE</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1006</td>
 <td>M</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1007</td>
 <td>Unknown</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1008</td>
 <td></td>
 </tr>
@@ -2282,7 +2282,7 @@ wildlife sightings in a nature reserve:</p>
 <col width="29%">
 <col width="4%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Variable Name</th>
 <th>Description</th>
 <th>Data Type</th>
@@ -2290,42 +2290,42 @@ wildlife sightings in a nature reserve:</p>
 <th>Units</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code>sighting_id</code></td>
 <td>Unique ID for each observation</td>
 <td>Integer</td>
 <td>1, 2, 3, …</td>
 <td>N/A</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>species_name</code></td>
 <td>Name of the animal species observed</td>
 <td>String</td>
 <td>e.g., “Red Fox”, “Barn Owl”</td>
 <td>N/A</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>count</code></td>
 <td>Number of individuals seen</td>
 <td>Integer</td>
 <td>0, 1, 2, …</td>
 <td>Count</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>observation_date</code></td>
 <td>Date the observation was recorded</td>
 <td>Datetime</td>
 <td>YYYY-MM-DD</td>
 <td>N/A</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>location</code></td>
 <td>Area of the park where sighting occurred</td>
 <td>String</td>
 <td>“North Woods”, “Wetland Trail”</td>
 <td>N/A</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>is_endangered</code></td>
 <td>Whether the species is endangered</td>
 <td>Boolean</td>
@@ -2453,7 +2453,7 @@ many?</li>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>There are 7 missing values in the <code>film_title</code>
@@ -2558,8 +2558,8 @@ column</li>
   "url": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/aio.html",
   "identifier": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/aio.html",
   "dateCreated": "2025-03-27",
-  "dateModified": "2026-04-28",
-  "datePublished": "2026-04-28"
+  "dateModified": "2026-05-05",
+  "datePublished": "2026-05-05"
 }
 
   </script><script>
