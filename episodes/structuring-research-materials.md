@@ -114,7 +114,24 @@ sampleID_date
 
 ### Special Characters and Spaces
 
-Avoid using special characters (such as ?#!"£$%^&*{}@/|\<> ) as operating systems and apps may handle these very differently, sometimes being completely unable to open a file with them in their name, or not recognising them at all. Some special characters have a meaning in particular programming languages, and may be interpreted as instructions to the computer rather than as part of the file name. 
+Avoid using special characters (such as ?#!"£$%^&*{}@/|\<> ) as operating systems and apps may handle these very differently, sometimes being completely unable to open a file with them in their name, or not recognising them at all. Some special characters have a meaning in particular programming languages, and may be interpreted as instructions to the computer rather than as part of the file name.
+
+:::::::::::::::::::::::::::: callout
+
+### What are special characters?
+
+Special characters are any characters that are not letters (A–Z, a–z), numbers (0–9), hyphens (-), or underscores (_). Common examples include:
+
+`? # ! " £ $ % ^ & * ( ) { } @ / \ | < > : ; ' ~`
+
+Some of these characters have a specific meaning to operating systems or software, which is why they can cause problems in folder and file names:
+
+- `/` and `\` are used to separate folders in file paths (e.g. `Documents/project/data`), so including one in a file name can confuse the computer about where the path ends and the name begins
+- `:` is used in Windows file paths (e.g. `C:\`) and is not allowed in file or folder names on Windows
+- Characters like `*`, `?`, and `"` are used by operating systems and command-line tools as instructions (e.g. `*` means "match any file"), so they may be misinterpreted when they appear in a name
+- Some characters may display differently or cause errors when files are shared across different operating systems (Windows, Mac, Linux), making it harder to open or find those files
+
+::::::::::::::::::::::::::::
 
 Similarly, spaces in file names can cause problems:
 
@@ -123,7 +140,7 @@ Similarly, spaces in file names can cause problems:
 
 Look at the file name below:
 
-STAR final results.xls
+STAR final results.xlsx
 
 How do you think this might be interpreted by a computer?
 How might you rewrite the name to avoid that?
@@ -243,6 +260,22 @@ Would someone new to the project make the same assumptions?
 :::::::::::::::
 :::::::::::::::
 
+:::::::::::::::::::::::::::: callout
+
+### Can't I just check "Date Modified"?
+
+When trying to work out which file is the most recent, it might seem easy to sort by the date modified or date created shown in your file browser. Unfortunately, these timestamps are not always reliable guides:
+
+- **Copying a file resets its "date created"** to the moment it was copied, even if the original was created years earlier
+- **Date modified can change unexpectedly** - opening a file and accidentally pressing a key, or a programme auto-saving, can update the timestamp without any meaningful change to the content
+- **Moving files between folders, drives, or computers** can reset one or both timestamps, depending on the operating system
+- **Restoring files from a backup** may set the timestamps to the moment of restoration rather than when the file was last genuinely edited
+- **Synchronisation tools** (such as cloud storage services) may update timestamps when files are synced, even if the content has not changed
+
+This means that "Date Modified" can appear to show a recent date on a file that is actually an old version, and an older date on what is actually the most current copy. Relying on timestamps alone to identify the latest version of a file is therefore risky. Including version information directly in the file name, or using version control software, is a much more reliable approach.
+
+::::::::::::::::::::::::::::
+
 Version control is about tracking change over time, so that you can:
 
 - See what changed
@@ -358,6 +391,17 @@ You may hear version control tools described using terms like:
 You don’t need to know how to use these yet. For now, think of them as names for ideas you’ve already encountered when trying to keep track of different versions of files.
 
 ::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
+- Organise files into a hierarchical folder structure: start broad and drill down into specific areas, using a sensible number of folders with meaningful names
+- Use a consistent file naming convention across a project so that you and your colleagues can easily find and identify files
+- Avoid spaces and special characters in file names; use hyphens or underscores to separate parts of the name instead
+- Use the YYYYMMDD (ISO 8601) date format in file names to ensure files sort correctly in date order
+- Use version numbers (e.g. v1.0, v1.1) or date-based suffixes to track document versions, and keep earlier versions in a clearly named subfolder
+- Version control tools such as Git and GitHub are particularly useful for text-based files (code, scripts, documentation) that change frequently or are worked on collaboratively
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
