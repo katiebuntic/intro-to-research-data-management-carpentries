@@ -234,7 +234,7 @@ Some files include 'final' in the name... sometimes more than once.
 
 ::::::::::::::: challenge
 
-##  Versions Everywhere
+## Versions Everywhere
 
 Look at the files in Folder 2.3 (do not open the files):
 
@@ -353,6 +353,16 @@ Imagine two people editing the file at the same time: what would be easy to reco
 
 Not all files benefit equally from version control tools. Files such as images or spreadsheets (i.e. non-text files) can be harder to manage, while plain text files work particularly well.
 
+:::::::::::::::::::::::::::: callout
+
+### A simpler approach for non-text files: cloud collaboration tools
+
+For files like Word documents, spreadsheets, or presentations, a shared cloud storage service (such as OneDrive, Google Drive, or SharePoint) can be a practical alternative. Rather than emailing a file back and forth — and ending up with multiple slightly different copies in different inboxes — collaborators can work from a single shared link. Everyone edits the same file, in the same place, at the same time.
+
+This avoids the version confusion that comes with emailing attachments, and most of these tools also keep a version history so you can see earlier states of the file if needed.
+
+::::::::::::::::::::::::::::
+
 :::::::::::::::::::: challenge
 
 ## Thinking ahead
@@ -378,9 +388,9 @@ Also consider scale: one person vs a team? One week vs several years
 
 ### Git and GitHub
 
-Git is a version control tool, and GitHub is a platform that hosts Git projects and supports collaboration.
+Git is a version control tool, and GitHub is a platform that hosts Git projects and supports collaboration. They are primarily designed for managing code and other plain text files — they are not a general-purpose solution for all research files.
 
-They are particularly useful for certain types of data, especially files that are:
+They are particularly useful for files that are:
 - text-based (such as code, scripts, and documentation)
 - edited frequently
 - worked on by more than one person
