@@ -26,6 +26,14 @@ exercises: 10
 
 Alex has recently started a PhD on a project that has been running for a few years. He has been given access to the project's folders and has been asked by his supervisor to look through some files left by a researcher who recently left.
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+**Episode setup:** Learners should have downloaded and unzipped the exercise materials as part of the lesson setup — Folder 2.1, 2.2, and 2.3 are all included. Check at the start of the session that everyone has done this before moving on to the first exercise.
+
+Estimated timing: ~50 minutes of teaching plus 10 minutes of exercises, though the two folder structure exercises (Parts I and II) together often take 15–20 minutes including debrief.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::: challenge
 
 ### Organising files into a folder structure Part I
@@ -45,6 +53,19 @@ When thinking about how you could improve the organisation of the files, conside
 
 ::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+**Running Part I live:** Put learners into groups of 3–4. In online delivery, use breakout rooms for 5–7 minutes, then debrief in the main room. In-person, table groups work well. Remind learners not to open any files — the point is what they can (and cannot) tell from the file and folder names alone.
+
+Key things to draw out in debrief:
+- Files dumped at the top level with no folder structure
+- Files that are hard to identify without opening them
+- Inconsistent or unhelpful names that make it unclear what a file contains
+
+Prompt learners: *If you came back to this folder in two years, or if a colleague unfamiliar with the project had to use it, what would they struggle with?*
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Alex goes to his supervisor and explains the problems he has found. His supervisor asks him to improve the organisation of the files as he is concerned that no-one will be able to find anything.
 
 :::::::::::::::::::::::::::: challenge
@@ -61,6 +82,17 @@ Individually, look at Folder 2.1 again and, within it create a set of folders to
 ::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+**Debriefing Part II:** Ask one or two learners to share their folder structure — online, ask them to share their screen; in-person, sketch it on a whiteboard. Emphasise that there is no single correct answer, but highlight the key principles: hierarchy, meaningful names, and consistency. Common themes to look for:
+- Separating raw data from processed or cleaned data
+- Grouping conference or travel documents separately from research data
+- Having a clear "current work" area versus an archive
+
+If there is time, ask learners to compare their structure with a neighbour and discuss any differences.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Poor organisation can make it difficult to find files, or to even realise that a specific file exists. This becomes a particular problem when multiple people are working together, or on projects that run over a number of years.
 
@@ -101,6 +133,12 @@ In summary:
 ## File naming
 
 Alex takes another look at the folder system he has created. The files are easier to search through, but he notices that there are lots of inconsistencies in how those files are named.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+**Running the naming discussion:** Give learners 3–5 minutes to look through Folder 2.2 individually before opening discussion. Typical problems learners identify include: inconsistent capitalisation, spaces in names, special characters, vague or unhelpful names, and dates written in different or ambiguous formats. Let learners surface these themselves before introducing the guidance that follows.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::: discussion
 
@@ -210,6 +248,12 @@ If the files came from laboratories in both the UK and in the USA, would that ra
 
 ::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+**Running the dates challenges:** Parts III and IV work well as quick whole-group exercises — display the file names on screen and ask learners to answer by a show of hands or a quick poll. The UK/US date ambiguity (e.g. does 05062026 mean 5 June or 6 May?) is often a surprise even to experienced researchers. Let the discussion run briefly before moving on.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Dates are a frequent cause of issues for researchers. Researchers from different countries may read date numbers differently: "05062026" may be one person's 5th of June (e.g. in the UK), while for another it's 6th of May (e.g. in the USA). Ensuring that everyone looking at the date reads it correctly can be the difference between the correct file being selected, and the wrong one.
 
 :::::::::::::::::::::::::::::: challenge
@@ -266,6 +310,14 @@ For several documents, there are multiple slightly different versions of the sam
 - Who made those changes, or why
 
 Some files include 'final' in the name... sometimes more than once.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+**Setting up the Versions Everywhere challenge:** Read or paraphrase the Reinhart-Rogoff callout below to the group before setting learners off on the task — it raises the stakes and motivates the exercise. Give learners 5 minutes to look through Folder 2.3 individually, then debrief as a group.
+
+In debrief, ask: *How confident are you that you picked the right file?* Most learners will have some uncertainty — that uncertainty is the teaching point.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::: callout
 
@@ -370,6 +422,14 @@ These tools are designed to:
 - Show exactly what changed between versions
 
 - Support collaboration without overwriting others’ work
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+**Running the tools discussion:** A brief (5-minute) group discussion before introducing Git and GitHub. The key insight to steer towards is that plain text files - code, scripts, plain-text documentation - are easy for version control tools to compare line by line, while binary formats (images, Word documents, spreadsheets) are not. The concept of "diffing" (seeing exactly what changed between two versions) is what makes version control most powerful for code.
+
+Learners often ask whether they should use Git for everything. The short answer is: not necessarily - the cloud collaboration callout that follows is a good practical alternative for documents and spreadsheets.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: challenge
 
