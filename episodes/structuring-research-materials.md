@@ -115,6 +115,24 @@ It can be worth thinking of an old fashioned set of filing cabinets:
 - within each drawer are folders containing files about specific subsections of that aspect e.g. in drawer 2 there are separate folders for code, raw data, cleaned data, graphs/ figures, and reports
 - within each folder in each drawer, there may be further sub-sections....
 
+In practice, a research project folder might look something like this:
+
+```
+my_project/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── analysis/
+│   ├── scripts/
+│   └── outputs/
+├── reports/
+│   ├── drafts/
+│   └── submitted/
+└── admin/
+    ├── conference/
+    └── expenses/
+```
+
 However, do be sensible about the level and number of folders you use: if you have lots of folders that only contain one file, you may have too many, making it more difficult and time-consuming to navigate. If you have very few folders, then there may be too many files in a folder, making it difficult to find the relevant one.
 
 Give each folder a name that is meaningful and concisely describes the contents of the folder, such as "raw_data", "conference_presentations", "expenses".
@@ -148,7 +166,9 @@ Open Folder 2.2 and look at the names of the files (you will not need to to open
 
 ::::::::::::::::::::::::::::
 
-Poor file naming practices can make it difficult and time-consuming to find files, and lead to people working on the wrong files, or even overwriting important files, thus losing important data. Just as with folder structure, taking some time early in a project to develop a naming convention can save time and effort in the long run, both for your future self, and for any colleagues you work with.
+Poor file naming practices can make it difficult and time-consuming to find files. They can also lead to people working on the wrong version, or overwriting important files and losing data that cannot be recovered.
+
+Taking some time at the start of a project to agree on a naming convention will save effort in the long run - both for you and for any colleagues you work with.
 
 Below are some key considerations when creating file names:
 
