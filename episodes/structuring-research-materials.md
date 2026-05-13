@@ -4,7 +4,7 @@ teaching: 50
 exercises: 10
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - How can you structure data using a standard folder system for better organisation?
 - What are the benefits of using a consistent file naming convention in research data management?
@@ -27,6 +27,7 @@ exercises: 10
 Alex has recently started a PhD on a project that has been running for a few years. He has been given access to the project's folders and has been asked by his supervisor to look through some files left by a researcher who recently left.
 
 :::::::::::::::::::::::::::: challenge
+
 ### Organising files into a folder structure Part I
 
 In groups, look through Folder 2.1, without opening any of the files in it, and discuss the following questions:
@@ -36,7 +37,6 @@ In groups, look through Folder 2.1, without opening any of the files in it, and 
 - Which files are 'raw' vs 'processed' data?
 - How would you improve the organisation of the files?
 
-
 :::::::::::::::::::::::: hint
 
 When thinking about how you could improve the organisation of the files, consider whether it might be easier to split them between different folders and whether any might need renaming
@@ -45,9 +45,10 @@ When thinking about how you could improve the organisation of the files, conside
 
 ::::::::::::::::::::::::::::::::::::::
 
-Alex goes to his supervisor and explains the problems he has found. His supervisor asks him to improve the organisation of the files as he is concerned that no-one will be able to find anything. 
+Alex goes to his supervisor and explains the problems he has found. His supervisor asks him to improve the organisation of the files as he is concerned that no-one will be able to find anything.
 
 :::::::::::::::::::::::::::: challenge
+
 ### Organising files into a folder structure Part II
 
 Individually, look at Folder 2.1 again and, within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders. You will not need to open or rename any of the files for this exercise).
@@ -61,7 +62,7 @@ Individually, look at Folder 2.1 again and, within it create a set of folders to
 
 ::::::::::::::::::::::::::::::::::::::
 
-Poor organisation can make it difficult to find files or to even see that a specific file exists.  This can become a massive problem where multiple people are working together or on projects that run over a number of years. Out-of-date versions of files may end up being used and shared, and important documents may be effectively lost. Relying on search tools to find documents assumes that you know that the document exists, and that you know how it was named; if you weren't the person who created it how would you know about it? If you think back to documents you created a few years ago, would you still be able to say what they were all called, what the latest versions were called, and what they all related to?
+Poor organisation can make it difficult to find files or to even see that a specific file exists. This can become a massive problem where multiple people are working together or on projects that run over a number of years. Out-of-date versions of files may end up being used and shared, and important documents may be effectively lost. Relying on search tools to find documents assumes that you know that the document exists, and that you know how it was named; if you weren't the person who created it how would you know about it? If you think back to documents you created a few years ago, would you still be able to say what they were all called, what the latest versions were called, and what they all related to?
 
 Taking a few moments to think about the structures you use to store files can save a lot of stress, and time, both for you and anyone you work with. If you work across multiple projects it can be worth coming up with a consistent approach, so that you and anyone you work with always knows where in the folder structure to find the same types of files. Structure folders hierarchically too: start broad and drill-down into specific areas.
 
@@ -94,6 +95,7 @@ In summary:
 Alex takes another look at the folder system he has created. The files are easier to search through, but he notices that there are lots of inconsistencies in how those files are named.
 
 :::::::::::::::::::::::::::: discussion
+
 ### Naming Files Part I
 
 Open Folder 2.2 and look at the names of the files (you will not need to to open the files). Can you identify any problems with the way the files are named? What kinds of issues might they cause for those working on the project?
@@ -114,13 +116,13 @@ sampleID_date
 
 ### Special Characters and Spaces
 
-Avoid using special characters (such as ?#!"£$%^&*{}@/|\<> ) as operating systems and apps may handle these very differently, sometimes being completely unable to open a file with them in their name, or not recognising them at all. Some special characters have a meaning in particular programming languages, and may be interpreted as instructions to the computer rather than as part of the file name.
+Avoid using special characters (such as ?#!"£$%^&\*{}@/|\<> ) as operating systems and apps may handle these very differently, sometimes being completely unable to open a file with them in their name, or not recognising them at all. Some special characters have a meaning in particular programming languages, and may be interpreted as instructions to the computer rather than as part of the file name.
 
 :::::::::::::::::::::::::::: callout
 
 ### What are special characters?
 
-Special characters are any characters that are not letters (A–Z, a–z), numbers (0–9), hyphens (-), or underscores (_). Common examples include:
+Special characters are any characters that are not letters (A–Z, a–z), numbers (0–9), hyphens (-), or underscores (\_). Common examples include:
 
 `? # ! " £ $ % ^ & * ( ) { } @ / \ | < > : ; ' ~`
 
@@ -136,6 +138,7 @@ Some of these characters have a specific meaning to operating systems or softwar
 Similarly, spaces in file names can cause problems:
 
 :::::::::::::::::::::::::::: challenge
+
 ### Naming Files Part II
 
 Look at the file name below:
@@ -144,7 +147,6 @@ STAR final results.xlsx
 
 How do you think this might be interpreted by a computer?
 How might you rewrite the name to avoid that?
-
 
 :::::::::::::::::::::::::::: solution
 
@@ -169,6 +171,7 @@ Recommendation: Use only numbers and letters (without accents) and use hyphens a
 ### Dates
 
 :::::::::::::::::::::::::::: challenge
+
 ### Naming Files Part III
 
 Look at the file names below:
@@ -193,9 +196,10 @@ If the files came from laboratories in both the UK and in the USA, would that ra
 
 ::::::::::::::::::::::::::::
 
-Dates are a frequent cause of issues for researchers. Researchers from different countries may read date numbers differently: "05062026" may be one person's 5th of June (e.g. in the UK), while for another it's 6th of May (e.g. in the USA). Ensuring that everyone looking at the date reads it correctly can be the difference between the correct file being selected, and the wrong one. 
+Dates are a frequent cause of issues for researchers. Researchers from different countries may read date numbers differently: "05062026" may be one person's 5th of June (e.g. in the UK), while for another it's 6th of May (e.g. in the USA). Ensuring that everyone looking at the date reads it correctly can be the difference between the correct file being selected, and the wrong one.
 
 :::::::::::::::::::::::::::::: challenge
+
 ### Naming Files Part IV
 
 Look at those file names again:
@@ -212,7 +216,7 @@ E) 12252026_sputum_culture_results.csv
 
 Note that they were given in the order they would appear in a folder, i.e. in numerical and alphabetical order.
 
-Can you think of a better way to write the dates, so that the files appear in date order? 
+Can you think of a better way to write the dates, so that the files appear in date order?
 
 ::::::::::::::::::::::::::::::
 
@@ -249,7 +253,7 @@ Look at the files in Folder 2.3 (do not open the files):
 ::::::::::::::: hint
 
 You don’t need to open the files to answer these questions.  
-Focus on the *file names* themselves:
+Focus on the _file names_ themselves:
 
 - Look for words like `final`, `draft`, `v1`, `v2`, or dates
 - Notice whether the versioning scheme is consistent across files
@@ -284,7 +288,7 @@ Version control is about tracking change over time, so that you can:
 
 - Understand how a file reached its current state
 
-Just setting out clear file naming conventions and using them consistently can go a long way towards ensuring you can do all of these things. 
+Just setting out clear file naming conventions and using them consistently can go a long way towards ensuring you can do all of these things.
 
 ### Recommendations
 
@@ -391,13 +395,14 @@ Also consider scale: one person vs a team? One week vs several years
 Git is a version control tool, and GitHub is a platform that hosts Git projects and supports collaboration. They are primarily designed for managing code and other plain text files — they are not a general-purpose solution for all research files.
 
 They are particularly useful for files that are:
+
 - text-based (such as code, scripts, and documentation)
 - edited frequently
 - worked on by more than one person
 
 They are generally less helpful for files like images, PDFs, spreadsheets, or heavily formatted documents (such as Word or LibreOffice files), where combining changes is difficult.
 
-File naming can help manage *major* versions (for example, `report_v1`, `report_v2`), but version control tools go further; they can record *every change* and allow you to return to a specific point in time, a bit like “Track Changes” for an entire project.
+File naming can help manage _major_ versions (for example, `report_v1`, `report_v2`), but version control tools go further; they can record _every change_ and allow you to return to a specific point in time, a bit like “Track Changes” for an entire project.
 
 You won’t be expected to use Git or GitHub yet. For now, it’s enough to understand why such tools exist and when they might be useful.
 
@@ -405,9 +410,9 @@ You won’t be expected to use Git or GitHub yet. For now, it’s enough to unde
 
 You may hear version control tools described using terms like:
 
-- **Repository**: a project’s home: the files *and* their record of changes  
-- **Commit**: a saved snapshot of changes, with a short note about what was done  
-- **History**: the timeline of commits showing how the project evolved  
+- **Repository**: a project’s home: the files _and_ their record of changes
+- **Commit**: a saved snapshot of changes, with a short note about what was done
+- **History**: the timeline of commits showing how the project evolved
 
 You don’t need to know how to use these yet. For now, think of them as names for ideas you’ve already encountered when trying to keep track of different versions of files.
 
@@ -423,7 +428,3 @@ You don’t need to know how to use these yet. For now, think of them as names f
 - Version control tools such as Git and GitHub are particularly useful for text-based files (code, scripts, documentation) that change frequently or are worked on collaboratively
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-
