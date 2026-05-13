@@ -51,7 +51,7 @@ Alex goes to his supervisor and explains the problems he has found. His supervis
 
 ### Organising files into a folder structure Part II
 
-Individually, look at Folder 2.1 again and, within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders. You will not need to open or rename any of the files for this exercise).
+Individually, look at Folder 2.1 again and, within it create a set of folders to organise each file into. You may want to create subfolders inside some of these folders too. Organise the files into your folders. Please note: You will not need to open or rename any of the files for this exercise.
 
 :::::::::::::::::::::::: hint
 
@@ -62,9 +62,17 @@ Individually, look at Folder 2.1 again and, within it create a set of folders to
 
 ::::::::::::::::::::::::::::::::::::::
 
-Poor organisation can make it difficult to find files or to even see that a specific file exists. This can become a massive problem where multiple people are working together or on projects that run over a number of years. Out-of-date versions of files may end up being used and shared, and important documents may be effectively lost. Relying on search tools to find documents assumes that you know that the document exists, and that you know how it was named; if you weren't the person who created it how would you know about it? If you think back to documents you created a few years ago, would you still be able to say what they were all called, what the latest versions were called, and what they all related to?
+Poor organisation can make it difficult to find files, or to even realise that a specific file exists. This becomes a particular problem when multiple people are working together, or on projects that run over a number of years.
 
-Taking a few moments to think about the structures you use to store files can save a lot of stress, and time, both for you and anyone you work with. If you work across multiple projects it can be worth coming up with a consistent approach, so that you and anyone you work with always knows where in the folder structure to find the same types of files. Structure folders hierarchically too: start broad and drill-down into specific areas.
+When organisation breaks down:
+
+- Out-of-date versions of files may end up being used and shared
+- Important documents can be effectively lost
+- Search tools only help if you already know the file exists and roughly what it was called - if you weren't the person who created it, how would you know?
+
+If you think back to documents you created a few years ago, would you still be able to say what they were all called, what the latest versions were, and what they all related to?
+
+Taking a few moments to think about folder structure early on can save a lot of stress and time - both for your future self and for anyone you work with. If you work across multiple projects, developing a consistent approach means everyone always knows where to look for a given type of file. Structure folders hierarchically: start broad and drill down into specific areas.
 
 It can be worth thinking of an old fashioned set of filing cabinets:
 
@@ -102,7 +110,9 @@ Open Folder 2.2 and look at the names of the files (you will not need to to open
 
 ::::::::::::::::::::::::::::
 
-Poor file naming practices can make it difficult and time-consuming to find files, and lead to people working on the wrong files, or even overwriting important files, thus losing important data. Just as with folder structure, taking some time early in a project to develop a naming convention can save time and effort in the long run, both for your future self, and for any colleagues you work with. Below are some key considerations when creating file names:
+Poor file naming practices can make it difficult and time-consuming to find files, and lead to people working on the wrong files, or even overwriting important files, thus losing important data. Just as with folder structure, taking some time early in a project to develop a naming convention can save time and effort in the long run, both for your future self, and for any colleagues you work with.
+
+Below are some key considerations when creating file names:
 
 ### What information to include
 
@@ -110,9 +120,13 @@ Carefully consider what information someone would need about the file to know it
 
 ### Whether you need to be able to order the files by a characteristic
 
-For example, will you need to be able to easily select the file that was created most recently? Or quickly find a file by a sample ID? If so, you will want that element of the name to be at the beginning of the file name. Sometimes you might have to prioritise one of those requirements: for example, maybe you need to find the most recent file relating to a specific sample, in which case you might name the files using the format:
+Whatever you most often need to find should go at the start of the file name, because files sort alphabetically from left to right. Some examples:
 
-sampleID_date
+- **Date first** — useful when the date is the primary way you distinguish files, for example a daily instrument export where there is only one file per day: `20260513_readings.csv`
+- **Sample ID first** — useful when you process many samples on the same day, making the date a poor distinguishing feature. Putting the sample ID first means all files for a given sample sit together when sorted: `SAMP042_20260513_raw.csv`
+- **Participant or site ID first** — common in clinical or social research where data is organised around individuals or locations rather than dates: `P014_interview_transcript.txt`
+
+Sometimes you may need to balance two requirements. If you need to find the most recent file *for a specific sample*, you might use `sampleID_date`, which groups by sample first and sorts chronologically within each group.
 
 ### Special Characters and Spaces
 
@@ -222,6 +236,23 @@ Can you think of a better way to write the dates, so that the files appear in da
 
 A good format for dates is YYYYMMDD (the ISO 8601 standard), or YYYY-MM-DD. This format ensures that everything can be easily ordered by year, then month, and then day. Seeing the year at the start of the date also indicates to those looking at the files that the date is probably being handled in this way.
 
+:::::::::::::::::::::::::::: callout
+
+### Does your field have its own naming conventions?
+
+Before inventing a naming convention from scratch, it is worth checking whether your discipline already has a standard — some fields have well-established conventions that make data easier to share, deposit in repositories, and reuse by others.
+
+A few examples:
+
+- **Neuroimaging (BIDS):** The Brain Imaging Data Structure standard specifies both folder layout and file names, such as `sub-01_ses-01_task-rest_bold.nii.gz`. Files deposited to OpenNeuro must follow this format.
+- **Clinical research (CDISC):** The Clinical Data Interchange Standards Consortium defines naming and structure for trial data submitted to regulators (e.g. the FDA and EMA). Variable names, domain codes, and file layouts are all specified.
+- **Genomics:** Sequencing files submitted to repositories such as NCBI's Sequence Read Archive are assigned standard accession numbers. Many labs also follow community conventions for raw read files, such as `sampleID_R1.fastq.gz`.
+- **Ecology and biodiversity:** The Darwin Core standard defines a common vocabulary for recording species observations, including how to express dates, locations, and identifiers.
+
+If a standard exists for your field, using it from the start will save work later — particularly when it comes to depositing data in a repository or sharing it with collaborators.
+
+::::::::::::::::::::::::::::
+
 ## Version control
 
 Alex has now organised the folders and renamed many of the files. Things look much better, but as he works through the project, he notices something worrying.
@@ -235,6 +266,14 @@ For several documents, there are multiple slightly different versions of the sam
 - Who made those changes, or why
 
 Some files include 'final' in the name... sometimes more than once.
+
+:::::::::::::::::::::::::::: callout
+
+### When the wrong version makes the news
+
+In 2010, economists Reinhart and Rogoff published a widely cited paper claiming that countries with government debt above 90% of GDP experienced sharply slower economic growth. The paper influenced austerity policy in the UK, US, and Europe. In 2013, a graduate student attempting to replicate the work found that several rows of data had been accidentally excluded from a formula in their Excel spreadsheet — the wrong version of the analysis had effectively been published. When corrected, the paper's central finding largely disappeared. The policies had already been implemented.
+
+::::::::::::::::::::::::::::
 
 ::::::::::::::: challenge
 
@@ -277,6 +316,14 @@ When trying to work out which file is the most recent, it might seem easy to sor
 - **Synchronisation tools** (such as cloud storage services) may update timestamps when files are synced, even if the content has not changed
 
 This means that "Date Modified" can appear to show a recent date on a file that is actually an old version, and an older date on what is actually the most current copy. Relying on timestamps alone to identify the latest version of a file is therefore risky. Including version information directly in the file name, or using version control software, is a much more reliable approach.
+
+::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::: callout
+
+### "Wrong version of file": a recurring reason for retraction
+
+Retraction Watch, which tracks scientific paper retractions, lists multiple cases each year where the stated reason is "wrong version of data file used" or "incorrect file submitted." In several cases, authors have described discovering — after publication — that they had analysed an earlier draft of their dataset rather than the final cleaned version, or had submitted a file that had since been corrected. The published findings were based on data that no longer existed in that form.
 
 ::::::::::::::::::::::::::::
 
