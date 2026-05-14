@@ -5,16 +5,9 @@ title: Setup
 Before joining the workshop, please complete the data and software setup 
 described in this page.
 
-## Data Sets
-
-Download the [txt file of example data](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/blob/main/episodes/data/Met_Objects_Dataset_sample.txt) and save 
-it somewhere easily accessible on your computer.
-
-This file is a shortened and modified version of the [Metropolitan Museum of
-Art's Open Access CSV](https://github.com/metmuseum/openaccess), released under 
-a CC0 license on github.
-
 ## Lesson Resources
+
+### For the episode: Structuring Research Materials
 
 We will be using some example files and folders during the workshop.
 
@@ -23,6 +16,15 @@ Please download them before the session begins:
 [Download lesson resources (ZIP)](Folder_Structures_Resources.zip)
 
 After downloading, locate the ZIP file in your Downloads folder. Right-click and select **Extract All** (or double click on Mac). Move the extracted folder somewhere easy to access (e.g. Desktop).
+
+### For the episode: Tabular Data Collection
+
+Download the [txt file of example data](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/blob/main/episodes/data/Met_Objects_Dataset_sample.txt) and save 
+it somewhere easily accessible on your computer.
+
+This file is a shortened and modified version of the [Metropolitan Museum of
+Art's Open Access CSV](https://github.com/metmuseum/openaccess), released under 
+a CC0 license on github.
 
 ## Software Setup
 
