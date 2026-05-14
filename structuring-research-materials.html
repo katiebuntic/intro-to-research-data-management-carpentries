@@ -317,7 +317,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Structuring Research Materials</h1>
-        <p>Last updated on 2026-04-10 |
+        <p>Last updated on 2026-05-14 |
 
         <a href="https://github.com/katiebuntic/intro-to-research-data-management-carpentries/edit/main/episodes/structuring-research-materials.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -367,6 +367,7 @@ useful for certain types of data.</li>
 for a few years. He has been given access to the project’s folders and
 has been asked by his supervisor to look through some files left by a
 researcher who recently left.</p>
+
 <div id="organising-files-into-a-folder-structure-part-i" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -390,7 +391,7 @@ in it, and discuss the following questions:</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>When thinking about how you could improve the organisation of the
 files, consider whether it might be easier to split them between
@@ -399,6 +400,7 @@ different folders and whether any might need renaming</p>
 </div>
 </div>
 </div>
+
 <p>Alex goes to his supervisor and explains the problems he has found.
 His supervisor asks him to improve the organisation of the files as he
 is concerned that no-one will be able to find anything.</p>
@@ -414,8 +416,8 @@ II</h3>
 <p>Individually, look at Folder 2.1 again and, within it create a set of
 folders to organise each file into. You may want to create subfolders
 inside some of these folders too. Organise the files into your folders.
-You will not need to open or rename any of the files for this
-exercise).</p>
+Please note: You will not need to open or rename any of the files for
+this exercise.</p>
 </div>
 </div>
 </div>
@@ -424,7 +426,7 @@ exercise).</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint2" aria-expanded="false" aria-controls="collapseHint2">
   <h4 class="accordion-header" id="headingHint2"> Give me a hint </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
 <div class="accordion-body">
 <ul><li>Alex sees that during the project the researcher gave a presentation
 at a conference and that alongside the slides, there are lots of
@@ -439,24 +441,26 @@ them?</li>
 </div>
 </div>
 </div>
-<p>Poor organisation can make it difficult to find files or to even see
-that a specific file exists. This can become a massive problem where
-multiple people are working together or on projects that run over a
-number of years. Out-of-date versions of files may end up being used and
-shared, and important documents may be effectively lost. Relying on
-search tools to find documents assumes that you know that the document
-exists, and that you know how it was named; if you weren’t the person
-who created it how would you know about it? If you think back to
-documents you created a few years ago, would you still be able to say
-what they were all called, what the latest versions were called, and
-what they all related to?</p>
-<p>Taking a few moments to think about the structures you use to store
-files can save a lot of stress, and time, both for you and anyone you
-work with. If you work across multiple projects it can be worth coming
-up with a consistent approach, so that you and anyone you work with
-always knows where in the folder structure to find the same types of
-files. Structure folders hierarchically too: start broad and drill-down
-into specific areas.</p>
+
+<p>Poor organisation can make it difficult to find files, or to even
+realise that a specific file exists. This becomes a particular problem
+when multiple people are working together, or on projects that run over
+a number of years.</p>
+<p>When organisation breaks down:</p>
+<ul><li>Out-of-date versions of files may end up being used and shared</li>
+<li>Important documents can be effectively lost</li>
+<li>Search tools only help if you already know the file exists and
+roughly what it was called - if you weren’t the person who created it,
+how would you know?</li>
+</ul><p>If you think back to documents you created a few years ago, would you
+still be able to say what they were all called, what the latest versions
+were, and what they all related to?</p>
+<p>Taking a few moments to think about folder structure early on can
+save a lot of stress and time - both for your future self and for anyone
+you work with. If you work across multiple projects, developing a
+consistent approach means everyone always knows where to look for a
+given type of file. Structure folders hierarchically: start broad and
+drill down into specific areas.</p>
 <p>It can be worth thinking of an old fashioned set of filing
 cabinets:</p>
 <figure><img src="fig/Filing_cabinet_small.png" alt="clipart image of a 3-drawered green filing cabinet with the top draw open to show a set of files inside" class="figure mx-auto d-block"><div class="figcaption">Image of a filing cabinet</div>
@@ -469,7 +473,22 @@ subsections of that aspect e.g. in drawer 2 there are separate folders
 for code, raw data, cleaned data, graphs/ figures, and reports</li>
 <li>within each folder in each drawer, there may be further
 sub-sections….</li>
-</ul><p>However, do be sensible about the level and number of folders you
+</ul><p>In practice, a research project folder might look something like
+this:</p>
+<pre><code>my_project/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── analysis/
+│   ├── scripts/
+│   └── outputs/
+├── reports/
+│   ├── drafts/
+│   └── submitted/
+└── admin/
+    ├── conference/
+    └── expenses/</code></pre>
+<p>However, do be sensible about the level and number of folders you
 use: if you have lots of folders that only contain one file, you may
 have too many, making it more difficult and time-consuming to navigate.
 If you have very few folders, then there may be too many files in a
@@ -498,6 +517,7 @@ files that are no longer needed into an ‘archive’ folder</li>
 <hr class="half-width"><p>Alex takes another look at the folder system he has created. The
 files are easier to search through, but he notices that there are lots
 of inconsistencies in how those files are named.</p>
+
 <div id="naming-files-part-i" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -514,12 +534,13 @@ on the project?</p>
 </div>
 </div>
 <p>Poor file naming practices can make it difficult and time-consuming
-to find files, and lead to people working on the wrong files, or even
-overwriting important files, thus losing important data. Just as with
-folder structure, taking some time early in a project to develop a
-naming convention can save time and effort in the long run, both for
-your future self, and for any colleagues you work with. Below are some
-key considerations when creating file names:</p>
+to find files. They can also lead to people working on the wrong
+version, or overwriting important files and losing data that cannot be
+recovered.</p>
+<p>Taking some time at the start of a project to agree on a naming
+convention will save effort in the long run - both for you and for any
+colleagues you work with.</p>
+<p>Below are some key considerations when creating file names:</p>
 <div class="section level3">
 <h3 id="what-information-to-include">What information to include<a class="anchor" aria-label="anchor" href="#what-information-to-include"></a></h3>
 <p>Carefully consider what information someone would need about the file
@@ -532,14 +553,30 @@ form part of the file name.</p>
 <div class="section level3">
 <h3 id="whether-you-need-to-be-able-to-order-the-files-by-a-characteristic">Whether you need to be able to order the files by a
 characteristic<a class="anchor" aria-label="anchor" href="#whether-you-need-to-be-able-to-order-the-files-by-a-characteristic"></a></h3>
-<p>For example, will you need to be able to easily select the file that
-was created most recently? Or quickly find a file by a sample ID? If so,
-you will want that element of the name to be at the beginning of the
-file name. Sometimes you might have to prioritise one of those
-requirements: for example, maybe you need to find the most recent file
-relating to a specific sample, in which case you might name the files
-using the format:</p>
-<p>sampleID_date</p>
+<p>Whatever you most often need to find should go at the start of the
+file name, because files sort alphabetically from left to right. Some
+examples:</p>
+<ul><li>
+<strong>Date first</strong> — useful when the date is the primary
+way you distinguish files, for example a daily instrument export where
+there is only one file per day: <code>20260513_readings.csv</code>
+</li>
+<li>
+<strong>Sample ID first</strong> — useful when you process many
+samples on the same day, making the date a poor distinguishing feature.
+Putting the sample ID first means all files for a given sample sit
+together when sorted: <code>SAMP042_20260513_raw.csv</code>
+</li>
+<li>
+<strong>Participant or site ID first</strong> — common in clinical
+or social research where data is organised around individuals or
+locations rather than dates:
+<code>P014_interview_transcript.txt</code>
+</li>
+</ul><p>Sometimes you may need to balance two requirements. If you need to
+find the most recent file <em>for a specific sample</em>, you might use
+<code>sampleID_date</code>, which groups by sample first and sorts
+chronologically within each group.</p>
 </div>
 <div class="section level3">
 <h3 id="special-characters-and-spaces">Special Characters and Spaces<a class="anchor" aria-label="anchor" href="#special-characters-and-spaces"></a></h3>
@@ -549,6 +586,39 @@ sometimes being completely unable to open a file with them in their
 name, or not recognising them at all. Some special characters have a
 meaning in particular programming languages, and may be interpreted as
 instructions to the computer rather than as part of the file name.</p>
+<div id="what-are-special-characters" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="what-are-special-characters" class="callout-inner">
+<h3 class="callout-title">What are special characters?</h3>
+<div class="callout-content">
+<p>Special characters are any characters that are not letters (A–Z,
+a–z), numbers (0–9), hyphens (-), or underscores (_). Common examples
+include:</p>
+<p><code>? # ! " £ $ % ^ &amp; * ( ) { } @ / \ | &lt; &gt; : ; ' ~</code></p>
+<p>Some of these characters have a specific meaning to operating systems
+or software, which is why they can cause problems in folder and file
+names:</p>
+<ul><li>
+<code>/</code> and <code>\</code> are used to separate folders in
+file paths (e.g. <code>Documents/project/data</code>), so including one
+in a file name can confuse the computer about where the path ends and
+the name begins</li>
+<li>
+<code>:</code> is used in Windows file paths (e.g. <code>C:\</code>)
+and is not allowed in file or folder names on Windows</li>
+<li>Characters like <code>*</code>, <code>?</code>, and <code>"</code>
+are used by operating systems and command-line tools as instructions
+(e.g. <code>*</code> means “match any file”), so they may be
+misinterpreted when they appear in a name</li>
+<li>Some characters may display differently or cause errors when files
+are shared across different operating systems (Windows, Mac, Linux),
+making it harder to open or find those files</li>
+</ul></div>
+</div>
+</div>
 <p>Similarly, spaces in file names can cause problems:</p>
 <div id="naming-files-part-ii" class="callout challenge">
 <div class="callout-square">
@@ -559,7 +629,7 @@ instructions to the computer rather than as part of the file name.</p>
 <h3 class="callout-title">Naming Files Part II</h3>
 <div class="callout-content">
 <p>Look at the file name below:</p>
-<p>STAR final results.xls</p>
+<p>STAR final results.xlsx</p>
 <p>How do you think this might be interpreted by a computer? How might
 you rewrite the name to avoid that?</p>
 </div>
@@ -570,7 +640,7 @@ you rewrite the name to avoid that?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>If you have spaces in a file name, the computer may interpret a space
 as showing that the end of the file name has been reached, and therefore
@@ -617,7 +687,7 @@ parts of the file name.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint3" aria-expanded="false" aria-controls="collapseHint3">
   <h4 class="accordion-header" id="headingHint3"> Give me a hint </h4>
 </button>
-<div id="collapseHint3" class="accordion-collapse collapse" data-bs-parent="#accordionHint3" aria-labelledby="headingHint3">
+<div id="collapseHint3" class="accordion-collapse collapse" aria-labelledby="headingHint3" data-bs-parent="#accordionHint3">
 <div class="accordion-body">
 <p>If the files came from laboratories in both the UK and in the USA,
 would that raise any concerns about how to read the dates on the
@@ -626,6 +696,7 @@ files?</p>
 </div>
 </div>
 </div>
+
 <p>Dates are a frequent cause of issues for researchers. Researchers
 from different countries may read date numbers differently: “05062026”
 may be one person’s 5th of June (e.g. in the UK), while for another it’s
@@ -658,6 +729,45 @@ YYYY-MM-DD. This format ensures that everything can be easily ordered by
 year, then month, and then day. Seeing the year at the start of the date
 also indicates to those looking at the files that the date is probably
 being handled in this way.</p>
+<div id="does-your-field-have-its-own-naming-conventions" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="does-your-field-have-its-own-naming-conventions" class="callout-inner">
+<h3 class="callout-title">Does your field have its own naming
+conventions?</h3>
+<div class="callout-content">
+<p>Before inventing a naming convention from scratch, it is worth
+checking whether your discipline already has a standard — some fields
+have well-established conventions that make data easier to share,
+deposit in repositories, and reuse by others.</p>
+<p>A few examples:</p>
+<ul><li>
+<strong>Neuroimaging (BIDS):</strong> The Brain Imaging Data
+Structure standard specifies both folder layout and file names, such as
+<code>sub-01_ses-01_task-rest_bold.nii.gz</code>. Files deposited to
+OpenNeuro must follow this format.</li>
+<li>
+<strong>Clinical research (CDISC):</strong> The Clinical Data
+Interchange Standards Consortium defines naming and structure for trial
+data submitted to regulators (e.g. the FDA and EMA). Variable names,
+domain codes, and file layouts are all specified.</li>
+<li>
+<strong>Genomics:</strong> Sequencing files submitted to
+repositories such as NCBI’s Sequence Read Archive are assigned standard
+accession numbers. Many labs also follow community conventions for raw
+read files, such as <code>sampleID_R1.fastq.gz</code>.</li>
+<li>
+<strong>Ecology and biodiversity:</strong> The Darwin Core standard
+defines a common vocabulary for recording species observations,
+including how to express dates, locations, and identifiers.</li>
+</ul><p>If a standard exists for your field, using it from the start will
+save work later — particularly when it comes to depositing data in a
+repository or sharing it with collaborators.</p>
+</div>
+</div>
+</div>
 </div>
 </section><section><h2 class="section-heading" id="version-control">Version control<a class="anchor" aria-label="anchor" href="#version-control"></a></h2>
 <hr class="half-width"><p>Alex has now organised the folders and renamed many of the files.
@@ -669,6 +779,27 @@ of the same file, and it’s not always clear:</p>
 <li><p>What changed between versions</p></li>
 <li><p>Who made those changes, or why</p></li>
 </ul><p>Some files include ‘final’ in the name… sometimes more than once.</p>
+
+<div id="when-the-wrong-version-makes-the-news" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="when-the-wrong-version-makes-the-news" class="callout-inner">
+<h3 class="callout-title">When the wrong version makes the news</h3>
+<div class="callout-content">
+<p>In 2010, economists Reinhart and Rogoff published a widely cited
+paper claiming that countries with government debt above 90% of GDP
+experienced sharply slower economic growth. The paper influenced
+austerity policy in the UK, US, and Europe. In 2013, a graduate student
+attempting to replicate the work found that several rows of data had
+been accidentally excluded from a formula in their Excel spreadsheet —
+the wrong version of the analysis had effectively been published. When
+corrected, the paper’s central finding largely disappeared. The policies
+had already been implemented.</p>
+</div>
+</div>
+</div>
 <div id="versions-everywhere" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -692,7 +823,7 @@ versions?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint4" aria-expanded="false" aria-controls="collapseHint4">
   <h4 class="accordion-header" id="headingHint4"> Give me a hint </h4>
 </button>
-<div id="collapseHint4" class="accordion-collapse collapse" data-bs-parent="#accordionHint4" aria-labelledby="headingHint4">
+<div id="collapseHint4" class="accordion-collapse collapse" aria-labelledby="headingHint4" data-bs-parent="#accordionHint4">
 <div class="accordion-body">
 <p>You don’t need to open the files to answer these questions.<br>
 Focus on the <em>file names</em> themselves:</p>
@@ -706,6 +837,65 @@ is “latest”</li>
 </div>
 </div>
 </div>
+<div id="cant-i-just-check-date-modified" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="cant-i-just-check-date-modified" class="callout-inner">
+<h3 class="callout-title">Can’t I just check “Date Modified”?</h3>
+<div class="callout-content">
+<p>When trying to work out which file is the most recent, it might seem
+easy to sort by the date modified or date created shown in your file
+browser. Unfortunately, these timestamps are not always reliable
+guides:</p>
+<ul><li>
+<strong>Copying a file resets its “date created”</strong> to the
+moment it was copied, even if the original was created years
+earlier</li>
+<li>
+<strong>Date modified can change unexpectedly</strong> - opening a
+file and accidentally pressing a key, or a programme auto-saving, can
+update the timestamp without any meaningful change to the content</li>
+<li>
+<strong>Moving files between folders, drives, or computers</strong>
+can reset one or both timestamps, depending on the operating system</li>
+<li>
+<strong>Restoring files from a backup</strong> may set the
+timestamps to the moment of restoration rather than when the file was
+last genuinely edited</li>
+<li>
+<strong>Synchronisation tools</strong> (such as cloud storage
+services) may update timestamps when files are synced, even if the
+content has not changed</li>
+</ul><p>This means that “Date Modified” can appear to show a recent date on a
+file that is actually an old version, and an older date on what is
+actually the most current copy. Relying on timestamps alone to identify
+the latest version of a file is therefore risky. Including version
+information directly in the file name, or using version control
+software, is a much more reliable approach.</p>
+</div>
+</div>
+</div>
+<div id="wrong-version-of-file-a-recurring-reason-for-retraction" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="wrong-version-of-file-a-recurring-reason-for-retraction" class="callout-inner">
+<h3 class="callout-title">“Wrong version of file”: a recurring reason
+for retraction</h3>
+<div class="callout-content">
+<p>Retraction Watch, which tracks scientific paper retractions, lists
+multiple cases each year where the stated reason is “wrong version of
+data file used” or “incorrect file submitted.” In several cases, authors
+have described discovering — after publication — that they had analysed
+an earlier draft of their dataset rather than the final cleaned version,
+or had submitted a file that had since been corrected. The published
+findings were based on data that no longer existed in that form.</p>
+</div>
+</div>
+</div>
 <p>Version control is about tracking change over time, so that you
 can:</p>
 <ul><li><p>See what changed</p></li>
@@ -716,27 +906,32 @@ consistently can go a long way towards ensuring you can do all of these
 things.</p>
 <div class="section level3">
 <h3 id="recommendations">Recommendations<a class="anchor" aria-label="anchor" href="#recommendations"></a></h3>
-<ul><li>Use version numbers to indicate the order that document versions
+<ul><li>
+<p>Use version numbers to indicate the order that document versions
 were created in. Decimal points can be used to indicate intermediate
 versions; whole numbers to indicate major versions at key points in the
-document’s lifecycle. For example, v0.1 might indicate a very early
-first draft of a paper, v1.0 might be the first version that was
-circulated to other authors for intial comments, v1.1 an updated version
-based on the comments, v2.0 might be the version that was submitted to
-the publisher and v3.0 might be the version that was resubmitted after
-revisions based on reviewer comments.</li>
-<li>Sometimes appending dates may be more appropriate, if so use the
+document’s lifecycle.</p>
+<p>For example:</p>
+<ul><li>v0.1: a very early first draft</li>
+<li>v1.0: the first version circulated to other authors for initial
+comments</li>
+<li>v1.1: an updated version based on those comments</li>
+<li>v2.0: the version submitted to a publisher</li>
+<li>v3.0: the version resubmitted after revisions based on reviewer
+comments</li>
+</ul></li>
+<li><p>Sometimes appending dates may be more appropriate. If so, use the
 YYYYMMDD format and consider its position in the file name so that the
-files are always ordered correctly if sorted alphabetically</li>
-<li>Where a document has reached a key point in its lifecycle, such as
-being submitted to a publisher, it may be helpful to append a short word
-or phrase such as “Submitted”, “Submitted revision”, to clarify that
-(but do use version numbers too!)</li>
-<li>Where there are lots of versions of a document in a folder, it may
-be appropriate to create a subfolder to keep previous versions in: this
-helps you and any colleagues to be able to quickly find the current
-version, particularly important if the document is a Standard Operating
-Procedure or Manual.</li>
+files are always ordered correctly when sorted alphabetically.</p></li>
+<li><p>Where a document has reached a key point in its lifecycle, such
+as being submitted to a publisher, it may be helpful to append a short
+word or phrase such as “Submitted” or “Submitted_revision” to clarify
+that — but do use version numbers too!</p></li>
+<li><p>Where there are lots of versions of a document in a folder, it
+may be appropriate to create a subfolder to keep previous versions in.
+This helps you and any colleagues to be able to quickly find the current
+version, which is particularly important if the document is a Standard
+Operating Procedure or Manual.</p></li>
 </ul><p>However, while file naming conventions can help, they aren’t always
 enough on their own.</p>
 </div>
@@ -776,7 +971,7 @@ tracking?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint5" aria-expanded="false" aria-controls="collapseHint5">
   <h4 class="accordion-header" id="headingHint5"> Give me a hint </h4>
 </button>
-<div id="collapseHint5" class="accordion-collapse collapse" data-bs-parent="#accordionHint5" aria-labelledby="headingHint5">
+<div id="collapseHint5" class="accordion-collapse collapse" aria-labelledby="headingHint5" data-bs-parent="#accordionHint5">
 <div class="accordion-body">
 <p>Imagine two people editing the file at the same time: what would be
 easy to reconcile, and what would be painful?</p>
@@ -787,6 +982,27 @@ easy to reconcile, and what would be painful?</p>
 <p>Not all files benefit equally from version control tools. Files such
 as images or spreadsheets (i.e. non-text files) can be harder to manage,
 while plain text files work particularly well.</p>
+<div id="a-simpler-approach-for-non-text-files-cloud-collaboration-tools" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="a-simpler-approach-for-non-text-files-cloud-collaboration-tools" class="callout-inner">
+<h3 class="callout-title">A simpler approach for non-text files: cloud
+collaboration tools</h3>
+<div class="callout-content">
+<p>For files like Word documents, spreadsheets, or presentations, a
+shared cloud storage service (such as OneDrive, Google Drive, or
+SharePoint) can be a practical alternative. Rather than emailing a file
+back and forth — and ending up with multiple slightly different copies
+in different inboxes — collaborators can work from a single shared link.
+Everyone edits the same file, in the same place, at the same time.</p>
+<p>This avoids the version confusion that comes with emailing
+attachments, and most of these tools also keep a version history so you
+can see earlier states of the file if needed.</p>
+</div>
+</div>
+</div>
 <div id="thinking-ahead" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -808,7 +1024,7 @@ file naming?</p></li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint6" aria-expanded="false" aria-controls="collapseHint6">
   <h4 class="accordion-header" id="headingHint6"> Give me a hint </h4>
 </button>
-<div id="collapseHint6" class="accordion-collapse collapse" data-bs-parent="#accordionHint6" aria-labelledby="headingHint6">
+<div id="collapseHint6" class="accordion-collapse collapse" aria-labelledby="headingHint6" data-bs-parent="#accordionHint6">
 <div class="accordion-body">
 <p>You might want to think about: how do you currently keep track of
 changes? What information gets lost when files are renamed or
@@ -828,11 +1044,14 @@ years</p>
 <h3 class="callout-title">Git and GitHub</h3>
 <div class="callout-content">
 <p>Git is a version control tool, and GitHub is a platform that hosts
-Git projects and supports collaboration.</p>
-<p>They are particularly useful for certain types of data, especially
-files that are: - text-based (such as code, scripts, and documentation)
-- edited frequently - worked on by more than one person</p>
-<p>They are generally less helpful for files like images, PDFs,
+Git projects and supports collaboration. They are primarily designed for
+managing code and other plain text files — they are not a
+general-purpose solution for all research files.</p>
+<p>They are particularly useful for files that are:</p>
+<ul><li>text-based (such as code, scripts, and documentation)</li>
+<li>edited frequently</li>
+<li>worked on by more than one person</li>
+</ul><p>They are generally less helpful for files like images, PDFs,
 spreadsheets, or heavily formatted documents (such as Word or
 LibreOffice files), where combining changes is difficult.</p>
 <p>File naming can help manage <em>major</em> versions (for example,
@@ -847,10 +1066,10 @@ to understand why such tools exist and when they might be useful.</p>
 <p>You may hear version control tools described using terms like:</p>
 <ul><li>
 <strong>Repository</strong>: a project’s home: the files
-<em>and</em> their record of changes<br></li>
+<em>and</em> their record of changes</li>
 <li>
 <strong>Commit</strong>: a saved snapshot of changes, with a short
-note about what was done<br></li>
+note about what was done</li>
 <li>
 <strong>History</strong>: the timeline of commits showing how the
 project evolved</li>
@@ -859,6 +1078,31 @@ as names for ideas you’ve already encountered when trying to keep track
 of different versions of files.</p>
 </div>
 </div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul><li>Organise files into a hierarchical folder structure: start broad and
+drill down into specific areas, using a sensible number of folders with
+meaningful names</li>
+<li>Use a consistent file naming convention across a project so that you
+and your colleagues can easily find and identify files</li>
+<li>Avoid spaces and special characters in file names; use hyphens or
+underscores to separate parts of the name instead</li>
+<li>Use the YYYYMMDD (ISO 8601) date format in file names to ensure
+files sort correctly in date order</li>
+<li>Use version numbers (e.g. v1.0, v1.1) or date-based suffixes to
+track document versions, and keep earlier versions in a clearly named
+subfolder</li>
+<li>Version control tools such as Git and GitHub are particularly useful
+for text-based files (code, scripts, documentation) that change
+frequently or are worked on collaboratively</li>
+</ul></div>
 </div>
 </div>
 <!--
@@ -925,8 +1169,8 @@ any links that you are not going to use.
   "url": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/structuring-research-materials.html",
   "identifier": "https://katiebuntic.github.io/intro-to-research-data-management-carpentries/structuring-research-materials.html",
   "dateCreated": "2025-03-27",
-  "dateModified": "2026-04-10",
-  "datePublished": "2026-05-12"
+  "dateModified": "2026-05-14",
+  "datePublished": "2026-05-14"
 }
 
   </script><script>
