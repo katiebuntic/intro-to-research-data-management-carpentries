@@ -492,6 +492,8 @@ For files like Word documents, spreadsheets, or presentations, a shared cloud st
 
 This avoids the version confusion that comes with emailing attachments, and most of these tools also keep a version history so you can see earlier states of the file if needed.
 
+However, it can make keeping very specific versions of files trickier, and it can be confusing if a collaborator makes unexpected changes, so think about how to manage them, and agree a process with everyone involved.
+
 ::::::::::::::::::::::::::::
 
 :::::::::::::::::::: challenge
@@ -527,7 +529,7 @@ They are particularly useful for files that are:
 - edited frequently
 - worked on by more than one person
 
-They are generally less helpful for files like images, PDFs, spreadsheets, or heavily formatted documents (such as Word or LibreOffice files), where combining changes is difficult.
+They are generally less helpful for files like images, PDFs, spreadsheets, or heavily formatted documents (such as Word or LibreOffice files). Not all collaborators may feel comfortable with using them too, as there is a little bit of a learning curve.
 
 File naming can help manage _major_ versions (for example, `report_v1`, `report_v2`), but version control tools go further; they can record _every change_ and allow you to return to a specific point in time, a bit like “Track Changes” for an entire project.
 
