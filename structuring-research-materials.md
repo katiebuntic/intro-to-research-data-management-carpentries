@@ -393,9 +393,25 @@ This means that "Date Modified" can appear to show a recent date on a file that 
 
 :::::::::::::::::::::::::::: callout
 
-### "Wrong version of file": a recurring reason for retraction
+### When the wrong data file reaches the clinic
 
-Retraction Watch, which tracks scientific paper retractions, lists multiple cases each year where the stated reason is "wrong version of data file used" or "incorrect file submitted." In several cases, authors have described discovering - after publication - that they had analysed an earlier draft of their dataset rather than the final cleaned version, or had submitted a file that had since been corrected. The published findings were based on data that no longer existed in that form.
+Between 2006 and 2010, a research team at Duke University published a series 
+of papers claiming that genomic signatures could predict how cancer patients 
+would respond to chemotherapy. Other researchers attempting to reproduce the 
+work found systematic data errors: rows had been shifted, sample labels mixed 
+up, and in some cases, earlier or incorrect versions of data files had been 
+used in analyses. By the time the problems were fully documented, clinical 
+trials had been opened on the basis of the flawed results. Several papers 
+were retracted, and the trials were halted.
+
+The researchers who uncovered the errors later described the process of 
+reconstructing which file had been used for which analysis as one of the 
+central difficulties - version information simply had not been recorded.
+
+> Baggerly, K.A. & Coombes, K.R. (2009). Deriving chemosensitivity from 
+> cell lines: forensic bioinformatics and reproducible research in 
+> high-throughput biology. *Annals of Applied Statistics*, 3(4), 1309–1334. 
+> https://doi.org/10.1214/09-AOAS291
 
 ::::::::::::::::::::::::::::
 
