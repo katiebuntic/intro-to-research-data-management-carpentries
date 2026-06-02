@@ -63,9 +63,9 @@ Variables that represent measurable quantities. These can be integers or floats.
 
 **Examples**:
 
-- `objectid` → `12345` _(integer, discrete — a unique ID number)_
-- `heightcm` → `23.5` _(float, continuous — a measurement in centimeters)_
-- `objectdate` → `1890` _(integer, discrete — a specific year)_
+- `objectid` → `12345` _(integer, discrete - a unique ID number)_
+- `heightcm` → `23.5` _(float, continuous - a measurement in centimeters)_
+- `objectdate` → `1890` _(integer, discrete - a specific year)_
 
 #### String variables
 
@@ -85,8 +85,8 @@ Categorical variables can be _Nominal_, which means there is no inherent order (
 
 - `gender` → `"Female"`, `"Male"` _(string, nominal)_
 - `medium` → `"Marble"`, `"Bronze"`, `"Oil on canvas"` _(string, nominal)_
-- `istimelinework` → `"Yes"` / `"No"` _(string, nominal — or Boolean: `TRUE` / `FALSE`)_
-- `artistdecade` → `1950`, `1960`, `1980` _(integer, ordinal — ordered decades)_
+- `istimelinework` → `"Yes"` / `"No"` _(string, nominal - or Boolean: `TRUE` / `FALSE`)_
+- `artistdecade` → `1950`, `1960`, `1980` _(integer, ordinal - ordered decades)_
 
 #### Date/time variables
 
@@ -175,7 +175,7 @@ We can see:
 - `"Male"`, `"MALE"`, and `"M"` are also equivalent
 - `"Unknown"` and the blank entry might indicate missing or uncertain data
 
-These differences need to be standardised before analysis — for example, converting all values to lowercase and replacing shorthand terms with full words.
+These differences need to be standardised before analysis, for example by converting all values to lowercase and replacing shorthand terms with full words.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
