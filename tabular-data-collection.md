@@ -348,7 +348,10 @@ Work in pairs or small groups and compare your answers.
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- keypoint 1
-- keypoint 2
+- Variables in tabular data can be numeric, string, categorical, or date/time, and a single variable may have both a conceptual type (how it is used) and a technical format (how it is stored).
+- Data inconsistencies such as mixed cases, varying formats, and invalid values can cause errors during analysis and should be identified before working with a dataset.
+- Inconsistencies are easier to prevent than to fix, so enforcing formats, using drop-down menus, and adding validation rules during data collection reduces the need for cleaning later.
+- Documenting data collection guidelines before collecting data ensures consistency and supports reproducibility for collaborators and future users.
+- A data dictionary describes the variables in a dataset, including their names, types, possible values, and units, making the dataset easier to understand and use correctly.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
