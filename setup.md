@@ -23,7 +23,7 @@ Download the dataset called `Met_Objects_Dataset_sample.txt` by visiting the lin
 
 [Met\_Objects\_Dataset\_sample.txt on GitHub](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/blob/main/episodes/data/Met_Objects_Dataset_sample.txt)
 
-![The GitHub file view for Met_Objects_Dataset_sample.txt, with the download button highlighted in yellow](../episodes/fig/met-dataset-github.png)
+![The GitHub file view for Met_Objects_Dataset_sample.txt, with the download button highlighted in yellow](fig/met-dataset-screenshot.png)
 
 Save the file somewhere easy to find, such as your Desktop.
 
