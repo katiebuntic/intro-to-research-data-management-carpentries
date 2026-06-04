@@ -19,8 +19,13 @@ After downloading, locate the ZIP file in your Downloads folder. Right-click and
 
 ### For the episode: Tabular Data Collection
 
-Download the [txt file of example data](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/blob/main/episodes/data/Met_Objects_Dataset_sample.txt) and save 
-it somewhere easily accessible on your computer.
+Download the dataset called `Met_Objects_Dataset_sample.txt` by visiting the link below and clicking the download button (highlighted in the screenshot):
+
+[Met\_Objects\_Dataset\_sample.txt on GitHub](https://github.com/katiebuntic/intro-to-research-data-management-carpentries/blob/main/episodes/data/Met_Objects_Dataset_sample.txt)
+
+![The GitHub file view for Met_Objects_Dataset_sample.txt, with the download button highlighted in yellow](../episodes/fig/met-dataset-github.png)
+
+Save the file somewhere easy to find, such as your Desktop.
 
 This file is a shortened and modified version of the [Metropolitan Museum of
 Art's Open Access CSV](https://github.com/metmuseum/openaccess), released under 
